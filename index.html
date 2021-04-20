@@ -1,1 +1,307 @@
-Main 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <title>OnyetApps - Open Source Repository</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link href="./assets/libs/bootstrap-5.0.0-beta3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-icons-1.4.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logomini.svg" alt="" width="32" height="32" class="d-inline-block align-text-top">
+                <span class="fs-5"><b>Onyet Apps</b></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="me-auto"></span>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-stars"></i> Open Sources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><span class="dropdown-header">Applications</span></li>
+                            <li><a class="dropdown-item" href="https://github.com/onyet/onyetcbt" target="_blank"><i
+                                        class="bi bi-arrow-right-short"></i> OCBT</a></li>
+                            <li><span class="dropdown-header">Plugins</span></li>
+                            <li><a class="dropdown-item" href="https://github.com/Onyetapp/onyetmpdf" target="_blank"><i
+                                        class="bi bi-arrow-right-short"></i> OMPDF</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-book"></i> Documentations
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><span class="dropdown-header">Applications</span></li>
+                            <li><a class="dropdown-item" href="https://github.com/onyet/onyetcbt/wiki"><i
+                                        class="bi bi-arrow-right-short"></i> OCBT</a></li>
+                            <li><span class="dropdown-header">Plugins</span></li>
+                            <li><a class="dropdown-item" href="https://github.com/Onyetapp/onyetmpdf/wiki"
+                                    target="_blank"><i class="bi bi-arrow-right-short"></i> OMPDF</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="https://paypal.me/onyetcorp" target="_blank" tabindex="-1" aria-disabled="true"><img
+                                src="./assets/banana.svg" alt="" width="23" class="d-inline-block align-text-top">Gift
+                            Bananas.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="cover" class="bg-dark text-white">
+        <div id="particle-canvas"></div>
+        <div class="container py-5">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <img src="./assets/logomini.svg" class="img-fluid">
+                    <h1 class="display-2 mt-3 fw-bold">Onyet Apps</h1>
+                    <p class="display-4">Make it simple powerfull.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">
+                    Powered by <cite title="OnyetCorp">D.Mukti & Farda F.</cite>
+                </figcaption>
+                <a href="#services" class="btn btn-warning btn-lg mt-3 mb-4"><i class="bi bi-play-fill"></i> Lets
+                    Start</a>
+            </figure>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="enterprise-garden-container">
+            <video id="video-service2" style="display: none;" preload autobuffer loop muted autoplay
+                class="enterprise-garden" data-threshold="0">
+                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="./assets/github-enterprise-garden-2.h264.mp4">
+                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"
+                    src="./assets/github-enterprise-garden-2.h264.mp4">
+            </video>
+            <video id="video-service1" preload autobuffer muted autoplay class="enterprise-garden" data-threshold="0">
+                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="./assets/github-enterprise-garden-1.h264.mp4">
+                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"
+                    src="./assets/github-enterprise-garden-1.h264.mp4">
+            </video>
+        </div>
+        <div id="particle-ball"></div>
+        <div class="container p-4">
+            <div class="text-center mt-1">
+                <h1 class="display-1">Services</h1>
+                <hr style="width: 250px; margin: 0 auto;">
+                <p style="max-width: 700px; margin: 0 auto; padding-top: 12px;">Onyet Apps is a devoted team of
+                    engineers, consultants and designers. We'll help you envision, build, and optimize cutting-edge
+                    digital products and solutions.</p>
+            </div>
+            <div class="row" style="margin-top: 48px;">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 100%; border-color: #212529;">
+                        <img class="card-img-top" src="./assets/g896.png" alt="Card image cap">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Web & Mobile Development</h5>
+                            <p class="card-text">Entrust the development of your web & mobile applications to our team.
+                                Using our own tools, we deliver high quality faster.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 100%; border-color: #212529;">
+                        <img class="card-img-top" src="./assets/g935.png" alt="Card image cap">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Design</h5>
+                            <p class="card-text">Create an appealing design to build a Brand identity to remember. From
+                                white label to complete solutions and style guides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card" style="width: 100%; border-color: #212529;">
+                        <img class="card-img-top" src="./assets/g1016.png" alt="Card image cap">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">Internet Of Things</h5>
+                            <p class="card-text">Let us assist you at every stage of application & hardware development:
+                                native, lorawan, mqtt or other services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#products" class="text-dark mt-2" style="width: 100%; display: block; text-align: center;">
+                <i class="bi bi-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="products" class="bg-dark text-white">
+        <div class="container p-4">
+            <div class="text-center mt-1">
+                <h1 class="display-1">Products</h1>
+                <hr style="width: 250px; margin: 0 auto;">
+                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;">We create software &
+                    Hardware to help startups, SMBs, and enterprises overcome their business challenges.</p>
+            </div>
+            <div class="row" style="margin-top: 48px;">
+                <div class="col-md-3">
+                    <div class="card mb-2"
+                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
+                        <div class="card-header"
+                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#d873e8,#4637d0);">
+                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);">
+                                <b>Nirbana</b></h1>
+                        </div>
+                        <div class="card-body">
+                            <p><b>Point of Sales</b></p>
+                            <p class="m-0">Application developed for SMEs and cooperatives, for POS purposes.</p>
+                        </div>
+                        <div class="card-footer p-0"
+                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
+                            <a href="#products" class="btn btn-block text-white"
+                                style="width: 100%; text-align: left;" onclick="$('#exampleModalLong').modal('show');">
+                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-2"
+                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
+                        <div class="card-header"
+                            style="height: 12rem; border-radius: 0; background-image:radial-gradient(circle farthest-corner at 80% 80%,#ffc247,#f75f1e)">
+                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);"><b>Ocbt</b>
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p><b>Computer Base Test</b></p>
+                            <p class="m-0">An open source application for online learning and computer-based tests.</p>
+                        </div>
+                        <div class="card-footer p-0"
+                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
+                            <a href="https://github.com/onyet/onyetcbt" target="_blank" class="btn btn-block text-white"
+                                style="width: 100%; text-align: left;">
+                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-2"
+                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
+                        <div class="card-header"
+                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#bae447,#12b35d);">
+                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);"><b>Koomo</b>
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <p><b>Monitoring Control</b></p>
+                            <p class="m-0">Main street lighting system monitoring dashboard application for <a
+                                    href="https://egrotek.com"
+                                    style="text-decoration: none; color: #12b35d;">egrotek</a>.</p>
+                        </div>
+                        <div class="card-footer p-0"
+                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
+                            <a href="https://docs.koomo.id" target="_blank" class="btn btn-block text-white"
+                                style="width: 100%; text-align: left;">
+                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-2"
+                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
+                        <div class="card-header"
+                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#29cafb,#2b4aff);">
+                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);">
+                                <b>Shareku</b></h1>
+                        </div>
+                        <div class="card-body">
+                            <p><b>Web File Directory</b></p>
+                            <p class="m-0">An open source application, a simplified version of the web file directory
+                                system.</p>
+                        </div>
+                        <div class="card-footer p-0"
+                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
+                            <a href="https://github.com/onyet/shareku" target="_blank" class="btn btn-block text-white"
+                                style="width: 100%; text-align: left;">
+                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#products" class="text-white mt-2" style="width: 100%; display: block; text-align: center;">
+                <i class="bi bi-arrow-down"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Modals -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Nibana Gallery</h5>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="$('#exampleModalLong').modal('hide');">
+                        <span aria-hidden="true">
+                            <i class="bi bi-x"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo1.png">
+                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo2.png">
+                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo3.png">
+                    <h1 class="text-center display-5 mt-2">Please contact us if you want to know more.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modals -->
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/libs/bootstrap-5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/particles.js/particles.js"></script>
+    <script src="./assets/js/particle-ball.js"></script>
+    <script>
+        particlesJS.load('particle-canvas', './assets/particlesjs-config.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#video-service1').hide();
+                $('#video-service2').show();
+            }, 3200);
+        });
+    </script>
+    <script>
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("service-worker.js");
+                console.log('Service Worker Loaded!');
+            }
+        });
+    </script>
+</body>
+
+</html>

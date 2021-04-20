@@ -1,0 +1,45 @@
+{
+    "short_name": "OnyetApps",
+    "name": "OnyetApps - Make it simple powerfull.",
+    "icons": [
+      {
+        "src": "/assets/res/48/icons.png",
+        "type": "image/png",
+        "sizes": "48x48",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/assets/res/72/icons.png",
+        "type": "image/png",
+        "sizes": "72x72",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/assets/res/96/icons.png",
+        "type": "image/png",
+        "sizes": "96x96",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/assets/res/144/icons.png",
+        "type": "image/png",
+        "sizes": "144x144",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/assets/onyetapps-black.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#FFFFFF",
+    "description": "Aplikasi Web Onyet Apps",
+    "prefer_related_applications": false,
+    "orientation": "landscape",
+    "lang": "en"
+  }
