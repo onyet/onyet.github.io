@@ -60,8 +60,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning" href="https://paypal.me/onyetcorp" target="_blank" tabindex="-1" aria-disabled="true"><img
-                                src="./assets/banana.svg" alt="" width="23" class="d-inline-block align-text-top">Gift
+                        <a class="nav-link text-warning" href="https://paypal.me/onyetcorp" target="_blank"
+                            tabindex="-1" aria-disabled="true"><img src="./assets/banana.svg" alt="" width="23"
+                                class="d-inline-block align-text-top">Gift
                             Bananas.</a>
                     </li>
                 </ul>
@@ -171,8 +172,8 @@
                         </div>
                         <div class="card-footer p-0"
                             style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
-                            <a href="#products" class="btn btn-block text-white"
-                                style="width: 100%; text-align: left;" onclick="$('#exampleModalLong').modal('show');">
+                            <a href="#products" class="btn btn-block text-white" style="width: 100%; text-align: left;"
+                                onclick="$('#exampleModalLong').modal('show');">
                                 Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
                             </a>
                         </div>
@@ -277,6 +278,13 @@
     </div>
     <!-- End Modals -->
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/libs/bootstrap-5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
@@ -287,19 +295,24 @@
             console.log('callback - particles.js config loaded');
         });
 
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('#video-service1').hide();
-                $('#video-service2').show();
-            }, 3200);
-        });
-    </script>
-    <script>
         window.addEventListener("load", () => {
             if ("serviceWorker" in navigator) {
                 navigator.serviceWorker.register("service-worker.js");
                 console.log('Service Worker Loaded!');
             }
+        });
+
+        var cn =
+            'eyJhcGlLZXkiOiJBSXphU3lDbkdDcUNxdHljQVU5YzJzaWJUUDVDZFJKalRvZ2FJMFUiLCJhdXRoRG9tYWluIjoib255ZXRjYnQuZmlyZWJhc2VhcHAuY29tIiwiZGF0YWJhc2VVUkwiOiJodHRwczovL29ueWV0Y2J0LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbSIsInByb2plY3RJZCI6Im9ueWV0Y2J0Iiwic3RvcmFnZUJ1Y2tldCI6Im9ueWV0Y2J0LmFwcHNwb3QuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI4MzgzMjc5OTk5MCIsImFwcElkIjoiMTo4MzgzMjc5OTk5MDp3ZWI6OTFhMDRlYTVkYTFiMzgyY2JiMjJkNyIsIm1lYXN1cmVtZW50SWQiOiJHLURSOUpOTFcxREMifQ==';
+
+        firebase.initializeApp(JSON.parse(atob(cn)));
+        firebase.analytics();
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#video-service1').hide();
+                $('#video-service2').show();
+            }, 3200);
         });
     </script>
 </body>
