@@ -31,7 +31,7 @@
     z-index: 2;
 }
 
-#services, #products {
+#services, #products, #clients {
     position: relative;
 }
 
@@ -44,10 +44,10 @@
     overflow: hidden;
 }
 
-#services .container, #products .container {
+#services .container, #products .container, #clients .container {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #services .enterprise-garden-container {
@@ -86,6 +86,12 @@
     position: absolute;
     /* border-radius: 100%; */
     opacity: 0.7;
+}
+
+#clients .item-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
 }
 
 /* width */
