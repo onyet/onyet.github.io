@@ -29,32 +29,45 @@
                 <span class="me-auto"></span>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> Home</a>
+                        <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> <span data-i18n="home">Home</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <i class="bi bi-stars"></i> Open Sources
+                            <i class="bi bi-stars"></i> <span data-i18n="open-sources">Open Sources</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                            <li><span class="dropdown-header">Applications</span></li>
+                            <li><span class="dropdown-header" data-i18n="applications">Applications</span></li>
                             <li><a class="dropdown-item" href="https://github.com/onyet/onyetcbt" target="_blank"><i
                                         class="bi bi-arrow-right-short"></i> OCBT</a></li>
-                            <li><span class="dropdown-header">Plugins</span></li>
+                            <li><span class="dropdown-header" data-i18n="plugins">Plugins</span></li>
                             <li><a class="dropdown-item" href="https://github.com/Onyetapp/onyetmpdf" target="_blank"><i
                                         class="bi bi-arrow-right-short"></i> OMPDF</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts"><i class="bi bi-chat-dots-fill"></i> Contact Us</a>
+                        <a class="nav-link" href="#contacts"><i class="bi bi-chat-dots-fill"></i> <span data-i18n="contact-us">Contact Us</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-warning" href="https://paypal.me/onyetcorp" target="_blank"
                             tabindex="-1" aria-disabled="true"><img src="./assets/banana.svg" alt="" width="23"
-                                class="d-inline-block align-text-top">Gift
-                            Bananas.</a>
+                                class="d-inline-block align-text-top"><span data-i18n="gift-bananas">Gift Bananas.</span></a>
                     </li>
                 </ul>
+                <div class="d-flex ms-3">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span data-i18n="language">Language</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('id')">Bahasa Indonesia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('zh')">中文</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('jp')">日本語</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -66,13 +79,12 @@
                 <blockquote class="blockquote">
                     <img src="./assets/logomini.svg" class="img-fluid">
                     <h1 class="display-2 mt-3 fw-bold">Onyet Apps</h1>
-                    <p class="display-4">Make it simple powerfull.</p>
+                    <p class="display-4"><span data-i18n="tagline">Make it simple powerfull.</span></p>
                 </blockquote>
                 <figcaption class="blockquote-footer mt-2">
-                    Powered by <cite title="OnyetCorp">D.Mukti & Farda F.</cite>
+                    <span data-i18n="powered-by">Powered by</span> <cite title="OnyetCorp">D.Mukti & Farda F.</cite>
                 </figcaption>
-                <a href="#services" class="btn btn-warning btn-lg mt-3 mb-4"><i class="bi bi-play-fill"></i> Lets
-                    Start</a>
+                <a href="#services" class="btn btn-warning btn-lg mt-3 mb-4"><i class="bi bi-play-fill"></i> <span data-i18n="lets-start">Lets Start</span></a>
             </figure>
         </div>
     </section>
@@ -94,9 +106,9 @@
         <div id="particle-ball"></div>
         <div class="container p-4">
             <div class="text-center mt-1">
-                <h1 class="display-1">Services</h1>
+                <h1 class="display-1" data-i18n="services-title">Services</h1>
                 <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 700px; margin: 0 auto; padding-top: 12px;">Onyet Apps is a devoted team of
+                <p style="max-width: 700px; margin: 0 auto; padding-top: 12px;" data-i18n="services-desc">Onyet Apps is a devoted team of
                     engineers, consultants and designers. We'll help you envision, build, and optimize cutting-edge
                     digital products and solutions.</p>
             </div>
@@ -105,8 +117,8 @@
                     <div class="card" style="width: 100%; border-color: #212529;">
                         <img class="card-img-top" src="./assets/g896.png" alt="Card image cap">
                         <div class="card-body bg-dark text-white">
-                            <h5 class="card-title">Web & Mobile Development</h5>
-                            <p class="card-text">Entrust the development of your web & mobile applications to our team.
+                            <h5 class="card-title" data-i18n="web-mobile-dev">Web & Mobile Development</h5>
+                            <p class="card-text" data-i18n="web-mobile-desc">Entrust the development of your web & mobile applications to our team.
                                 Using our own tools, we deliver high quality faster.</p>
                         </div>
                     </div>
@@ -115,8 +127,8 @@
                     <div class="card" style="width: 100%; border-color: #212529;">
                         <img class="card-img-top" src="./assets/g935.png" alt="Card image cap">
                         <div class="card-body bg-dark text-white">
-                            <h5 class="card-title">Design</h5>
-                            <p class="card-text">Create an appealing design to build a Brand identity to remember. From
+                            <h5 class="card-title" data-i18n="design-title">Design</h5>
+                            <p class="card-text" data-i18n="design-desc">Create an appealing design to build a Brand identity to remember. From
                                 white label to complete solutions and style guides.</p>
                         </div>
                     </div>
@@ -125,8 +137,8 @@
                     <div class="card" style="width: 100%; border-color: #212529;">
                         <img class="card-img-top" src="./assets/g1016.png" alt="Card image cap">
                         <div class="card-body bg-dark text-white">
-                            <h5 class="card-title">Internet Of Things</h5>
-                            <p class="card-text">Let us assist you at every stage of application & hardware development:
+                            <h5 class="card-title" data-i18n="iot-title">Internet Of Things</h5>
+                            <p class="card-text" data-i18n="iot-desc">Let us assist you at every stage of application & hardware development:
                                 native, lorawan, mqtt or other services.</p>
                         </div>
                     </div>
@@ -141,9 +153,9 @@
     <section id="products" class="bg-dark text-white">
         <div class="container p-4">
             <div class="text-center mt-1">
-                <h1 class="display-1">Products</h1>
+                <h1 class="display-1" data-i18n="products-title">Products</h1>
                 <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;">We create software &
+                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="products-desc">We create software &
                     Hardware to help startups, SMBs, and enterprises overcome their business challenges.</p>
             </div>
             <div class="row" style="margin-top: 48px;">
@@ -156,14 +168,14 @@
                                 <b>Nirwata</b></h1>
                         </div>
                         <div class="card-body">
-                            <p><b>Point of Sales</b></p>
-                            <p class="m-0">Application developed for SMEs and cooperatives, for POS purposes.</p>
+                            <p><b data-i18n="pos-title">Point of Sales</b></p>
+                            <p class="m-0" data-i18n="pos-desc">Application developed for SMEs and cooperatives, for POS purposes.</p>
                         </div>
                         <div class="card-footer p-0"
                             style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
                             <a href="#products" class="btn btn-block text-white" style="width: 100%; text-align: left;"
                                 onclick="$('#exampleModalLong').modal('show');">
-                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
                             </a>
                         </div>
                     </div>
@@ -177,14 +189,14 @@
                             </h1>
                         </div>
                         <div class="card-body">
-                            <p><b>Computer Base Test</b></p>
-                            <p class="m-0">An open source application for online learning and computer-based tests.</p>
+                            <p><b data-i18n="ocbt-title">Computer Base Test</b></p>
+                            <p class="m-0" data-i18n="ocbt-desc">An open source application for online learning and computer-based tests.</p>
                         </div>
                         <div class="card-footer p-0"
                             style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
                             <a href="https://github.com/onyet/onyetcbt" target="_blank" class="btn btn-block text-white"
                                 style="width: 100%; text-align: left;">
-                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
                             </a>
                         </div>
                     </div>
@@ -198,8 +210,8 @@
                             </h1>
                         </div>
                         <div class="card-body">
-                            <p><b>Monitoring Control</b></p>
-                            <p class="m-0">Main street lighting system monitoring dashboard application for <a
+                            <p><b data-i18n="koomo-title">Monitoring Control</b></p>
+                            <p class="m-0" data-i18n="koomo-desc">Main street lighting system monitoring dashboard application for <a
                                     href="https://egrotek.com"
                                     style="text-decoration: none; color: #12b35d;">egrotek</a>.</p>
                         </div>
@@ -207,7 +219,7 @@
                             style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
                             <a href="https://docs.koomo.id" target="_blank" class="btn btn-block text-white"
                                 style="width: 100%; text-align: left;">
-                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
                             </a>
                         </div>
                     </div>
@@ -221,15 +233,15 @@
                                 <b>Shareku</b></h1>
                         </div>
                         <div class="card-body">
-                            <p><b>Web File Directory</b></p>
-                            <p class="m-0">An open source application, a simplified version of the web file directory
+                            <p><b data-i18n="shareku-title">Web File Directory</b></p>
+                            <p class="m-0" data-i18n="shareku-desc">An open source application, a simplified version of the web file directory
                                 system.</p>
                         </div>
                         <div class="card-footer p-0"
                             style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
                             <a href="https://github.com/onyet/shareku" target="_blank" class="btn btn-block text-white"
                                 style="width: 100%; text-align: left;">
-                                Discover <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
+                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
                             </a>
                         </div>
                     </div>
@@ -247,9 +259,9 @@
         <img src="./assets/roboc-github.png" class="img-robot">
         <div class="container p-4">
             <div class="text-center mt-1">
-                <h1 class="display-1">Who Uses Our Services?</h1>
+                <h1 class="display-1" data-i18n="clients-title">Who Uses Our Services?</h1>
                 <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;">See who we've helped solve
+                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="clients-desc">See who we've helped solve
                     their business problems and grow them. There are many more that we haven't mentioned besides below.
                 </p>
             </div>
@@ -428,9 +440,9 @@
         
         <div class="container p-4">
             <div class="text-center mt-1">
-                <h1 class="display-1">Our Team</h1>
+                <h1 class="display-1" data-i18n="team-title">Our Team</h1>
                 <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 400px; margin: 0 auto; padding-top: 12px; opacity: 0.8;">We bring a wealth of skills and experience from a wide range of backgrounds.
+                <p style="max-width: 400px; margin: 0 auto; padding-top: 12px; opacity: 0.8;" data-i18n="team-desc">We bring a wealth of skills and experience from a wide range of backgrounds.
                 </p>
             </div>
             <div class="row" style="margin-top: 48px;">
@@ -439,8 +451,8 @@
                         <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Farda&gender=female" alt="Farda Fitriyanti">
                         <div class="card-body bg-light text-dark text-center">
                             <h5 class="card-title">Farda Fitriyanti</h5>
-                            <p class="card-text fw-bold text-primary">CEO</p>
-                            <p class="card-text small text-muted">Leading the vision and strategy of Onyet Apps with innovative leadership.</p>
+                            <p class="card-text fw-bold text-primary" data-i18n="ceo-role">CEO</p>
+                            <p class="card-text small text-muted" data-i18n="ceo-desc">Leading the vision and strategy of Onyet Apps with innovative leadership.</p>
                             <div class="mt-3">
                                 <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
                             </div>
@@ -452,8 +464,8 @@
                         <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Oki&gender=female" alt="Dian Mukti Wibowo">
                         <div class="card-body bg-light text-dark text-center">
                             <h5 class="card-title">Dian Mukti Wibowo</h5>
-                            <p class="card-text fw-bold text-success">CTO</p>
-                            <p class="card-text small text-muted">Overseeing technology development and driving innovation in our solutions.</p>
+                            <p class="card-text fw-bold text-success" data-i18n="cto-role">CTO</p>
+                            <p class="card-text small text-muted" data-i18n="cto-desc">Overseeing technology development and driving innovation in our solutions.</p>
                             <div class="mt-3">
                                 <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
                             </div>
@@ -465,8 +477,8 @@
                         <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dian&gender=male" alt="Oki Fitriya Hasani">
                         <div class="card-body bg-light text-dark text-center">
                             <h5 class="card-title">Oki Fitriya Hasani</h5>
-                            <p class="card-text fw-bold text-warning">Sales Manager</p>
-                            <p class="card-text small text-muted">Driving business growth and building strong client relationships.</p>
+                            <p class="card-text fw-bold text-warning" data-i18n="sales-role">Sales Manager</p>
+                            <p class="card-text small text-muted" data-i18n="sales-desc">Driving business growth and building strong client relationships.</p>
                             <div class="mt-3">
                                 <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
                             </div>
@@ -481,26 +493,26 @@
     <section id="contacts" class="bg-dark text-white">
         <div class="container p-4">
             <div class="text-center mt-1">
-                <h1 class="display-1">Contact Us</h1>
+                <h1 class="display-1" data-i18n="contact-title">Contact Us</h1>
                 <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;">Get in touch with us for inquiries, collaborations, or support. We'd love to hear from you!</p>
+                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="contact-desc">Get in touch with us for inquiries, collaborations, or support. We'd love to hear from you!</p>
             </div>
             <div class="row justify-content-center" style="margin-top: 48px;">
                 <div class="col-md-6">
                     <form>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <label for="name" class="form-label" data-i18n="name-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" data-i18n-placeholder="name-placeholder">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+                            <label for="email" class="form-label" data-i18n="email-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com" data-i18n-placeholder="email-placeholder">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..."></textarea>
+                            <label for="message" class="form-label" data-i18n="message-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." data-i18n-placeholder="message-placeholder"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-warning">Send Message</button>
+                        <button type="submit" class="btn btn-warning" data-i18n="send-message">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -511,27 +523,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5>Onyet Apps</h5>
-                    <p>Make it simple powerful. Open source solutions for your business.</p>
+                    <h5 data-i18n="brand">Onyet Apps</h5>
+                    <p data-i18n="footer-tagline">Make it simple powerful. Open source solutions for your business.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5>Quick Links</h5>
+                    <h5 data-i18n="quick-links">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
-                        <li><a href="#products" class="text-white text-decoration-none">Products</a></li>
-                        <li><a href="#contacts" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" data-i18n="home">Home</a></li>
+                        <li><a href="#services" class="text-white text-decoration-none" data-i18n="services-link">Services</a></li>
+                        <li><a href="#products" class="text-white text-decoration-none" data-i18n="products-link">Products</a></li>
+                        <li><a href="#contacts" class="text-white text-decoration-none" data-i18n="contact-link">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5>Contact</h5>
-                    <p>Email: onyetcorp@gmail.com</p>
-                    <p>Follow us on <a href="https://github.com/onyet" target="_blank" class="text-warning">GitHub</a></p>
+                    <h5 data-i18n="contact-footer">Contact</h5>
+                    <p><span data-i18n="email-footer">Email:</span> onyetcorp@gmail.com</p>
+                    <p data-i18n="follow-us">Follow us on <a href="https://github.com/onyet" target="_blank" class="text-warning">GitHub</a></p>
                 </div>
             </div>
             <hr>
             <div class="text-center">
-                <p>&copy; 2025 Onyet Apps. All rights reserved.</p>
+                <p data-i18n="copyright">&copy; 2025 Onyet Apps. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -542,7 +554,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Nirwata Gallery</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="modal-title">Nirwata Gallery</h5>
                     <button type="button" class="btn btn-danger btn-sm" onclick="$('#exampleModalLong').modal('hide');">
                         <span aria-hidden="true">
                             <i class="bi bi-x"></i>
@@ -553,7 +565,7 @@
                     <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo1.png">
                     <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo2.png">
                     <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo3.png">
-                    <h1 class="text-center display-5 mt-2">Please contact us if you want to know more.</h1>
+                    <h1 class="text-center display-5 mt-2" data-i18n="modal-body-text">Please contact us if you want to know more.</h1>
                 </div>
             </div>
         </div>
@@ -596,6 +608,348 @@
                 $('#video-service2').show();
             }, 3200);
         });
+
+        // Internationalization
+        const translations = {
+            en: {
+                "home": "Home",
+                "open-sources": "Open Sources",
+                "applications": "Applications",
+                "plugins": "Plugins",
+                "language": "Language",
+                "contact-us": "Contact Us",
+                "tagline": "Make it simple powerfull.",
+                "powered-by": "Powered by",
+                "lets-start": "Lets Start",
+                "services-title": "Services",
+                "services-desc": "Onyet Apps is a devoted team of engineers, consultants and designers. We'll help you envision, build, and optimize cutting-edge digital products and solutions.",
+                "web-mobile-dev": "Web & Mobile Development",
+                "web-mobile-desc": "Entrust the development of your web & mobile applications to our team. Using our own tools, we deliver high quality faster.",
+                "design-title": "Design",
+                "design-desc": "Create an appealing design to build a Brand identity to remember. From white label to complete solutions and style guides.",
+                "iot-title": "Internet Of Things",
+                "iot-desc": "Let us assist you at every stage of application & hardware development: native, lorawan, mqtt or other services.",
+                "products-title": "Products",
+                "products-desc": "We create software & Hardware to help startups, SMBs, and enterprises overcome their business challenges.",
+                "pos-title": "Point of Sales",
+                "pos-desc": "Application developed for SMEs and cooperatives, for POS purposes.",
+                "discover": "Discover",
+                "clients-title": "Who Uses Our Services?",
+                "clients-desc": "See who we've helped solve their business problems and grow them. There are many more that we haven't mentioned besides below.",
+                "team-title": "Our Team",
+                "team-desc": "We bring a wealth of skills and experience from a wide range of backgrounds.",
+                "ceo-role": "CEO",
+                "ceo-desc": "Leading the vision and strategy of Onyet Apps with innovative leadership.",
+                "cto-role": "CTO",
+                "cto-desc": "Overseeing technology development and driving innovation in our solutions.",
+                "sales-role": "Sales Manager",
+                "sales-desc": "Driving business growth and building strong client relationships.",
+                "contact-title": "Contact Us",
+                "contact-desc": "Get in touch with us for inquiries, collaborations, or support. We'd love to hear from you!",
+                "footer-tagline": "Make it simple powerful. Open source solutions for your business.",
+                "quick-links": "Quick Links",
+                "services-link": "Services",
+                "products-link": "Products",
+                "contact-link": "Contact Us",
+                "contact-footer": "Contact",
+                "follow-us": "Follow us on",
+                "copyright": "&copy; 2025 Onyet Apps. All rights reserved.",
+                "gift-bananas": "Gift Bananas.",
+                "name-label": "Name",
+                "name-placeholder": "Your Name",
+                "email-label": "Email",
+                "email-placeholder": "your.email@example.com",
+                "message-label": "Message",
+                "message-placeholder": "Your message here...",
+                "send-message": "Send Message",
+                "brand": "Onyet Apps",
+                "modal-title": "Nirwata Gallery",
+                "modal-body-text": "Please contact us if you want to know more.",
+                "ocbt-title": "Computer Base Test",
+                "ocbt-desc": "An open source application for online learning and computer-based tests.",
+                "koomo-title": "Monitoring Control",
+                "koomo-desc": "Main street lighting system monitoring dashboard application for egrotek.",
+                "shareku-title": "Web File Directory",
+                "shareku-desc": "An open source application, a simplified version of the web file directory system.",
+                "email-footer": "Email:"
+            },
+            id: {
+                "home": "Beranda",
+                "open-sources": "Sumber Terbuka",
+                "applications": "Aplikasi",
+                "plugins": "Plugin",
+                "language": "Bahasa",
+                "contact-us": "Hubungi Kami",
+                "tagline": "Buat itu sederhana kuat.",
+                "powered-by": "Dipersembahkan oleh",
+                "lets-start": "Mari Mulai",
+                "services-title": "Layanan",
+                "services-desc": "Onyet Apps adalah tim yang berdedikasi dari insinyur, konsultan, dan desainer. Kami akan membantu Anda membayangkan, membangun, dan mengoptimalkan produk dan solusi digital mutakhir.",
+                "web-mobile-dev": "Pengembangan Web & Mobile",
+                "web-mobile-desc": "Percayakan pengembangan aplikasi web & mobile Anda kepada tim kami. Menggunakan alat kami sendiri, kami memberikan kualitas tinggi lebih cepat.",
+                "design-title": "Desain",
+                "design-desc": "Buat desain yang menarik untuk membangun identitas merek yang diingat. Dari label putih hingga solusi lengkap dan panduan gaya.",
+                "iot-title": "Internet of Things",
+                "iot-desc": "Mari kami bantu di setiap tahap pengembangan aplikasi & perangkat keras: native, lorawan, mqtt atau layanan lainnya.",
+                "products-title": "Produk",
+                "products-desc": "Kami membuat perangkat lunak & Perangkat keras untuk membantu startup, SMB, dan perusahaan mengatasi tantangan bisnis mereka.",
+                "pos-title": "Point of Sales",
+                "pos-desc": "Aplikasi yang dikembangkan untuk UKM dan koperasi, untuk tujuan POS.",
+                "discover": "Temukan",
+                "clients-title": "Siapa yang Menggunakan Layanan Kami?",
+                "clients-desc": "Lihat siapa yang telah kami bantu menyelesaikan masalah bisnis mereka dan berkembang. Ada banyak lagi yang belum kami sebutkan selain di bawah ini.",
+                "team-title": "Tim Kami",
+                "team-desc": "Kami membawa kekayaan keterampilan dan pengalaman dari berbagai latar belakang.",
+                "ceo-role": "CEO",
+                "ceo-desc": "Memimpin visi dan strategi Onyet Apps dengan kepemimpinan inovatif.",
+                "cto-role": "CTO",
+                "cto-desc": "Mengawasi pengembangan teknologi dan mendorong inovasi dalam solusi kami.",
+                "sales-role": "Manajer Penjualan",
+                "sales-desc": "Mendorong pertumbuhan bisnis dan membangun hubungan klien yang kuat.",
+                "contact-title": "Hubungi Kami",
+                "contact-desc": "Hubungi kami untuk pertanyaan, kolaborasi, atau dukungan. Kami senang mendengar dari Anda!",
+                "footer-tagline": "Buat itu sederhana kuat. Solusi sumber terbuka untuk bisnis Anda.",
+                "quick-links": "Tautan Cepat",
+                "services-link": "Layanan",
+                "products-link": "Produk",
+                "contact-link": "Hubungi Kami",
+                "contact-footer": "Kontak",
+                "follow-us": "Ikuti kami di",
+                "copyright": "&copy; 2025 Onyet Apps. Semua hak dilindungi.",
+                "gift-bananas": "Hadiah Pisang.",
+                "name-label": "Nama",
+                "name-placeholder": "Nama Anda",
+                "email-label": "Email",
+                "email-placeholder": "email.anda@contoh.com",
+                "message-label": "Pesan",
+                "message-placeholder": "Pesan Anda di sini...",
+                "send-message": "Kirim Pesan",
+                "brand": "Onyet Apps",
+                "modal-title": "Galeri Nirwata",
+                "modal-body-text": "Silakan hubungi kami jika Anda ingin tahu lebih banyak.",
+                "ocbt-title": "Tes Berbasis Komputer",
+                "ocbt-desc": "Aplikasi sumber terbuka untuk pembelajaran online dan tes berbasis komputer.",
+                "koomo-title": "Kontrol Pemantauan",
+                "koomo-desc": "Aplikasi dasbor pemantauan sistem penerangan jalan utama untuk egrotek.",
+                "shareku-title": "Direktori File Web",
+                "shareku-desc": "Aplikasi sumber terbuka, versi sederhana dari sistem direktori file web.",
+                "email-footer": "Email:"
+            },
+            zh: {
+                "home": "首页",
+                "open-sources": "开源",
+                "applications": "应用程序",
+                "plugins": "插件",
+                "language": "语言",
+                "contact-us": "联系我们",
+                "tagline": "让它简单强大。",
+                "powered-by": "由...提供支持",
+                "lets-start": "让我们开始",
+                "services-title": "服务",
+                "services-desc": "Onyet Apps 是一支由工程师、顾问和设计师组成的敬业团队。我们将帮助您构想、构建和优化尖端的数字产品和解决方案。",
+                "web-mobile-dev": "Web & Mobile 开发",
+                "web-mobile-desc": "将您的 Web 和移动应用程序开发委托给我们的团队。使用我们自己的工具，我们更快地提供高质量。",
+                "design-title": "设计",
+                "design-desc": "创建吸引人的设计来建立值得记住的品牌身份。从白标到完整解决方案和风格指南。",
+                "iot-title": "物联网",
+                "iot-desc": "让我们在应用程序和硬件开发的每个阶段协助您：原生、lorawan、mqtt 或其他服务。",
+                "products-title": "产品",
+                "products-desc": "我们创建软件和硬件来帮助初创公司、中小企业和企业克服业务挑战。",
+                "pos-title": "销售点",
+                "pos-desc": "为中小企业和合作社开发的应用程序，用于 POS 目的。",
+                "discover": "发现",
+                "clients-title": "谁使用我们的服务？",
+                "clients-desc": "看看我们帮助谁解决了他们的业务问题并成长。还有许多我们没有提到的其他。",
+                "team-title": "我们的团队",
+                "team-desc": "我们带来来自各种背景的丰富技能和经验。",
+                "ceo-role": "CEO",
+                "ceo-desc": "以创新领导引领 Onyet Apps 的愿景和战略。",
+                "cto-role": "CTO",
+                "cto-desc": "监督技术开发并推动我们解决方案的创新。",
+                "sales-role": "销售经理",
+                "sales-desc": "推动业务增长并建立牢固的客户关系。",
+                "contact-title": "联系我们",
+                "contact-desc": "联系我们以获取查询、合作或支持。我们很乐意听到您的声音！",
+                "footer-tagline": "让它简单强大。为您的业务提供开源解决方案。",
+                "quick-links": "快速链接",
+                "services-link": "服务",
+                "products-link": "产品",
+                "contact-link": "联系我们",
+                "contact-footer": "联系",
+                "follow-us": "关注我们",
+                "copyright": "&copy; 2025 Onyet Apps. 版权所有。",
+                "gift-bananas": "礼物香蕉。",
+                "name-label": "姓名",
+                "name-placeholder": "您的姓名",
+                "email-label": "电子邮件",
+                "email-placeholder": "your.email@example.com",
+                "message-label": "消息",
+                "message-placeholder": "您的消息在这里...",
+                "send-message": "发送消息",
+                "brand": "Onyet Apps",
+                "modal-title": "Nirwata 画廊",
+                "modal-body-text": "如果您想了解更多，请联系我们。",
+                "ocbt-title": "计算机基础测试",
+                "ocbt-desc": "用于在线学习和计算机基础测试的开源应用程序。",
+                "koomo-title": "监控控制",
+                "koomo-desc": "为 egrotek 提供主街道照明系统监控仪表板应用程序。",
+                "shareku-title": "Web 文件目录",
+                "shareku-desc": "开源应用程序，Web 文件目录系统的简化版本。",
+                "email-footer": "电子邮件:"
+            },
+            jp: {
+                "home": "ホーム",
+                "open-sources": "オープンソース",
+                "applications": "アプリケーション",
+                "plugins": "プラグイン",
+                "language": "言語",
+                "contact-us": "お問い合わせ",
+                "tagline": "シンプルでパワフルに。",
+                "powered-by": "提供",
+                "lets-start": "始めましょう",
+                "services-title": "サービス",
+                "services-desc": "Onyet Apps は、エンジニア、コンサルタント、デザイナーの献身的なチームです。最新のデジタル製品とソリューションを構想、構築、最適化するお手伝いをします。",
+                "web-mobile-dev": "Web & Mobile 開発",
+                "web-mobile-desc": "Web とモバイルアプリケーションの開発を私たちのチームに委託してください。私たちの独自ツールを使用して、高品質をより速く提供します。",
+                "design-title": "デザイン",
+                "design-desc": "覚えられるブランドアイデンティティを構築するための魅力的なデザインを作成します。ホワイトラベルから完全なソリューションとスタイルガイドまで。",
+                "iot-title": "モノのインターネット",
+                "iot-desc": "アプリケーションとハードウェア開発の各段階でお手伝いします：ネイティブ、lorawan、mqtt またはその他のサービス。",
+                "products-title": "製品",
+                "products-desc": "スタートアップ、中小企業、大企業がビジネス課題を克服するのを助けるソフトウェアとハードウェアを作成します。",
+                "pos-title": "販売時点",
+                "pos-desc": "中小企業と協同組合向けに開発された POS 目的のアプリケーション。",
+                "discover": "発見",
+                "clients-title": "誰が私たちのサービスを使っていますか？",
+                "clients-desc": "私たちが誰のビジネス問題を解決し、成長させたかを見てください。以下以外にも多くの人がいます。",
+                "team-title": "私たちのチーム",
+                "team-desc": "私たちはさまざまな背景から豊富なスキルと経験をもたらします。",
+                "ceo-role": "CEO",
+                "ceo-desc": "革新的なリーダーシップで Onyet Apps のビジョンと戦略をリード。",
+                "cto-role": "CTO",
+                "cto-desc": "技術開発を監督し、私たちのソリューションのイノベーションを推進。",
+                "sales-role": "営業マネージャー",
+                "sales-desc": "ビジネス成長を推進し、強力なクライアント関係を構築。",
+                "contact-title": "お問い合わせ",
+                "contact-desc": "お問い合わせ、コラボレーション、サポートについてはお気軽にお問い合わせください。ぜひお聞かせください！",
+                "footer-tagline": "シンプルでパワフルに。あなたのビジネス向けのオープンソースソリューション。",
+                "quick-links": "クイックリンク",
+                "services-link": "サービス",
+                "products-link": "製品",
+                "contact-link": "お問い合わせ",
+                "contact-footer": "連絡",
+                "follow-us": "フォロー",
+                "copyright": "&copy; 2025 Onyet Apps. 全著作権所有。",
+                "gift-bananas": "ギフトバナナ。",
+                "name-label": "名前",
+                "name-placeholder": "あなたの名前",
+                "email-label": "メール",
+                "email-placeholder": "your.email@example.com",
+                "message-label": "メッセージ",
+                "message-placeholder": "あなたのメッセージはここに...",
+                "send-message": "メッセージを送る",
+                "brand": "Onyet Apps",
+                "modal-title": "Nirwata ギャラリー",
+                "modal-body-text": "もっと知りたい場合は、お問い合わせください。",
+                "ocbt-title": "コンピュータベーステスト",
+                "ocbt-desc": "オンライン学習とコンピュータベーステストのためのオープンソースアプリケーション。",
+                "koomo-title": "監視制御",
+                "koomo-desc": "egrotek のためのメインストリート照明システム監視ダッシュボードアプリケーション。",
+                "shareku-title": "Web ファイルディレクトリ",
+                "shareku-desc": "オープンソースアプリケーション、Web ファイルディレクトリシステムの簡略版。",
+                "email-footer": "メール:"
+            },
+            ar: {
+                "home": "الرئيسية",
+                "open-sources": "المصادر المفتوحة",
+                "applications": "التطبيقات",
+                "plugins": "الإضافات",
+                "language": "اللغة",
+                "contact-us": "اتصل بنا",
+                "tagline": "اجعلها بسيطة قوية.",
+                "powered-by": "مدعوم من",
+                "lets-start": "دعنا نبدأ",
+                "services-title": "الخدمات",
+                "services-desc": "Onyet Apps فريق مخصص من المهندسين والاستشاريين والمصممين. سنساعدك في تخيل وبناء وتحسين المنتجات والحلول الرقمية المتطورة.",
+                "web-mobile-dev": "تطوير الويب والموبايل",
+                "web-mobile-desc": "أوكل تطوير تطبيقات الويب والموبايل الخاصة بك إلى فريقنا. باستخدام أدواتنا الخاصة، نقدم جودة عالية بشكل أسرع.",
+                "design-title": "التصميم",
+                "design-desc": "أنشئ تصميمًا جذابًا لبناء هوية علامة تجارية تُذكر. من العلامة البيضاء إلى الحلول الكاملة ودليل الأنماط.",
+                "iot-title": "إنترنت الأشياء",
+                "iot-desc": "دعنا نساعدك في كل مرحلة من مراحل تطوير التطبيقات والأجهزة: الأصلي، lorawan، mqtt أو خدمات أخرى.",
+                "products-title": "المنتجات",
+                "products-desc": "نحن ننشئ برمجيات وأجهزة لمساعدة الشركات الناشئة والشركات الصغيرة والمتوسطة والمؤسسات على التغلب على تحديات الأعمال.",
+                "pos-title": "نقطة البيع",
+                "pos-desc": "تطبيق مطور للشركات الصغيرة والمتوسطة والتعاونيات، لأغراض نقاط البيع.",
+                "discover": "اكتشف",
+                "clients-title": "من يستخدم خدماتنا؟",
+                "clients-desc": "انظر من ساعدناهم في حل مشاكل أعمالهم والنمو. هناك الكثير غير المذكورين أدناه.",
+                "team-title": "فريقنا",
+                "team-desc": "نحن نجلب ثروة من المهارات والخبرة من خلفيات متنوعة.",
+                "ceo-role": "الرئيس التنفيذي",
+                "ceo-desc": "قيادة رؤية واستراتيجية Onyet Apps بالقيادة المبتكرة.",
+                "cto-role": "كبير التقنيين",
+                "cto-desc": "الإشراف على تطوير التكنولوجيا ودفع الابتكار في حلولنا.",
+                "sales-role": "مدير المبيعات",
+                "sales-desc": "دفع نمو الأعمال وبناء علاقات عملاء قوية.",
+                "contact-title": "اتصل بنا",
+                "contact-desc": "تواصل معنا للاستفسارات والتعاون أو الدعم. نحب أن نسمع منك!",
+                "footer-tagline": "اجعلها بسيطة قوية. حلول مفتوحة المصدر لأعمالك.",
+                "quick-links": "روابط سريعة",
+                "services-link": "الخدمات",
+                "products-link": "المنتجات",
+                "contact-link": "اتصل بنا",
+                "contact-footer": "الاتصال",
+                "follow-us": "تابعنا على",
+                "copyright": "&copy; 2025 Onyet Apps. جميع الحقوق محفوظة.",
+                "gift-bananas": "هدية الموز.",
+                "name-label": "الاسم",
+                "name-placeholder": "اسمك",
+                "email-label": "البريد الإلكتروني",
+                "email-placeholder": "your.email@example.com",
+                "message-label": "الرسالة",
+                "message-placeholder": "رسالتك هنا...",
+                "send-message": "إرسال الرسالة",
+                "brand": "Onyet Apps",
+                "modal-title": "معرض Nirwata",
+                "modal-body-text": "يرجى الاتصال بنا إذا كنت تريد معرفة المزيد.",
+                "ocbt-title": "اختبار قائم على الحاسوب",
+                "ocbt-desc": "تطبيق مفتوح المصدر للتعلم عبر الإنترنت والاختبارات القائمة على الحاسوب.",
+                "koomo-title": "مراقبة التحكم",
+                "koomo-desc": "تطبيق لوحة تحكم مراقبة نظام إضاءة الشوارع الرئيسية لشركة egrotek.",
+                "shareku-title": "دليل ملفات الويب",
+                "shareku-desc": "تطبيق مفتوح المصدر، نسخة مبسطة من نظام دليل ملفات الويب.",
+                "email-footer": "البريد الإلكتروني:"
+            }
+        };
+
+        function changeLanguage(lang) {
+            localStorage.setItem('selectedLanguage', lang);
+            document.documentElement.lang = lang;
+            if (lang === 'ar') {
+                document.documentElement.dir = 'rtl';
+            } else {
+                document.documentElement.dir = 'ltr';
+            }
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+            placeholders.forEach(element => {
+                const key = element.getAttribute('data-i18n-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+        }
+
+        // Load language on page load
+        const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+        changeLanguage(savedLang);
     </script>
 </body>
 

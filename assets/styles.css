@@ -166,3 +166,7 @@
 .team-card:hover .bi-github {
     transform: scale(1.2);
 }
+
+[dir="rtl"] .enterprise-garden {
+    transform: scaleX(-1);
+}
