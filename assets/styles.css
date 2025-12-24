@@ -149,3 +149,20 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.team-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.team-card .bi-github {
+    transition: transform 0.2s ease;
+}
+
+.team-card:hover .bi-github {
+    transform: scale(1.2);
+}
