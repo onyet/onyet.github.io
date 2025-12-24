@@ -1,64 +1,306 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syarat Layanan & Kebijakan Privasi</title>
+  <title data-i18n="page-title">Terms of Service & Privacy Policy</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed p-6 md:p-12">
-  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed p-6 md:p-12 pt-20">
+  <nav class="fixed top-0 left-0 right-0 bg-gray-800 text-white p-4 z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center flex-wrap">
+      <a href="index.html" class="flex items-center space-x-2 hover:text-gray-300">
+        <img src="./assets/logomini.svg" alt="Logo" class="w-8 h-8">
+        <span class="text-lg font-bold" data-i18n="brand">Onyet Apps</span>
+      </a>
+      <div class="flex space-x-2 mt-2 md:mt-0">
+        <select id="language-select" onchange="changeLanguage(this.value)" class="px-3 py-1 bg-gray-700 hover:bg-gray-600 rounded text-sm text-white">
+          <option value="en">English</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="zh">中文</option>
+          <option value="jp">日本語</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8 mt-20">
 
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">Syarat Layanan</h1>
-    <p class="font-semibold mb-6"><strong>Tanggal Berlaku:</strong> 01 Januari 2025</p>
+    <h1 class="text-4xl font-bold text-blue-600 mb-4" data-i18n="terms-title">Terms of Service</h1>
+    <p class="font-semibold mb-6"><strong data-i18n="effective-date">Effective Date:</strong> 01 Januari 2025</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">1. Penggunaan Aplikasi</h2>
-    <p class="mb-4">Anda setuju untuk menggunakan aplikasi ini hanya untuk tujuan yang sah dan tidak melanggar hukum yang berlaku di wilayah Anda.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="usage-title">1. Application Usage</h2>
+    <p class="mb-4" data-i18n="usage-desc">You agree to use this application only for lawful purposes and not in violation of applicable laws in your jurisdiction.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">1.1 Izin Perangkat</h2>
-    <p class="mb-4">Aplikasi ini memerlukan akses ke kamera perangkat Anda untuk fitur scan barcode dan akses ke lokasi geografis (geolocation) untuk fitur terkait lokasi. Dengan menggunakan aplikasi ini, Anda memberikan izin untuk akses tersebut sesuai dengan kebijakan privasi kami.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="permissions-title">1.1 Device Permissions</h2>
+    <p class="mb-4" data-i18n="permissions-desc">This application requires access to your device's camera for barcode scanning features and access to geographic location (geolocation) for location-related features. By using this application, you grant permission for such access in accordance with our privacy policy.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">2. Hak Kekayaan Intelektual</h2>
-    <p class="mb-4">Semua konten, logo, dan materi lain yang terdapat di dalam aplikasi ini adalah milik <strong class="font-bold">OnyetCorp</strong> dan dilindungi oleh undang-undang hak cipta.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="ip-title">2. Intellectual Property Rights</h2>
+    <p class="mb-4" data-i18n="ip-desc">All content, logos, and other materials in this application are owned by <strong class="font-bold">OnyetCorp</strong> and protected by copyright laws.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">3. Batasan Tanggung Jawab</h2>
-    <p class="mb-4">Kami tidak bertanggung jawab atas kerugian langsung atau tidak langsung yang timbul akibat penggunaan aplikasi ini.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="liability-title">3. Limitation of Liability</h2>
+    <p class="mb-4" data-i18n="liability-desc">We are not responsible for any direct or indirect losses arising from the use of this application.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">4. Perubahan Ketentuan</h2>
-    <p class="mb-4">Kami berhak untuk mengubah syarat dan ketentuan ini kapan saja. Perubahan akan diberitahukan melalui aplikasi atau email.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="changes-title">4. Changes to Terms</h2>
+    <p class="mb-4" data-i18n="changes-desc">We reserve the right to change these terms and conditions at any time. Changes will be notified through the application or email.</p>
 
     <hr class="border-t-2 border-gray-300 my-8">
 
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">Kebijakan Privasi</h1>
-    <p class="font-semibold mb-6"><strong>Tanggal Berlaku:</strong> 01 Januari 2025</p>
+    <h1 class="text-4xl font-bold text-blue-600 mb-4" data-i18n="privacy-title">Privacy Policy</h1>
+    <p class="font-semibold mb-6"><strong data-i18n="effective-date">Effective Date:</strong> 01 Januari 2025</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">1. Informasi yang Kami Kumpulkan</h2>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="info-collected-title">1. Information We Collect</h2>
     <ul class="list-disc list-inside mb-4 space-y-2">
-      <li>Informasi yang Anda berikan secara langsung (nama, email, dll.)</li>
-      <li>Data penggunaan aplikasi (waktu penggunaan, perangkat, log error, dll.)</li>
-      <li>Akses kamera untuk fitur scan barcode: Data barcode yang dipindai mungkin dikumpulkan untuk tujuan fungsional aplikasi, seperti verifikasi atau pencatatan.</li>
-      <li>Data lokasi geografis (geolocation): Informasi lokasi perangkat Anda dikumpulkan saat fitur geolocation diaktifkan, untuk menyediakan layanan berbasis lokasi.</li>
+      <li data-i18n="info-1">Information you provide directly (name, email, etc.)</li>
+      <li data-i18n="info-2">Application usage data (usage time, device, error logs, etc.)</li>
+      <li data-i18n="info-3">Camera access for barcode scanning: Scanned barcode data may be collected for application functionality purposes, such as verification or recording.</li>
+      <li data-i18n="info-4">Geographic location data (geolocation): Your device's location information is collected when geolocation features are enabled, to provide location-based services.</li>
     </ul>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">2. Penggunaan Data</h2>
-    <p class="mb-4">Kami menggunakan data Anda untuk:</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="usage-data-title">2. Data Usage</h2>
+    <p class="mb-4" data-i18n="usage-data-desc">We use your data to:</p>
     <ul class="list-disc list-inside mb-4 space-y-2">
-      <li>Menyediakan dan meningkatkan layanan aplikasi</li>
-      <li>Mengirim notifikasi penting</li>
-      <li>Menganalisis penggunaan untuk pengembangan fitur</li>
-      <li>Memproses data barcode yang dipindai untuk fungsi aplikasi, seperti verifikasi produk atau inventaris</li>
-      <li>Menggunakan data lokasi untuk menyediakan fitur berbasis lokasi, seperti pencarian tempat terdekat atau pelacakan</li>
+      <li data-i18n="usage-1">Provide and improve application services</li>
+      <li data-i18n="usage-2">Send important notifications</li>
+      <li data-i18n="usage-3">Analyze usage for feature development</li>
+      <li data-i18n="usage-4">Process scanned barcode data for application functions, such as product verification or inventory</li>
+      <li data-i18n="usage-5">Use location data to provide location-based features, such as nearby search or tracking</li>
     </ul>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">3. Penyimpanan dan Keamanan</h2>
-    <p class="mb-4">Data Anda disimpan dengan aman dan hanya diakses oleh pihak berwenang dalam perusahaan kami.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="storage-title">3. Storage and Security</h2>
+    <p class="mb-4" data-i18n="storage-desc">Your data is stored securely and accessed only by authorized parties within our company.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">4. Berbagi Informasi</h2>
-    <p class="mb-4">Kami tidak akan menjual atau membagikan data Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="sharing-title">4. Information Sharing</h2>
+    <p class="mb-4" data-i18n="sharing-desc">We will not sell or share your data with third parties without your consent, except as required by law.</p>
 
-    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4">5. Hak Pengguna</h2>
-    <p class="mb-4">Anda dapat meminta akses, perbaikan, atau penghapusan data pribadi Anda dengan menghubungi kami di: <strong class="font-bold">onyetcorp@gmail.com</strong>. Anda juga dapat mengelola izin akses kamera dan lokasi melalui pengaturan perangkat Anda kapan saja.</p>
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="rights-title">5. User Rights</h2>
+    <p class="mb-4" data-i18n="rights-desc">You can request access, correction, or deletion of your personal data by contacting us at: <strong class="font-bold">onyetcorp@gmail.com</strong>. You can also manage camera and location access permissions through your device settings at any time.</p>
+
+    <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="gdpr-title">6. GDPR Compliance</h2>
+    <p class="mb-4" data-i18n="gdpr-desc">This application complies with the General Data Protection Regulation (GDPR) for users in the European Union. We ensure that your personal data is processed lawfully, fairly, and transparently. You have the right to access, rectify, erase, and restrict processing of your data under GDPR.</p>
 
   </div>
+
+  <script>
+    // Internationalization
+    const translations = {
+      en: {
+        "page-title": "Terms of Service & Privacy Policy",
+        "brand": "Onyet Apps",
+        "language": "Language",
+        "terms-title": "Terms of Service",
+        "effective-date": "Effective Date:",
+        "usage-title": "1. Application Usage",
+        "usage-desc": "You agree to use this application only for lawful purposes and not in violation of applicable laws in your jurisdiction.",
+        "permissions-title": "1.1 Device Permissions",
+        "permissions-desc": "This application requires access to your device's camera for barcode scanning features and access to geographic location (geolocation) for location-related features. By using this application, you grant permission for such access in accordance with our privacy policy.",
+        "ip-title": "2. Intellectual Property Rights",
+        "ip-desc": "All content, logos, and other materials in this application are owned by OnyetCorp and protected by copyright laws.",
+        "liability-title": "3. Limitation of Liability",
+        "liability-desc": "We are not responsible for any direct or indirect losses arising from the use of this application.",
+        "changes-title": "4. Changes to Terms",
+        "changes-desc": "We reserve the right to change these terms and conditions at any time. Changes will be notified through the application or email.",
+        "privacy-title": "Privacy Policy",
+        "info-collected-title": "1. Information We Collect",
+        "info-1": "Information you provide directly (name, email, etc.)",
+        "info-2": "Application usage data (usage time, device, error logs, etc.)",
+        "info-3": "Camera access for barcode scanning: Scanned barcode data may be collected for application functionality purposes, such as verification or recording.",
+        "info-4": "Geographic location data (geolocation): Your device's location information is collected when geolocation features are enabled, to provide location-based services.",
+        "usage-data-title": "2. Data Usage",
+        "usage-data-desc": "We use your data to:",
+        "usage-1": "Provide and improve application services",
+        "usage-2": "Send important notifications",
+        "usage-3": "Analyze usage for feature development",
+        "usage-4": "Process scanned barcode data for application functions, such as product verification or inventory",
+        "usage-5": "Use location data to provide location-based features, such as nearby search or tracking",
+        "storage-title": "3. Storage and Security",
+        "storage-desc": "Your data is stored securely and accessed only by authorized parties within our company.",
+        "sharing-title": "4. Information Sharing",
+        "sharing-desc": "We will not sell or share your data with third parties without your consent, except as required by law.",
+        "rights-title": "5. User Rights",
+        "rights-desc": "You can request access, correction, or deletion of your personal data by contacting us at: onyetcorp@gmail.com. You can also manage camera and location access permissions through your device settings at any time.",
+        "gdpr-title": "6. GDPR Compliance",
+        "gdpr-desc": "This application complies with the General Data Protection Regulation (GDPR) for users in the European Union. We ensure that your personal data is processed lawfully, fairly, and transparently. You have the right to access, rectify, erase, and restrict processing of your data under GDPR."
+      },
+      id: {
+        "page-title": "Syarat Layanan & Kebijakan Privasi",
+        "brand": "Onyet Apps",
+        "language": "Bahasa",
+        "terms-title": "Syarat Layanan",
+        "effective-date": "Tanggal Berlaku:",
+        "usage-title": "1. Penggunaan Aplikasi",
+        "usage-desc": "Anda setuju untuk menggunakan aplikasi ini hanya untuk tujuan yang sah dan tidak melanggar hukum yang berlaku di wilayah Anda.",
+        "permissions-title": "1.1 Izin Perangkat",
+        "permissions-desc": "Aplikasi ini memerlukan akses ke kamera perangkat Anda untuk fitur scan barcode dan akses ke lokasi geografis (geolocation) untuk fitur terkait lokasi. Dengan menggunakan aplikasi ini, Anda memberikan izin untuk akses tersebut sesuai dengan kebijakan privasi kami.",
+        "ip-title": "2. Hak Kekayaan Intelektual",
+        "ip-desc": "Semua konten, logo, dan materi lain yang terdapat di dalam aplikasi ini adalah milik OnyetCorp dan dilindungi oleh undang-undang hak cipta.",
+        "liability-title": "3. Batasan Tanggung Jawab",
+        "liability-desc": "Kami tidak bertanggung jawab atas kerugian langsung atau tidak langsung yang timbul akibat penggunaan aplikasi ini.",
+        "changes-title": "4. Perubahan Ketentuan",
+        "changes-desc": "Kami berhak untuk mengubah syarat dan ketentuan ini kapan saja. Perubahan akan diberitahukan melalui aplikasi atau email.",
+        "privacy-title": "Kebijakan Privasi",
+        "info-collected-title": "1. Informasi yang Kami Kumpulkan",
+        "info-1": "Informasi yang Anda berikan secara langsung (nama, email, dll.)",
+        "info-2": "Data penggunaan aplikasi (waktu penggunaan, perangkat, log error, dll.)",
+        "info-3": "Akses kamera untuk fitur scan barcode: Data barcode yang dipindai mungkin dikumpulkan untuk tujuan fungsional aplikasi, seperti verifikasi atau pencatatan.",
+        "info-4": "Data lokasi geografis (geolocation): Informasi lokasi perangkat Anda dikumpulkan saat fitur geolocation diaktifkan, untuk menyediakan layanan berbasis lokasi.",
+        "usage-data-title": "2. Penggunaan Data",
+        "usage-data-desc": "Kami menggunakan data Anda untuk:",
+        "usage-1": "Menyediakan dan meningkatkan layanan aplikasi",
+        "usage-2": "Mengirim notifikasi penting",
+        "usage-3": "Menganalisis penggunaan untuk pengembangan fitur",
+        "usage-4": "Memproses data barcode yang dipindai untuk fungsi aplikasi, seperti verifikasi produk atau inventaris",
+        "usage-5": "Menggunakan data lokasi untuk menyediakan fitur berbasis lokasi, seperti pencarian tempat terdekat atau pelacakan",
+        "storage-title": "3. Penyimpanan dan Keamanan",
+        "storage-desc": "Data Anda disimpan dengan aman dan hanya diakses oleh pihak berwenang dalam perusahaan kami.",
+        "sharing-title": "4. Berbagi Informasi",
+        "sharing-desc": "Kami tidak akan menjual atau membagikan data Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum.",
+        "rights-title": "5. Hak Pengguna",
+        "rights-desc": "Anda dapat meminta akses, perbaikan, atau penghapusan data pribadi Anda dengan menghubungi kami di: onyetcorp@gmail.com. Anda juga dapat mengelola izin akses kamera dan lokasi melalui pengaturan perangkat Anda kapan saja.",
+        "gdpr-title": "6. Kepatuhan GDPR",
+        "gdpr-desc": "Aplikasi ini mematuhi Peraturan Perlindungan Data Umum (GDPR) untuk pengguna di Uni Eropa. Kami memastikan bahwa data pribadi Anda diproses secara sah, adil, dan transparan. Anda memiliki hak untuk mengakses, memperbaiki, menghapus, dan membatasi pemrosesan data Anda di bawah GDPR."
+      },
+      zh: {
+        "page-title": "服务条款与隐私政策",
+        "brand": "Onyet Apps",
+        "language": "语言",
+        "terms-title": "服务条款",
+        "effective-date": "生效日期：",
+        "usage-title": "1. 应用程序使用",
+        "usage-desc": "您同意仅将此应用程序用于合法目的，且不违反您所在司法管辖区的适用法律。",
+        "permissions-title": "1.1 设备权限",
+        "permissions-desc": "此应用程序需要访问您的设备摄像头以进行条形码扫描功能，并访问地理位置（地理定位）以进行位置相关功能。通过使用此应用程序，您根据我们的隐私政策授予此类访问权限。",
+        "ip-title": "2. 知识产权",
+        "ip-desc": "此应用程序中的所有内容、徽标和其他材料均由 OnyetCorp 拥有，并受版权法保护。",
+        "liability-title": "3. 责任限制",
+        "liability-desc": "我们不对因使用此应用程序而产生的任何直接或间接损失负责。",
+        "changes-title": "4. 条款变更",
+        "changes-desc": "我们保留随时更改这些条款和条件的权利。变更将通过应用程序或电子邮件通知。",
+        "privacy-title": "隐私政策",
+        "info-collected-title": "1. 我们收集的信息",
+        "info-1": "您直接提供的信息（姓名、电子邮件等）",
+        "info-2": "应用程序使用数据（使用时间、设备、错误日志等）",
+        "info-3": "摄像头访问用于条形码扫描：扫描的条形码数据可能被收集用于应用程序功能目的，例如验证或记录。",
+        "info-4": "地理位置数据（地理定位）：当启用地理定位功能时，会收集您的设备位置信息，以提供基于位置的服务。",
+        "usage-data-title": "2. 数据使用",
+        "usage-data-desc": "我们使用您的数据来：",
+        "usage-1": "提供和改进应用程序服务",
+        "usage-2": "发送重要通知",
+        "usage-3": "分析使用情况以进行功能开发",
+        "usage-4": "处理扫描的条形码数据以进行应用程序功能，例如产品验证或库存",
+        "usage-5": "使用位置数据提供基于位置的功能，例如附近搜索或跟踪",
+        "storage-title": "3. 存储和安全",
+        "storage-desc": "您的数据安全存储，仅由我们公司内的授权方访问。",
+        "sharing-title": "4. 信息共享",
+        "sharing-desc": "除非法律要求，否则我们不会未经您的同意出售或与第三方共享您的数据。",
+        "rights-title": "5. 用户权利",
+        "rights-desc": "您可以通过联系我们 onyetcorp@gmail.com 请求访问、更正或删除您的个人数据。您也可以随时通过设备设置管理摄像头和位置访问权限。",
+        "gdpr-title": "6. GDPR 合规",
+        "gdpr-desc": "此应用程序遵守欧盟的一般数据保护条例 (GDPR)。我们确保您的个人数据以合法、公平和透明的方式处理。您有权根据 GDPR 访问、更正、删除和限制处理您的数据。"
+      },
+      jp: {
+        "page-title": "利用規約とプライバシーポリシー",
+        "brand": "Onyet Apps",
+        "language": "言語",
+        "terms-title": "利用規約",
+        "effective-date": "有効日：",
+        "usage-title": "1. アプリケーションの使用",
+        "usage-desc": "このアプリケーションを合法的な目的のみに使用し、管轄区域の適用法に違反しないことに同意します。",
+        "permissions-title": "1.1 デバイス権限",
+        "permissions-desc": "このアプリケーションは、バーコードスキャン機能のためにデバイスのカメラへのアクセスを必要とし、位置関連機能のために地理的位置（ジオロケーション）へのアクセスを必要とします。このアプリケーションを使用することで、当社のプライバシーポリシーに従ってそのようなアクセスを許可します。",
+        "ip-title": "2. 知的財産権",
+        "ip-desc": "このアプリケーション内のすべてのコンテンツ、ロゴ、その他の材料は OnyetCorp が所有し、著作権法で保護されています。",
+        "liability-title": "3. 責任の制限",
+        "liability-desc": "このアプリケーションの使用により生じる直接的または間接的な損失について責任を負いません。",
+        "changes-title": "4. 規約の変更",
+        "changes-desc": "これらの規約をいつでも変更する権利を留保します。変更はアプリケーションまたは電子メールを通じて通知されます。",
+        "privacy-title": "プライバシーポリシー",
+        "info-collected-title": "1. 収集する情報",
+        "info-1": "直接提供する情報（名前、メールなど）",
+        "info-2": "アプリケーション使用データ（使用時間、デバイス、エラーログなど）",
+        "info-3": "バーコードスキャン機能のためのカメラアクセス：スキャンされたバーコードデータは、検証や記録などのアプリケーション機能目的で収集される場合があります。",
+        "info-4": "地理的位置データ（ジオロケーション）：ジオロケーション機能が有効な場合、位置ベースのサービスを提供するためにデバイスの位置情報が収集されます。",
+        "usage-data-title": "2. データの使用",
+        "usage-data-desc": "私たちはあなた的数据を使用します：",
+        "usage-1": "アプリケーションサービスの提供と改善",
+        "usage-2": "重要な通知の送信",
+        "usage-3": "機能開発のための使用状況の分析",
+        "usage-4": "製品検証や在庫などのアプリケーション機能のためにスキャンされたバーコードデータを処理",
+        "usage-5": "近くの検索や追跡などの位置ベースの機能を提供するために位置データを使用",
+        "storage-title": "3. ストレージとセキュリティ",
+        "storage-desc": "あなた的数据は安全に保存され、当社内の承認された当事者だけがアクセスします。",
+        "sharing-title": "4. 情報の共有",
+        "sharing-desc": "法律で要求される場合を除き、あなたの同意なしにあなた的数据を販売または第三者と共有しません。",
+        "rights-title": "5. ユーザーの権利",
+        "rights-desc": "onyetcorp@gmail.com に連絡して個人データのアクセス、修正、または削除をリクエストできます。また、デバイス設定を通じてカメラと位置アクセスの権限をいつでも管理できます。",
+        "gdpr-title": "6. GDPR コンプライアンス",
+        "gdpr-desc": "このアプリケーションは、欧州連合の一般データ保護規則 (GDPR) に準拠しています。私たちはあなたの個人データが合法的、公正、透明に処理されることを保証します。GDPR の下で、あなたのデータへのアクセス、修正、削除、処理の制限を行う権利があります。"
+      },
+      ar: {
+        "page-title": "شروط الخدمة وسياسة الخصوصية",
+        "brand": "Onyet Apps",
+        "language": "اللغة",
+        "terms-title": "شروط الخدمة",
+        "effective-date": "تاريخ السريان:",
+        "usage-title": "1. استخدام التطبيق",
+        "usage-desc": "أنت توافق على استخدام هذا التطبيق فقط لأغراض قانونية وغير مخالفة للقوانين المعمول بها في منطقتك القضائية.",
+        "permissions-title": "1.1 أذونات الجهاز",
+        "permissions-desc": "يتطلب هذا التطبيق الوصول إلى كاميرا جهازك لميزات مسح الباركود ووصول إلى الموقع الجغرافي (الجيولوقع) للميزات المتعلقة بالموقع. باستخدام هذا التطبيق، تمنح إذنًا لمثل هذا الوصول وفقًا لسياسة الخصوصية الخاصة بنا.",
+        "ip-title": "2. حقوق الملكية الفكرية",
+        "ip-desc": "جميع المحتويات والشعارات والمواد الأخرى في هذا التطبيق مملوكة لـ OnyetCorp ومحمية بقوانين حقوق النشر.",
+        "liability-title": "3. تحديد المسؤولية",
+        "liability-desc": "نحن غير مسؤولين عن أي خسائر مباشرة أو غير مباشرة تنشأ من استخدام هذا التطبيق.",
+        "changes-title": "4. تغييرات الشروط",
+        "changes-desc": "نحتفظ بالحق في تغيير هذه الشروط والأحكام في أي وقت. سيتم إخطار التغييرات من خلال التطبيق أو البريد الإلكتروني.",
+        "privacy-title": "سياسة الخصوصية",
+        "info-collected-title": "1. المعلومات التي نجمعها",
+        "info-1": "المعلومات التي تقدمها مباشرة (الاسم، البريد الإلكتروني، إلخ)",
+        "info-2": "بيانات استخدام التطبيق (وقت الاستخدام، الجهاز، سجلات الأخطاء، إلخ)",
+        "info-3": "الوصول إلى الكاميرا لميزة مسح الباركود: قد يتم جمع بيانات الباركود الممسوحة لأغراض وظيفة التطبيق، مثل التحقق أو التسجيل.",
+        "info-4": "بيانات الموقع الجغرافي (الجيولوقع): يتم جمع معلومات موقع جهازك عند تمكين ميزات الجيولوقع، لتوفير خدمات قائمة على الموقع.",
+        "usage-data-title": "2. استخدام البيانات",
+        "usage-data-desc": "نحن نستخدم بياناتك لـ:",
+        "usage-1": "توفير وتحسين خدمات التطبيق",
+        "usage-2": "إرسال إشعارات مهمة",
+        "usage-3": "تحليل الاستخدام لتطوير الميزات",
+        "usage-4": "معالجة بيانات الباركود الممسوحة لوظائف التطبيق، مثل التحقق من المنتج أو المخزون",
+        "usage-5": "استخدام بيانات الموقع لتوفير ميزات قائمة على الموقع، مثل البحث القريب أو التتبع",
+        "storage-title": "3. التخزين والأمان",
+        "storage-desc": "يتم تخزين بياناتك بشكل آمن ويتم الوصول إليها فقط من قبل الأطراف المصرح بها في شركتنا.",
+        "sharing-title": "4. مشاركة المعلومات",
+        "sharing-desc": "لن نبيع أو نشارك بياناتك مع أطراف ثالثة دون موافقتك، إلا كما يتطلبه القانون.",
+        "rights-title": "5. حقوق المستخدم",
+        "rights-desc": "يمكنك طلب الوصول إلى تصحيح أو حذف بياناتك الشخصية عن طريق الاتصال بنا على: onyetcorp@gmail.com. يمكنك أيضًا إدارة أذونات الوصول إلى الكاميرا والموقع من خلال إعدادات جهازك في أي وقت.",
+        "gdpr-title": "6. الامتثال لـ GDPR",
+        "gdpr-desc": "يتوافق هذا التطبيق مع اللائحة العامة لحماية البيانات (GDPR) للمستخدمين في الاتحاد الأوروبي. نحن نضمن أن بياناتك الشخصية تتم معالجتها بشكل قانوني وعادل وشفاف. لديك الحق في الوصول إلى تصحيح وحذف وقصر معالجة بياناتك بموجب GDPR."
+      }
+    };
+
+    function changeLanguage(lang) {
+      localStorage.setItem('selectedLanguage', lang);
+      document.documentElement.lang = lang;
+      if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+      } else {
+        document.documentElement.dir = 'ltr';
+      }
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.innerHTML = translations[lang][key];
+        }
+      });
+      // Update title
+      if (translations[lang] && translations[lang]['page-title']) {
+        document.title = translations[lang]['page-title'];
+      }
+    }
+
+    // Load language on page load
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    changeLanguage(savedLang);
+    document.getElementById('language-select').value = savedLang;
+  </script>
 </body>
 </html>
