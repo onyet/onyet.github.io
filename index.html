@@ -1,1082 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="./manifest.json">
-    <title>OnyetApps - Open Source Repository</title>
-    <link rel="icon" href="./assets/favicon.ico">
-    <link href="./assets/libs/bootstrap-5.0.0-beta3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/libs/bootstrap-icons-1.4.1/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dian Mukti Wibowo - Portfolio & CV</title>
+  <meta name="description" content="Portfolio & CV of Dian Mukti Wibowo - web & application developer." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles */
+    .gradient-bg { background: linear-gradient(90deg,#0f172a 0%, #0b1220 100%); }
+  </style>
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/logomini.svg" alt="" width="32" height="32" class="d-inline-block align-text-top">
-                <span class="fs-5"><b>Onyet Apps</b></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <span class="me-auto"></span>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> <span data-i18n="home">Home</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="bi bi-stars"></i> <span data-i18n="open-sources">Open Sources</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                            <li><span class="dropdown-header" data-i18n="applications">Applications</span></li>
-                            <li><a class="dropdown-item" href="https://github.com/onyet/onyetcbt" target="_blank"><i
-                                        class="bi bi-arrow-right-short"></i> OCBT</a></li>
-                            <li><span class="dropdown-header" data-i18n="plugins">Plugins</span></li>
-                            <li><a class="dropdown-item" href="https://github.com/Onyetapp/onyetmpdf" target="_blank"><i
-                                        class="bi bi-arrow-right-short"></i> OMPDF</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts"><i class="bi bi-chat-dots-fill"></i> <span data-i18n="contact-us">Contact Us</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="https://paypal.me/onyetcorp" target="_blank"
-                            tabindex="-1" aria-disabled="true"><img src="./assets/banana.svg" alt="" width="23"
-                                class="d-inline-block align-text-top"><span data-i18n="gift-bananas">Gift Bananas.</span></a>
-                    </li>
-                </ul>
-                <div class="d-flex ms-3">
-                    <div class="dropdown">
-                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span data-i18n="language">Language</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('id')">Bahasa Indonesia</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('zh')">中文</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('jp')">日本語</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="changeLanguage('pt')">Português</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<body class="bg-slate-50 text-slate-800 antialiased"> 
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="w-full bg-white/60 backdrop-blur sticky top-0 z-30 shadow-sm">
+      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="inline-flex items-center gap-3">
+          <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" class="w-12 h-12 rounded-full object-cover border"/>
+          <div class="leading-tight">
+            <div class="font-semibold">Dian Mukti Wibowo</div>
+            <div class="text-sm text-slate-500">Web & App Developer</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+          <a href="#about" class="hover:text-slate-900">About</a>
+          <a href="#portfolio" class="hover:text-slate-900">Portfolio</a>
+          <a href="#contact" class="hover:text-slate-900">Contact</a>
+          <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" class="hover:text-slate-900">LinkedIn</a>
+          <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download class="px-4 py-2 bg-slate-900 text-white rounded hover:bg-slate-800">Download CV</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-md bg-slate-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
         </div>
-    </nav>
+      </div>
+    </header>
 
-    <section id="cover" class="bg-dark text-white">
-        <div id="particle-canvas"></div>
-        <div class="container py-5">
-            <figure class="text-center">
-                <blockquote class="blockquote">
-                    <img src="./assets/logomini.svg" class="img-fluid">
-                    <h1 class="display-2 mt-3 fw-bold">Onyet Apps</h1>
-                    <p class="display-4"><span data-i18n="tagline">Make it simple powerfull.</span></p>
-                </blockquote>
-                <figcaption class="blockquote-footer mt-2">
-                    <span data-i18n="powered-by">Powered by</span> <cite title="OnyetCorp">D.Mukti & Farda F.</cite>
-                </figcaption>
-                <a href="#services" class="btn btn-warning btn-lg mt-3 mb-4"><i class="bi bi-play-fill"></i> <span data-i18n="lets-start">Lets Start</span></a>
-            </figure>
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="gradient-bg text-white py-20">
+        <div class="max-w-5xl mx-auto px-6 lg:flex lg:gap-12 items-center">
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl sm:text-5xl font-extrabold">Dian Mukti Wibowo</h1>
+            <p class="mt-4 text-lg text-slate-200">Full‑stack software engineer yang membangun aplikasi web dan mobile yang skalabel dan mudah dipelihara. Spesialis solusi end‑to‑end menggunakan Python, Go, PHP, TypeScript, dan Flutter.</p>
+            <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" target="_blank" rel="noopener" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded shadow hover:shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                View CV
+              </a>
+              <a href="#portfolio" class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-white border border-white/25 rounded hover:bg-white/5">See portfolio</a>
+            </div>
+            <div class="mt-6 text-sm text-slate-300">More details available in the downloadable CV. Contact information listed on this page.</div>
+          </div>
+
+          <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
+            <div class="w-56 h-56 rounded-2xl overflow-hidden shadow-lg ring-1 ring-white/20">
+              <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition duration-500"/>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="services">
-        <div class="enterprise-garden-container">
-            <video id="video-service2" style="display: none;" preload autobuffer loop muted autoplay
-                class="enterprise-garden" data-threshold="0">
-                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="./assets/github-enterprise-garden-2.h264.mp4">
-                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"
-                    src="./assets/github-enterprise-garden-2.h264.mp4">
-            </video>
-            <video id="video-service1" preload autobuffer muted autoplay class="enterprise-garden" data-threshold="0">
-                <source type="video/mp4; codecs=hevc,mp4a.40.2" src="./assets/github-enterprise-garden-1.h264.mp4">
-                <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"
-                    src="./assets/github-enterprise-garden-1.h264.mp4">
-            </video>
+      <!-- About -->
+      <section id="about" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="max-w-5xl mx-auto">
+          <div>
+            <h2 class="text-2xl font-bold">About</h2>
+            <p class="mt-4 text-slate-600 max-w-2xl">Full‑stack software engineer building scalable, maintainable web & mobile applications. I focus on pragmatic solutions that deliver value fast.</p>
+            <p class="mt-2 text-slate-500 italic font-medium">“Make it simple. Make it powerful.”</p>
+
+            <div class="mt-8 flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-4">
+              <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-slate-800 font-semibold">What I do</div>
+                <p class="mt-2 text-slate-600 text-sm">Build end-to-end web and mobile systems - frontend, backend, APIs, and deployment pipelines.</p>
+              </div>
+
+              <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-slate-800 font-semibold">Core tech</div>
+                <p class="mt-2 text-slate-600 text-sm">Python · Go · PHP · TypeScript · Flutter · Ionic / Angular</p>
+              </div>
+
+              <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-slate-800 font-semibold">Focus</div>
+                <p class="mt-2 text-slate-600 text-sm">Reliability, performance, and clean, maintainable code.</p>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center gap-3">
+              <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm">See projects</a>
+              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download class="px-4 py-2 border border-slate-200 rounded text-slate-700">Download CV</a>
+            </div>
+          </div>
+
+
         </div>
-        <div id="particle-ball"></div>
-        <div class="container p-4">
-            <div class="text-center mt-1">
-                <h1 class="display-1" data-i18n="services-title">Services</h1>
-                <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 700px; margin: 0 auto; padding-top: 12px;" data-i18n="services-desc">Onyet Apps is a devoted team of
-                    engineers, consultants and designers. We'll help you envision, build, and optimize cutting-edge
-                    digital products and solutions.</p>
-            </div>
-            <div class="row" style="margin-top: 48px;">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card" style="width: 100%; border-color: #212529;">
-                        <img class="card-img-top" src="./assets/g896.png" alt="Card image cap">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title" data-i18n="web-mobile-dev">Web & Mobile Development</h5>
-                            <p class="card-text" data-i18n="web-mobile-desc">Entrust the development of your web & mobile applications to our team.
-                                Using our own tools, we deliver high quality faster.</p>
-                        </div>
-                    </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="bg-white/50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+          <h2 class="text-2xl font-bold">Portfolio</h2>
+          <p class="mt-2 text-slate-600">Selected web and application projects. Edit the entries below to add your projects with descriptions, tech stack and links.</p>
+
+          <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Digimar -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/digimar.webp" alt="Digimar" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Digimar" onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card" style="width: 100%; border-color: #212529;">
-                        <img class="card-img-top" src="./assets/g935.png" alt="Card image cap">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title" data-i18n="design-title">Design</h5>
-                            <p class="card-text" data-i18n="design-desc">Create an appealing design to build a Brand identity to remember. From
-                                white label to complete solutions and style guides.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Digimar</h3>
+                <p class="mt-2 text-sm text-slate-600">Digital marketing automation platform - social media post management and scheduling. My role: mobile & web (mobile version and web frontend; collaborated on backend APIs).</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==')" class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
-                    <div class="card" style="width: 100%; border-color: #212529;">
-                        <img class="card-img-top" src="./assets/g1016.png" alt="Card image cap">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title" data-i18n="iot-title">Internet Of Things</h5>
-                            <p class="card-text" data-i18n="iot-desc">Let us assist you at every stage of application & hardware development:
-                                native, lorawan, mqtt or other services.</p>
-                        </div>
-                    </div>
+              </div>
+            </article>
+
+            <!-- Egrotek -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/egrotek.webp" alt="Egrotek" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Egrotek" onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
                 </div>
-            </div>
-            <a href="#products" class="text-dark mt-2" style="width: 100%; display: block; text-align: center;">
-                <i class="bi bi-arrow-down"></i>
-            </a>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Egrotek</h3>
+                <p class="mt-2 text-sm text-slate-600">IoT LoRaWAN server and dashboard for device management, gateway integration and MQTT brokers. Role: full-stack (LoRa server, dashboard, device integrations, mobile config).</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Evenpedia -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/evenpedia.webp" alt="Evenpedia" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Evenpedia" onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Evenpedia</h3>
+                <p class="mt-2 text-sm text-slate-600">Online event booking & marketplace connecting vendors and clients. Role: web & mobile developer.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Halokatering -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/halokatering.webp" alt="Halokatering" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Halokatering" onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Halokatering</h3>
+                <p class="mt-2 text-sm text-slate-600">Online catering booking platform connecting customers and caterers. Role: frontend (landing pages and app UI).</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Instant Video App -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/instantvideoapp.webp" alt="Instant Video App" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Instant Video App" onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Instant Video App</h3>
+                <p class="mt-2 text-sm text-slate-600">AI-generated video platform - backend for generation, merging and rule-based processing. Role: backend engineering for AI pipeline.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Salesbot -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/salesbot.webp" alt="Salesbot" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Salesbot" onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Salesbot.id</h3>
+                <p class="mt-2 text-sm text-slate-600">AI bot for WhatsApp & email used to increase sales and automate marketing. Role: gateway management, frontend, mobile & email server setup.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Simijel -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/simijel.webp" alt="Simijel" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Simijel" onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Simijel</h3>
+                <p class="mt-2 text-sm text-slate-600">Used for waste cooking oil export and traceability (integrated with Veriflux). Role: frontend, mobile and integrations.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                </div>
+              </div>
+            </article>
+
+
+            <!-- Online-Beacukai -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/online-beacukai.webp" alt="Online Beacukai" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview Online Beacukai" onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">Online Beacukai</h3>
+                <p class="mt-2 text-sm text-slate-600">Logistics and customs reporting platform for bonded companies, exporters and importers. Role: frontend and mobile apps.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- IndonesiaCore -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+              <div class="relative overflow-hidden">
+                <img src="assets/portofolio-dian/projects-ss/indonesiacore.webp" alt="IndonesiaCore" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','IndonesiaCore','aHR0cHM6Ly93d3cuaW5kb25lc2lhY29yZS5jb20=','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','IndonesiaCore','aHR0cHM6Ly93d3cuaW5kb25lc2lhY29yZS5jb20=','')" tabindex="0" />
+                <div role="button" tabindex="0" aria-label="Preview IndonesiaCore" onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','IndonesiaCore','aHR0cHM6Ly93d3cuaW5kb25lc2lhY29yZS5jb20=','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','IndonesiaCore','aHR0cHM6Ly93d3cuaW5kb25lc2lhY29yZS5jb20=','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"/></svg>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold">IndonesiaCore</h3>
+                <p class="mt-2 text-sm text-slate-600">Company profile website for PT Incore System Solution. Role: full-stack including design decisions.</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button onclick="openEncoded('aHR0cHM6Ly93d3cuaW5kb25lc2lhY29yZS5jb20=')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="mt-6 text-center">
+            <button onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')" class="px-4 py-2 bg-slate-900 text-white rounded">More projects on GitHub</button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="products" class="bg-dark text-white">
-        <div class="container p-4">
-            <div class="text-center mt-1">
-                <h1 class="display-1" data-i18n="products-title">Products</h1>
-                <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="products-desc">We create software &
-                    Hardware to help startups, SMBs, and enterprises overcome their business challenges.</p>
-            </div>
-            <div class="row" style="margin-top: 48px;">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card mb-2"
-                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
-                        <div class="card-header"
-                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#d873e8,#4637d0);">
-                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);">
-                                <b>Nirwata</b></h1>
-                        </div>
-                        <div class="card-body">
-                            <p><b data-i18n="pos-title">Point of Sales</b></p>
-                            <p class="m-0" data-i18n="pos-desc">Application developed for SMEs and cooperatives, for POS purposes.</p>
-                        </div>
-                        <div class="card-footer p-0"
-                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
-                            <a href="#products" class="btn btn-block text-white" style="width: 100%; text-align: left;"
-                                onclick="$('#exampleModalLong').modal('show');">
-                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card mb-2"
-                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
-                        <div class="card-header"
-                            style="height: 12rem; border-radius: 0; background-image:radial-gradient(circle farthest-corner at 80% 80%,#ffc247,#f75f1e)">
-                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);"><b>Ocbt</b>
-                            </h1>
-                        </div>
-                        <div class="card-body">
-                            <p><b data-i18n="ocbt-title">Computer Base Test</b></p>
-                            <p class="m-0" data-i18n="ocbt-desc">An open source application for online learning and computer-based tests.</p>
-                        </div>
-                        <div class="card-footer p-0"
-                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
-                            <a href="https://github.com/onyet/onyetcbt" target="_blank" class="btn btn-block text-white"
-                                style="width: 100%; text-align: left;">
-                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card mb-2"
-                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
-                        <div class="card-header"
-                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#bae447,#12b35d);">
-                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);"><b>Koomo</b>
-                            </h1>
-                        </div>
-                        <div class="card-body">
-                            <p><b data-i18n="koomo-title">Monitoring Control</b></p>
-                            <p class="m-0" data-i18n="koomo-desc">Main street lighting system monitoring dashboard application for <a
-                                    href="https://egrotek.com"
-                                    style="text-decoration: none; color: #12b35d;">egrotek</a>.</p>
-                        </div>
-                        <div class="card-footer p-0"
-                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
-                            <a href="https://docs.koomo.id" target="_blank" class="btn btn-block text-white"
-                                style="width: 100%; text-align: left;">
-                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card mb-2"
-                        style="width: 100%; border: 1px solid rgb(0 0 0 / 66%); border-radius: 0; background-color: #1b1b1b">
-                        <div class="card-header"
-                            style="height: 12rem; border-radius: 0; background-image: radial-gradient(circle farthest-corner at 80% 80%,#29cafb,#2b4aff);">
-                            <h1 class="display-5" style="text-align: center; margin-top: calc(48% - 3rem);">
-                                <b>Shareku</b></h1>
-                        </div>
-                        <div class="card-body">
-                            <p><b data-i18n="shareku-title">Web File Directory</b></p>
-                            <p class="m-0" data-i18n="shareku-desc">An open source application, a simplified version of the web file directory
-                                system.</p>
-                        </div>
-                        <div class="card-footer p-0"
-                            style="background-color: #0e0e0e; border-top: 1px solid rgb(0 0 0 / 66%);">
-                            <a href="https://github.com/onyet/shareku" target="_blank" class="btn btn-block text-white"
-                                style="width: 100%; text-align: left;">
-                                <span data-i18n="discover">Discover</span> <i class="bi bi-arrow-up-right-square" style="float: right;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Contact -->
+      <section id="contact" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+          <div class="bg-white rounded-lg shadow-sm p-8">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <p class="mt-3 text-slate-600">Available for freelance and contract work. I usually respond within 1 business day. Prefer email or WhatsApp for quick communication.</p>
+
+            <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+              <a href="mailto:onyetcorp@gmail.com" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l4-4m-4 4l4 4"/></svg>
+                Email
+              </a>
+              <a href="https://wa.me/6282221874400" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 6.3a11 11 0 10-3.4 14.2L21 22l1.7-5.3a11 11 0 00-.999-10.4zM12.7 7.8c-.3-.1-.6-.1-.9.1-.5.3-1 1-1.1 1.1-.2.3-.3.6 0 .9.2.3 1 1.9 2.3 3.2s2.9 2.1 3.2 2.3c.3.2.6.2.9 0 .1-.1.8-.7 1.1-1 .1-.3.1-.5.1-.9 0-.2-.6-1.2-1.4-2-.8-.8-1.8-1.4-2-1.4-.2 0-.5 0-.8.1z"/></svg>
+                WhatsApp
+              </a>
+              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download class="inline-flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 border rounded text-slate-700 hover:bg-slate-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                Download CV
+              </a>
             </div>
 
-            <a href="#clients" class="text-white mt-2" style="width: 100%; display: block; text-align: center;">
-                <i class="bi bi-arrow-down"></i>
-            </a>
+            <div class="mt-6 grid grid-cols-1 gap-3 text-sm text-slate-700">
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8"/></svg>
+                <div>onyetcorp@gmail.com / <a href="mailto:mutelitcorp@gmail.com" class="text-sky-600 hover:underline">mutelitcorp@gmail.com</a></div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12 1.05.38 2.07.75 3.03a2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.96.37 1.98.63 3.03.75A2 2 0 0 1 22 16.92z"/></svg>
+                <div><a href="https://wa.me/6282221874400" class="text-sky-600 hover:underline">+62 822-2187-4400 (WhatsApp)</a></div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-12"/></svg>
+                <div><a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" class="text-sky-600 hover:underline">linkedin.com/in/dian-mukti-wibowo-244576a6</a></div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>Purwokerto Timur, Jawa Tengah, Indonesia</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-stretch justify-center">
+            <div class="w-full rounded-lg overflow-hidden shadow-lg bg-white h-full">
+              <iframe title="Purwokerto Timur map" aria-label="Map showing Purwokerto Timur" src="https://maps.google.com/maps?q=Purwokerto%20Timur&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 md:h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="p-3 text-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=Purwokerto+Timur" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Open in Google Maps</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
 
-    <section id="clients" class="text-white" style="background-color: #121519; border-top: 1px solid #090b0e;">
-        <img src="./assets/roboc-github.png" class="img-robot">
-        <div class="container p-4">
-            <div class="text-center mt-1">
-                <h1 class="display-1" data-i18n="clients-title">Who Uses Our Services?</h1>
-                <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="clients-desc">See who we've helped solve
-                    their business problems and grow them. There are many more that we haven't mentioned besides below.
-                </p>
-            </div>
-            <div class="row" style="margin-top: 8vh;">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="http://www.spmnasionalpwt.sch.id" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-spm-pwt.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">SMK SPM Nasional Purwokerto</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none"
-                        href="https://play.google.com/store/apps/details?id=id.onyet.lapaspwt" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-lapas-pwt.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">Lapas Kelas IIA Purwokerto</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://egrotek.com/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-egrotek.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">Egrotek Karsa Utama</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="http://smkppnbima.sch.id" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-smkppn-bima.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">SMKPP Negeri Bima</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://perjuanganfamily.my.id/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-perjuangan-family.jpg" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">Yayasan Perjuangan Family</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="http://www.smam4gempol.sch.id/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-smam-gempol.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">SMA Muhammadiyah 4 Gempol</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://sdvipkemiri.sch.id/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-sdvip-nu-kemiri.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">SD VIP Ma'arif NU 1 Kemiri</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://smppelitaanugerah.sch.id/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-pelita-anugerah.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">SMP-SMA Pelita Anugerah</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row" style="margin-bottom: 5vh;">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://doodle.co.id" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-telon-doodle.ico" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">Doodle Exclusive Telon Oil</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="https://academy.telkomsat.net/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-telkomsat.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">LMS Telkomsat Academy</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="http://www.kopkarsentra.com/" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-kopkarsentra.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">Koperasi Semen Nusantara</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a class="card mb-4 text-decoration-none" href="http://cipta-prisma.web.id" target="_blank">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0 p-2">
-                                <img class="item-logo" src="./assets/clients/logo-cipta-prima.png" alt="Logo">
-                            </div>
-                            <div class="flex-grow-1 ms-1 mt-3">
-                                <p class="font-monospace text-dark fw-bold">CV. Cipta Prisma</p>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
-            <a href="#teams" class="text-white" style="width: 100%; display: block; text-align: center;">
-                <i class="bi bi-arrow-down"></i>
-            </a>
-        </div>
-        <img src="./assets/fly-land-github.png" class="img-float">
-    </section>
+    </main>
 
-    <section id="teams" class="text-dark">
-        
-        <div class="container p-4">
-            <div class="text-center mt-1">
-                <h1 class="display-1" data-i18n="team-title">Our Team</h1>
-                <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 400px; margin: 0 auto; padding-top: 12px; opacity: 0.8;" data-i18n="team-desc">We bring a wealth of skills and experience from a wide range of backgrounds.
-                </p>
-            </div>
-            <div class="row" style="margin-top: 48px;">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card h-100 shadow-sm team-card" style="border-color: #212529;">
-                        <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Farda&gender=female" alt="Farda Fitriyanti">
-                        <div class="card-body bg-light text-dark text-center">
-                            <h5 class="card-title">Farda Fitriyanti</h5>
-                            <p class="card-text fw-bold text-primary" data-i18n="ceo-role">CEO</p>
-                            <p class="card-text small text-muted" data-i18n="ceo-desc">Leading the vision and strategy of Onyet Apps with innovative leadership.</p>
-                            <div class="mt-3">
-                                <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card h-100 shadow-sm team-card" style="border-color: #212529;">
-                        <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Oki&gender=female" alt="Dian Mukti Wibowo">
-                        <div class="card-body bg-light text-dark text-center">
-                            <h5 class="card-title">Dian Mukti Wibowo</h5>
-                            <p class="card-text fw-bold text-success" data-i18n="cto-role">CTO</p>
-                            <p class="card-text small text-muted" data-i18n="cto-desc">Overseeing technology development and driving innovation in our solutions.</p>
-                            <div class="mt-3">
-                                <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card h-100 shadow-sm team-card" style="border-color: #212529;">
-                        <img class="card-img-top rounded-circle mx-auto mt-3" style="width: 120px; height: 120px;" src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dian&gender=male" alt="Oki Fitriya Hasani">
-                        <div class="card-body bg-light text-dark text-center">
-                            <h5 class="card-title">Oki Fitriya Hasani</h5>
-                            <p class="card-text fw-bold text-warning" data-i18n="sales-role">Sales Manager</p>
-                            <p class="card-text small text-muted" data-i18n="sales-desc">Driving business growth and building strong client relationships.</p>
-                            <div class="mt-3">
-                                <a href="https://github.com/onyet" target="_blank" class="text-muted"><i class="bi bi-github fs-4"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="contacts" class="bg-dark text-white">
-        <div class="container p-4">
-            <div class="text-center mt-1">
-                <h1 class="display-1" data-i18n="contact-title">Contact Us</h1>
-                <hr style="width: 250px; margin: 0 auto;">
-                <p style="max-width: 600px; margin: 0 auto; padding-top: 12px; opacity: 0.7;" data-i18n="contact-desc">Get in touch with us for inquiries, collaborations, or support. We'd love to hear from you!</p>
-            </div>
-            <div class="row justify-content-center" style="margin-top: 48px;">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label" data-i18n="name-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" data-i18n-placeholder="name-placeholder">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label" data-i18n="email-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com" data-i18n-placeholder="email-placeholder">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label" data-i18n="message-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." data-i18n-placeholder="message-placeholder"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning" data-i18n="send-message">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 data-i18n="brand">Onyet Apps</h5>
-                    <p data-i18n="footer-tagline">Make it simple powerful. Open source solutions for your business.</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 data-i18n="quick-links">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none" data-i18n="home">Home</a></li>
-                        <li><a href="#services" class="text-white text-decoration-none" data-i18n="services-link">Services</a></li>
-                        <li><a href="#products" class="text-white text-decoration-none" data-i18n="products-link">Products</a></li>
-                        <li><a href="#contacts" class="text-white text-decoration-none" data-i18n="contact-link">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 data-i18n="contact-footer">Contact</h5>
-                    <p><span data-i18n="email-footer">Email:</span> onyetcorp@gmail.com</p>
-                    <p data-i18n="follow-us">Follow us on <a href="https://github.com/onyet" target="_blank" class="text-warning">GitHub</a></p>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p data-i18n="copyright">&copy; 2025 Onyet Apps. All rights reserved.</p>
-            </div>
-        </div>
+    <footer class="bg-white border-t">
+      <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div>© <strong>Dian Mukti Wibowo</strong> - Purwokerto Timur</div>
+        <div>Made with ❤️ - <a href="https://github.com/onyet" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Onyet</a> <span class="mx-2 text-slate-400">·</span> <a href="/privacy-police.html" class="text-slate-600 hover:underline">Privacy policy</a> <span class="mx-2 text-slate-400">·</span> <a href="/index2.html" class="text-slate-600 hover:underline">Onyet Apps</a></div>
+      </div>
     </footer>
+  </div>
 
-    <!-- Modals -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="modal-title">Nirwata Gallery</h5>
-                    <button type="button" class="btn btn-danger btn-sm" onclick="$('#exampleModalLong').modal('hide');">
-                        <span aria-hidden="true">
-                            <i class="bi bi-x"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo1.png">
-                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo2.png">
-                    <img class="img-fluid mb-3" style="border: 1px solid #1e1e1e" src="./assets/mefo3.png">
-                    <h1 class="text-center display-5 mt-2" data-i18n="modal-body-text">Please contact us if you want to know more.</h1>
-                </div>
-            </div>
-        </div>
+  <!-- Image preview modal -->
+  <div id="img-preview" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-6">
+    <div class="relative max-w-4xl w-full">
+      <button id="close-preview" class="absolute top-3 right-3 bg-white/90 rounded-full p-2 text-black">✕</button>
+      <div class="bg-black rounded-lg p-4">
+        <img id="preview-img" src="" alt="" class="w-full rounded shadow-lg object-contain max-h-[70vh]" />
+        <div id="preview-caption" class="mt-3 text-center text-sm text-white"></div>
+        <div id="preview-links" class="mt-4 flex items-center justify-center gap-3"></div>
+      </div>
     </div>
-    <!-- End Modals -->
+  </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
-
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/libs/bootstrap-5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/particles.js/particles.js"></script>
-    <script src="./assets/js/particle-ball.js"></script>
-    <script>
-        particlesJS.load('particle-canvas', './assets/particlesjs-config.json', function () {
-            console.log('callback - particles.js config loaded');
+  <script>
+    // mobile menu (simple)
+    const menuBtn = document.getElementById('menu-btn');
+    let mobileOpen = false;
+    menuBtn?.addEventListener('click', () => {
+      mobileOpen = !mobileOpen;
+      if(mobileOpen){
+        const nav = document.createElement('nav');
+        nav.id = 'mobile-nav';
+        nav.className = 'fixed inset-0 bg-white p-6 z-40';
+        nav.innerHTML = `
+          <div class="flex justify-between items-center">
+            <div class="font-semibold">Dian Mukti Wibowo</div>
+            <button id="close-menu" aria-label="Close menu">✕</button>
+          </div>
+          <div class="mt-6 flex flex-col gap-4">
+            <a href="#about" class="text-slate-700 py-3 text-lg block">About</a>
+            <a href="#portfolio" class="text-slate-700 py-3 text-lg block">Portfolio</a>
+            <a href="#contact" class="text-slate-700 py-3 text-lg block">Contact</a>
+            <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" class="text-slate-700 py-3 text-lg block">LinkedIn</a>
+            <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" class="text-slate-700 py-3 text-lg block">Download CV</a>
+          </div>
+        `;
+        document.body.appendChild(nav);
+        document.getElementById('close-menu').addEventListener('click', () => {
+          document.getElementById('mobile-nav')?.remove();
+          mobileOpen = false;
         });
+      } else {
+        document.getElementById('mobile-nav')?.remove();
+      }
+    });
 
-        window.addEventListener("load", () => {
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register("service-worker.js");
-                console.log('Service Worker Loaded!');
-            }
-        });
-
-        var cn =
-            'eyJhcGlLZXkiOiJBSXphU3lDbkdDcUNxdHljQVU5YzJzaWJUUDVDZFJKalRvZ2FJMFUiLCJhdXRoRG9tYWluIjoib255ZXRjYnQuZmlyZWJhc2VhcHAuY29tIiwiZGF0YWJhc2VVUkwiOiJodHRwczovL29ueWV0Y2J0LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbSIsInByb2plY3RJZCI6Im9ueWV0Y2J0Iiwic3RvcmFnZUJ1Y2tldCI6Im9ueWV0Y2J0LmFwcHNwb3QuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI4MzgzMjc5OTk5MCIsImFwcElkIjoiMTo4MzgzMjc5OTk5MDp3ZWI6OTFhMDRlYTVkYTFiMzgyY2JiMjJkNyIsIm1lYXN1cmVtZW50SWQiOiJHLURSOUpOTFcxREMifQ==';
-
-        firebase.initializeApp(JSON.parse(atob(cn)));
-        firebase.analytics();
-
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('#video-service1').hide();
-                $('#video-service2').show();
-            }, 3200);
-        });
-
-        // Internationalization
-        const translations = {
-            en: {
-                "home": "Home",
-                "open-sources": "Open Sources",
-                "applications": "Applications",
-                "plugins": "Plugins",
-                "language": "Language",
-                "contact-us": "Contact Us",
-                "tagline": "Make it simple powerfull.",
-                "powered-by": "Powered by",
-                "lets-start": "Lets Start",
-                "services-title": "Services",
-                "services-desc": "Onyet Apps is a devoted team of engineers, consultants and designers. We'll help you envision, build, and optimize cutting-edge digital products and solutions.",
-                "web-mobile-dev": "Web & Mobile Development",
-                "web-mobile-desc": "Entrust the development of your web & mobile applications to our team. Using our own tools, we deliver high quality faster.",
-                "design-title": "Design",
-                "design-desc": "Create an appealing design to build a Brand identity to remember. From white label to complete solutions and style guides.",
-                "iot-title": "Internet Of Things",
-                "iot-desc": "Let us assist you at every stage of application & hardware development: native, lorawan, mqtt or other services.",
-                "products-title": "Products",
-                "products-desc": "We create software & Hardware to help startups, SMBs, and enterprises overcome their business challenges.",
-                "pos-title": "Point of Sales",
-                "pos-desc": "Application developed for SMEs and cooperatives, for POS purposes.",
-                "discover": "Discover",
-                "clients-title": "Who Uses Our Services?",
-                "clients-desc": "See who we've helped solve their business problems and grow them. There are many more that we haven't mentioned besides below.",
-                "team-title": "Our Team",
-                "team-desc": "We bring a wealth of skills and experience from a wide range of backgrounds.",
-                "ceo-role": "CEO",
-                "ceo-desc": "Leading the vision and strategy of Onyet Apps with innovative leadership.",
-                "cto-role": "CTO",
-                "cto-desc": "Overseeing technology development and driving innovation in our solutions.",
-                "sales-role": "Sales Manager",
-                "sales-desc": "Driving business growth and building strong client relationships.",
-                "contact-title": "Contact Us",
-                "contact-desc": "Get in touch with us for inquiries, collaborations, or support. We'd love to hear from you!",
-                "footer-tagline": "Make it simple powerful. Open source solutions for your business.",
-                "quick-links": "Quick Links",
-                "services-link": "Services",
-                "products-link": "Products",
-                "contact-link": "Contact Us",
-                "contact-footer": "Contact",
-                "follow-us": "Follow us on",
-                "copyright": "&copy; 2025 Onyet Apps. All rights reserved.",
-                "gift-bananas": "Gift Bananas.",
-                "name-label": "Name",
-                "name-placeholder": "Your Name",
-                "email-label": "Email",
-                "email-placeholder": "your.email@example.com",
-                "message-label": "Message",
-                "message-placeholder": "Your message here...",
-                "send-message": "Send Message",
-                "brand": "Onyet Apps",
-                "modal-title": "Nirwata Gallery",
-                "modal-body-text": "Please contact us if you want to know more.",
-                "ocbt-title": "Computer Base Test",
-                "ocbt-desc": "An open source application for online learning and computer-based tests.",
-                "koomo-title": "Monitoring Control",
-                "koomo-desc": "Main street lighting system monitoring dashboard application for egrotek.",
-                "shareku-title": "Web File Directory",
-                "shareku-desc": "An open source application, a simplified version of the web file directory system.",
-                "email-footer": "Email:"
-            },
-            id: {
-                "home": "Beranda",
-                "open-sources": "Sumber Terbuka",
-                "applications": "Aplikasi",
-                "plugins": "Plugin",
-                "language": "Bahasa",
-                "contact-us": "Hubungi Kami",
-                "tagline": "Buat itu sederhana kuat.",
-                "powered-by": "Dipersembahkan oleh",
-                "lets-start": "Mari Mulai",
-                "services-title": "Layanan",
-                "services-desc": "Onyet Apps adalah tim yang berdedikasi dari insinyur, konsultan, dan desainer. Kami akan membantu Anda membayangkan, membangun, dan mengoptimalkan produk dan solusi digital mutakhir.",
-                "web-mobile-dev": "Pengembangan Web & Mobile",
-                "web-mobile-desc": "Percayakan pengembangan aplikasi web & mobile Anda kepada tim kami. Menggunakan alat kami sendiri, kami memberikan kualitas tinggi lebih cepat.",
-                "design-title": "Desain",
-                "design-desc": "Buat desain yang menarik untuk membangun identitas merek yang diingat. Dari label putih hingga solusi lengkap dan panduan gaya.",
-                "iot-title": "Internet of Things",
-                "iot-desc": "Mari kami bantu di setiap tahap pengembangan aplikasi & perangkat keras: native, lorawan, mqtt atau layanan lainnya.",
-                "products-title": "Produk",
-                "products-desc": "Kami membuat perangkat lunak & Perangkat keras untuk membantu startup, SMB, dan perusahaan mengatasi tantangan bisnis mereka.",
-                "pos-title": "Point of Sales",
-                "pos-desc": "Aplikasi yang dikembangkan untuk UKM dan koperasi, untuk tujuan POS.",
-                "discover": "Temukan",
-                "clients-title": "Siapa yang Menggunakan Layanan Kami?",
-                "clients-desc": "Lihat siapa yang telah kami bantu menyelesaikan masalah bisnis mereka dan berkembang. Ada banyak lagi yang belum kami sebutkan selain di bawah ini.",
-                "team-title": "Tim Kami",
-                "team-desc": "Kami membawa kekayaan keterampilan dan pengalaman dari berbagai latar belakang.",
-                "ceo-role": "CEO",
-                "ceo-desc": "Memimpin visi dan strategi Onyet Apps dengan kepemimpinan inovatif.",
-                "cto-role": "CTO",
-                "cto-desc": "Mengawasi pengembangan teknologi dan mendorong inovasi dalam solusi kami.",
-                "sales-role": "Manajer Penjualan",
-                "sales-desc": "Mendorong pertumbuhan bisnis dan membangun hubungan klien yang kuat.",
-                "contact-title": "Hubungi Kami",
-                "contact-desc": "Hubungi kami untuk pertanyaan, kolaborasi, atau dukungan. Kami senang mendengar dari Anda!",
-                "footer-tagline": "Buat itu sederhana kuat. Solusi sumber terbuka untuk bisnis Anda.",
-                "quick-links": "Tautan Cepat",
-                "services-link": "Layanan",
-                "products-link": "Produk",
-                "contact-link": "Hubungi Kami",
-                "contact-footer": "Kontak",
-                "follow-us": "Ikuti kami di",
-                "copyright": "&copy; 2025 Onyet Apps. Semua hak dilindungi.",
-                "gift-bananas": "Hadiah Pisang.",
-                "name-label": "Nama",
-                "name-placeholder": "Nama Anda",
-                "email-label": "Email",
-                "email-placeholder": "email.anda@contoh.com",
-                "message-label": "Pesan",
-                "message-placeholder": "Pesan Anda di sini...",
-                "send-message": "Kirim Pesan",
-                "brand": "Onyet Apps",
-                "modal-title": "Galeri Nirwata",
-                "modal-body-text": "Silakan hubungi kami jika Anda ingin tahu lebih banyak.",
-                "ocbt-title": "Tes Berbasis Komputer",
-                "ocbt-desc": "Aplikasi sumber terbuka untuk pembelajaran online dan tes berbasis komputer.",
-                "koomo-title": "Kontrol Pemantauan",
-                "koomo-desc": "Aplikasi dasbor pemantauan sistem penerangan jalan utama untuk egrotek.",
-                "shareku-title": "Direktori File Web",
-                "shareku-desc": "Aplikasi sumber terbuka, versi sederhana dari sistem direktori file web.",
-                "email-footer": "Email:"
-            },
-            zh: {
-                "home": "首页",
-                "open-sources": "开源",
-                "applications": "应用程序",
-                "plugins": "插件",
-                "language": "语言",
-                "contact-us": "联系我们",
-                "tagline": "让它简单强大。",
-                "powered-by": "由...提供支持",
-                "lets-start": "让我们开始",
-                "services-title": "服务",
-                "services-desc": "Onyet Apps 是一支由工程师、顾问和设计师组成的敬业团队。我们将帮助您构想、构建和优化尖端的数字产品和解决方案。",
-                "web-mobile-dev": "Web & Mobile 开发",
-                "web-mobile-desc": "将您的 Web 和移动应用程序开发委托给我们的团队。使用我们自己的工具，我们更快地提供高质量。",
-                "design-title": "设计",
-                "design-desc": "创建吸引人的设计来建立值得记住的品牌身份。从白标到完整解决方案和风格指南。",
-                "iot-title": "物联网",
-                "iot-desc": "让我们在应用程序和硬件开发的每个阶段协助您：原生、lorawan、mqtt 或其他服务。",
-                "products-title": "产品",
-                "products-desc": "我们创建软件和硬件来帮助初创公司、中小企业和企业克服业务挑战。",
-                "pos-title": "销售点",
-                "pos-desc": "为中小企业和合作社开发的应用程序，用于 POS 目的。",
-                "discover": "发现",
-                "clients-title": "谁使用我们的服务？",
-                "clients-desc": "看看我们帮助谁解决了他们的业务问题并成长。还有许多我们没有提到的其他。",
-                "team-title": "我们的团队",
-                "team-desc": "我们带来来自各种背景的丰富技能和经验。",
-                "ceo-role": "CEO",
-                "ceo-desc": "以创新领导引领 Onyet Apps 的愿景和战略。",
-                "cto-role": "CTO",
-                "cto-desc": "监督技术开发并推动我们解决方案的创新。",
-                "sales-role": "销售经理",
-                "sales-desc": "推动业务增长并建立牢固的客户关系。",
-                "contact-title": "联系我们",
-                "contact-desc": "联系我们以获取查询、合作或支持。我们很乐意听到您的声音！",
-                "footer-tagline": "让它简单强大。为您的业务提供开源解决方案。",
-                "quick-links": "快速链接",
-                "services-link": "服务",
-                "products-link": "产品",
-                "contact-link": "联系我们",
-                "contact-footer": "联系",
-                "follow-us": "关注我们",
-                "copyright": "&copy; 2025 Onyet Apps. 版权所有。",
-                "gift-bananas": "礼物香蕉。",
-                "name-label": "姓名",
-                "name-placeholder": "您的姓名",
-                "email-label": "电子邮件",
-                "email-placeholder": "your.email@example.com",
-                "message-label": "消息",
-                "message-placeholder": "您的消息在这里...",
-                "send-message": "发送消息",
-                "brand": "Onyet Apps",
-                "modal-title": "Nirwata 画廊",
-                "modal-body-text": "如果您想了解更多，请联系我们。",
-                "ocbt-title": "计算机基础测试",
-                "ocbt-desc": "用于在线学习和计算机基础测试的开源应用程序。",
-                "koomo-title": "监控控制",
-                "koomo-desc": "为 egrotek 提供主街道照明系统监控仪表板应用程序。",
-                "shareku-title": "Web 文件目录",
-                "shareku-desc": "开源应用程序，Web 文件目录系统的简化版本。",
-                "email-footer": "电子邮件:"
-            },
-            jp: {
-                "home": "ホーム",
-                "open-sources": "オープンソース",
-                "applications": "アプリケーション",
-                "plugins": "プラグイン",
-                "language": "言語",
-                "contact-us": "お問い合わせ",
-                "tagline": "シンプルでパワフルに。",
-                "powered-by": "提供",
-                "lets-start": "始めましょう",
-                "services-title": "サービス",
-                "services-desc": "Onyet Apps は、エンジニア、コンサルタント、デザイナーの献身的なチームです。最新のデジタル製品とソリューションを構想、構築、最適化するお手伝いをします。",
-                "web-mobile-dev": "Web & Mobile 開発",
-                "web-mobile-desc": "Web とモバイルアプリケーションの開発を私たちのチームに委託してください。私たちの独自ツールを使用して、高品質をより速く提供します。",
-                "design-title": "デザイン",
-                "design-desc": "覚えられるブランドアイデンティティを構築するための魅力的なデザインを作成します。ホワイトラベルから完全なソリューションとスタイルガイドまで。",
-                "iot-title": "モノのインターネット",
-                "iot-desc": "アプリケーションとハードウェア開発の各段階でお手伝いします：ネイティブ、lorawan、mqtt またはその他のサービス。",
-                "products-title": "製品",
-                "products-desc": "スタートアップ、中小企業、大企業がビジネス課題を克服するのを助けるソフトウェアとハードウェアを作成します。",
-                "pos-title": "販売時点",
-                "pos-desc": "中小企業と協同組合向けに開発された POS 目的のアプリケーション。",
-                "discover": "発見",
-                "clients-title": "誰が私たちのサービスを使っていますか？",
-                "clients-desc": "私たちが誰のビジネス問題を解決し、成長させたかを見てください。以下以外にも多くの人がいます。",
-                "team-title": "私たちのチーム",
-                "team-desc": "私たちはさまざまな背景から豊富なスキルと経験をもたらします。",
-                "ceo-role": "CEO",
-                "ceo-desc": "革新的なリーダーシップで Onyet Apps のビジョンと戦略をリード。",
-                "cto-role": "CTO",
-                "cto-desc": "技術開発を監督し、私たちのソリューションのイノベーションを推進。",
-                "sales-role": "営業マネージャー",
-                "sales-desc": "ビジネス成長を推進し、強力なクライアント関係を構築。",
-                "contact-title": "お問い合わせ",
-                "contact-desc": "お問い合わせ、コラボレーション、サポートについてはお気軽にお問い合わせください。ぜひお聞かせください！",
-                "footer-tagline": "シンプルでパワフルに。あなたのビジネス向けのオープンソースソリューション。",
-                "quick-links": "クイックリンク",
-                "services-link": "サービス",
-                "products-link": "製品",
-                "contact-link": "お問い合わせ",
-                "contact-footer": "連絡",
-                "follow-us": "フォロー",
-                "copyright": "&copy; 2025 Onyet Apps. 全著作権所有。",
-                "gift-bananas": "ギフトバナナ。",
-                "name-label": "名前",
-                "name-placeholder": "あなたの名前",
-                "email-label": "メール",
-                "email-placeholder": "your.email@example.com",
-                "message-label": "メッセージ",
-                "message-placeholder": "あなたのメッセージはここに...",
-                "send-message": "メッセージを送る",
-                "brand": "Onyet Apps",
-                "modal-title": "Nirwata ギャラリー",
-                "modal-body-text": "もっと知りたい場合は、お問い合わせください。",
-                "ocbt-title": "コンピュータベーステスト",
-                "ocbt-desc": "オンライン学習とコンピュータベーステストのためのオープンソースアプリケーション。",
-                "koomo-title": "監視制御",
-                "koomo-desc": "egrotek のためのメインストリート照明システム監視ダッシュボードアプリケーション。",
-                "shareku-title": "Web ファイルディレクトリ",
-                "shareku-desc": "オープンソースアプリケーション、Web ファイルディレクトリシステムの簡略版。",
-                "email-footer": "メール:"
-            },
-            ar: {
-                "home": "الرئيسية",
-                "open-sources": "المصادر المفتوحة",
-                "applications": "التطبيقات",
-                "plugins": "الإضافات",
-                "language": "اللغة",
-                "contact-us": "اتصل بنا",
-                "tagline": "اجعلها بسيطة قوية.",
-                "powered-by": "مدعوم من",
-                "lets-start": "دعنا نبدأ",
-                "services-title": "الخدمات",
-                "services-desc": "Onyet Apps فريق مخصص من المهندسين والاستشاريين والمصممين. سنساعدك في تخيل وبناء وتحسين المنتجات والحلول الرقمية المتطورة.",
-                "web-mobile-dev": "تطوير الويب والموبايل",
-                "web-mobile-desc": "أوكل تطوير تطبيقات الويب والموبايل الخاصة بك إلى فريقنا. باستخدام أدواتنا الخاصة، نقدم جودة عالية بشكل أسرع.",
-                "design-title": "التصميم",
-                "design-desc": "أنشئ تصميمًا جذابًا لبناء هوية علامة تجارية تُذكر. من العلامة البيضاء إلى الحلول الكاملة ودليل الأنماط.",
-                "iot-title": "إنترنت الأشياء",
-                "iot-desc": "دعنا نساعدك في كل مرحلة من مراحل تطوير التطبيقات والأجهزة: الأصلي، lorawan، mqtt أو خدمات أخرى.",
-                "products-title": "المنتجات",
-                "products-desc": "نحن ننشئ برمجيات وأجهزة لمساعدة الشركات الناشئة والشركات الصغيرة والمتوسطة والمؤسسات على التغلب على تحديات الأعمال.",
-                "pos-title": "نقطة البيع",
-                "pos-desc": "تطبيق مطور للشركات الصغيرة والمتوسطة والتعاونيات، لأغراض نقاط البيع.",
-                "discover": "اكتشف",
-                "clients-title": "من يستخدم خدماتنا؟",
-                "clients-desc": "انظر من ساعدناهم في حل مشاكل أعمالهم والنمو. هناك الكثير غير المذكورين أدناه.",
-                "team-title": "فريقنا",
-                "team-desc": "نحن نجلب ثروة من المهارات والخبرة من خلفيات متنوعة.",
-                "ceo-role": "الرئيس التنفيذي",
-                "ceo-desc": "قيادة رؤية واستراتيجية Onyet Apps بالقيادة المبتكرة.",
-                "cto-role": "كبير التقنيين",
-                "cto-desc": "الإشراف على تطوير التكنولوجيا ودفع الابتكار في حلولنا.",
-                "sales-role": "مدير المبيعات",
-                "sales-desc": "دفع نمو الأعمال وبناء علاقات عملاء قوية.",
-                "contact-title": "اتصل بنا",
-                "contact-desc": "تواصل معنا للاستفسارات والتعاون أو الدعم. نحب أن نسمع منك!",
-                "footer-tagline": "اجعلها بسيطة قوية. حلول مفتوحة المصدر لأعمالك.",
-                "quick-links": "روابط سريعة",
-                "services-link": "الخدمات",
-                "products-link": "المنتجات",
-                "contact-link": "اتصل بنا",
-                "contact-footer": "الاتصال",
-                "follow-us": "تابعنا على",
-                "copyright": "&copy; 2025 Onyet Apps. جميع الحقوق محفوظة.",
-                "gift-bananas": "هدية الموز.",
-                "name-label": "الاسم",
-                "name-placeholder": "اسمك",
-                "email-label": "البريد الإلكتروني",
-                "email-placeholder": "your.email@example.com",
-                "message-label": "الرسالة",
-                "message-placeholder": "رسالتك هنا...",
-                "send-message": "إرسال الرسالة",
-                "brand": "Onyet Apps",
-                "modal-title": "معرض Nirwata",
-                "modal-body-text": "يرجى الاتصال بنا إذا كنت تريد معرفة المزيد.",
-                "ocbt-title": "اختبار قائم على الحاسوب",
-                "ocbt-desc": "تطبيق مفتوح المصدر للتعلم عبر الإنترنت والاختبارات القائمة على الحاسوب.",
-                "koomo-title": "مراقبة التحكم",
-                "koomo-desc": "تطبيق لوحة تحكم مراقبة نظام إضاءة الشوارع الرئيسية لشركة egrotek.",
-                "shareku-title": "دليل ملفات الويب",
-                "shareku-desc": "تطبيق مفتوح المصدر، نسخة مبسطة من نظام دليل ملفات الويب.",
-                "email-footer": "البريد الإلكتروني:"
-            },
-            de: {
-                "home": "Startseite",
-                "open-sources": "Open Sources",
-                "applications": "Anwendungen",
-                "plugins": "Plugins",
-                "language": "Sprache",
-                "contact-us": "Kontakt",
-                "tagline": "Mache es einfach mächtig.",
-                "powered-by": "Unterstützt von",
-                "lets-start": "Los geht's",
-                "services-title": "Dienstleistungen",
-                "services-desc": "Onyet Apps ist ein engagiertes Team von Ingenieuren, Beratern und Designern. Wir helfen Ihnen, fortschrittliche digitale Produkte und Lösungen zu entwerfen, zu bauen und zu optimieren.",
-                "web-mobile-dev": "Web- und Mobile-Entwicklung",
-                "web-mobile-desc": "Vertrauen Sie die Entwicklung Ihrer Web- und Mobile-Anwendungen unserem Team an. Mit unseren eigenen Tools liefern wir schneller hohe Qualität.",
-                "design-title": "Design",
-                "design-desc": "Erstellen Sie ein ansprechendes Design, um eine Markenidentität aufzubauen, die in Erinnerung bleibt. Von White-Label bis zu vollständigen Lösungen und Style-Guides.",
-                "iot-title": "Internet der Dinge",
-                "iot-desc": "Lassen Sie uns Sie in jeder Phase der Anwendungs- und Hardware-Entwicklung unterstützen: nativ, lorawan, mqtt oder andere Dienste.",
-                "products-title": "Produkte",
-                "products-desc": "Wir erstellen Software und Hardware, um Startups, KMUs und Unternehmen dabei zu helfen, ihre Geschäftsherausforderungen zu überwinden.",
-                "pos-title": "Point of Sales",
-                "pos-desc": "Anwendung entwickelt für KMUs und Genossenschaften für POS-Zwecke.",
-                "discover": "Entdecken",
-                "clients-title": "Wer nutzt unsere Dienstleistungen?",
-                "clients-desc": "Sehen Sie, wem wir geholfen haben, ihre Geschäftsprobleme zu lösen und zu wachsen. Es gibt viele weitere, die wir nicht erwähnt haben.",
-                "team-title": "Unser Team",
-                "team-desc": "Wir bringen eine Fülle an Fähigkeiten und Erfahrungen aus einer Vielzahl von Hintergründen mit.",
-                "ceo-role": "CEO",
-                "ceo-desc": "Führt die Vision und Strategie von Onyet Apps mit innovativer Führung.",
-                "cto-role": "CTO",
-                "cto-desc": "Überwacht die Technologieentwicklung und treibt Innovation in unseren Lösungen voran.",
-                "sales-role": "Vertriebsleiter",
-                "sales-desc": "Treibt Geschäftswachstum und baut starke Kundenbeziehungen auf.",
-                "contact-title": "Kontaktieren Sie uns",
-                "contact-desc": "Nehmen Sie Kontakt mit uns auf für Anfragen, Kooperationen oder Support. Wir freuen uns von Ihnen zu hören!",
-                "footer-tagline": "Mache es einfach mächtig. Open-Source-Lösungen für Ihr Geschäft.",
-                "quick-links": "Schnelllinks",
-                "services-link": "Dienstleistungen",
-                "products-link": "Produkte",
-                "contact-link": "Kontakt",
-                "contact-footer": "Kontakt",
-                "follow-us": "Folgen Sie uns auf",
-                "copyright": "&copy; 2025 Onyet Apps. Alle Rechte vorbehalten.",
-                "gift-bananas": "Geschenk Bananen.",
-                "name-label": "Name",
-                "name-placeholder": "Ihr Name",
-                "email-label": "E-Mail",
-                "email-placeholder": "ihre.email@beispiel.com",
-                "message-label": "Nachricht",
-                "message-placeholder": "Ihre Nachricht hier...",
-                "send-message": "Nachricht senden",
-                "brand": "Onyet Apps",
-                "modal-title": "Nirwata Galerie",
-                "modal-body-text": "Bitte kontaktieren Sie uns, wenn Sie mehr erfahren möchten.",
-                "ocbt-title": "Computerbasierter Test",
-                "ocbt-desc": "Eine Open-Source-Anwendung für Online-Lernen und computerbasierte Tests.",
-                "koomo-title": "Überwachungskontrolle",
-                "koomo-desc": "Dashboard-Anwendung zur Überwachung des Hauptstraßenbeleuchtungssystems für egrotek.",
-                "shareku-title": "Web-Dateiverzeichnis",
-                "shareku-desc": "Eine Open-Source-Anwendung, eine vereinfachte Version des Web-Dateiverzeichnissystems.",
-                "email-footer": "E-Mail:"
-            },
-            pt: {
-                "home": "Início",
-                "open-sources": "Códigos Abertos",
-                "applications": "Aplicações",
-                "plugins": "Plugins",
-                "language": "Idioma",
-                "contact-us": "Contate-nos",
-                "tagline": "Torne simples poderoso.",
-                "powered-by": "Desenvolvido por",
-                "lets-start": "Vamos Começar",
-                "services-title": "Serviços",
-                "services-desc": "Onyet Apps é uma equipe dedicada de engenheiros, consultores e designers. Ajudaremos você a conceber, construir e otimizar produtos e soluções digitais de ponta.",
-                "web-mobile-dev": "Desenvolvimento Web e Mobile",
-                "web-mobile-desc": "Confie o desenvolvimento de suas aplicações web e mobile à nossa equipe. Usando nossas próprias ferramentas, entregamos alta qualidade mais rápido.",
-                "design-title": "Design",
-                "design-desc": "Crie um design atraente para construir uma identidade de marca memorável. De white label a soluções completas e guias de estilo.",
-                "iot-title": "Internet das Coisas",
-                "iot-desc": "Deixe-nos ajudá-lo em cada estágio do desenvolvimento de aplicações e hardware: nativo, lorawan, mqtt ou outros serviços.",
-                "products-title": "Produtos",
-                "products-desc": "Criamos software e hardware para ajudar startups, PMEs e empresas a superar seus desafios de negócio.",
-                "pos-title": "Ponto de Venda",
-                "pos-desc": "Aplicação desenvolvida para PMEs e cooperativas, para fins de POS.",
-                "discover": "Descobrir",
-                "clients-title": "Quem Usa Nossos Serviços?",
-                "clients-desc": "Veja quem ajudamos a resolver seus problemas de negócio e crescer. Há muitos outros que não mencionamos além dos abaixo.",
-                "team-title": "Nossa Equipe",
-                "team-desc": "Trazemos uma riqueza de habilidades e experiências de uma ampla gama de origens.",
-                "ceo-role": "CEO",
-                "ceo-desc": "Liderando a visão e estratégia da Onyet Apps com liderança inovadora.",
-                "cto-role": "CTO",
-                "cto-desc": "Supervisionando o desenvolvimento de tecnologia e impulsionando a inovação em nossas soluções.",
-                "sales-role": "Gerente de Vendas",
-                "sales-desc": "Impulsionando o crescimento do negócio e construindo relacionamentos fortes com clientes.",
-                "contact-title": "Contate-nos",
-                "contact-desc": "Entre em contato conosco para consultas, colaborações ou suporte. Adoraríamos ouvir de você!",
-                "footer-tagline": "Torne simples poderoso. Soluções de código aberto para seu negócio.",
-                "quick-links": "Links Rápidos",
-                "services-link": "Serviços",
-                "products-link": "Produtos",
-                "contact-link": "Contate-nos",
-                "contact-footer": "Contato",
-                "follow-us": "Siga-nos no",
-                "copyright": "&copy; 2025 Onyet Apps. Todos os direitos reservados.",
-                "gift-bananas": "Presenteie Bananas.",
-                "name-label": "Nome",
-                "name-placeholder": "Seu Nome",
-                "email-label": "E-mail",
-                "email-placeholder": "seu.email@exemplo.com",
-                "message-label": "Mensagem",
-                "message-placeholder": "Sua mensagem aqui...",
-                "send-message": "Enviar Mensagem",
-                "brand": "Onyet Apps",
-                "modal-title": "Galeria Nirwata",
-                "modal-body-text": "Por favor, contate-nos se quiser saber mais.",
-                "ocbt-title": "Teste Baseado em Computador",
-                "ocbt-desc": "Uma aplicação de código aberto para aprendizagem online e testes baseados em computador.",
-                "koomo-title": "Controle de Monitoramento",
-                "koomo-desc": "Aplicação de painel de controle de monitoramento do sistema de iluminação de ruas principais para egrotek.",
-                "shareku-title": "Diretório de Arquivos Web",
-                "shareku-desc": "Uma aplicação de código aberto, uma versão simplificada do sistema de diretório de arquivos web.",
-                "email-footer": "E-mail:"
-            },
-        };
-
-        function changeLanguage(lang) {
-            localStorage.setItem('selectedLanguage', lang);
-            document.documentElement.lang = lang;
-            if (lang === 'ar') {
-                document.documentElement.dir = 'rtl';
-            } else {
-                document.documentElement.dir = 'ltr';
-            }
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    element.innerHTML = translations[lang][key];
-                }
-            });
-            const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
-            placeholders.forEach(element => {
-                const key = element.getAttribute('data-i18n-placeholder');
-                if (translations[lang] && translations[lang][key]) {
-                    element.placeholder = translations[lang][key];
-                }
-            });
+    // openEncoded: decrypt base64-encoded link and open in new tab
+    function openEncoded(enc) {
+      try {
+        const url = atob(enc);
+        // small validation: open only http/https
+        if (/^https?:\/\//i.test(url)) {
+          window.open(url, '_blank', 'noopener');
+        } else {
+          console.warn('Invalid URL');
         }
+      } catch (e) {
+        console.error('Failed to open link', e);
+      }
+    }
 
-        // Load language on page load
-        const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-        changeLanguage(savedLang);
-    </script>
+    // Image preview functions
+    function openPreview(src, caption, siteEnc, playEnc) {
+      const modal = document.getElementById('img-preview');
+      document.getElementById('preview-img').src = src;
+      document.getElementById('preview-img').alt = caption || '';
+      document.getElementById('preview-caption').textContent = caption || '';
+
+      // build action buttons if links provided
+      const links = document.getElementById('preview-links');
+      links.innerHTML = '';
+      if (siteEnc) {
+        const a = document.createElement('button');
+        a.className = 'px-4 py-2 bg-sky-600 text-white rounded';
+        a.textContent = 'Open site';
+        a.onclick = () => openEncoded(siteEnc);
+        links.appendChild(a);
+      }
+      if (playEnc) {
+        const b = document.createElement('button');
+        b.className = 'px-4 py-2 bg-slate-100 text-slate-800 rounded border';
+        b.textContent = 'Play Store';
+        b.onclick = () => openEncoded(playEnc);
+        links.appendChild(b);
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePreview() {
+      const modal = document.getElementById('img-preview');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+      document.getElementById('preview-img').src = '';
+      document.getElementById('preview-links').innerHTML = '';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('click', function(e){
+      if(e.target && e.target.id === 'close-preview') closePreview();
+      if(e.target && e.target.id === 'img-preview') closePreview();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') closePreview();
+    });
+  </script>
 </body>
-
 </html>
