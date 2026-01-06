@@ -1,4 +1,7 @@
-<html lang="en" dir="ltr"><head>
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="page-title">Dian Mukti Wibowo - Portfolio &amp; CV</title>
@@ -122,16 +125,1214 @@
 
     /* Make PDF modal full screen on small screens */
     @media (max-width: 640px) {
+
       /* pdf shell (inner modal) should occupy full viewport and remove rounded corners */
-      #pdf-shell { border-radius: 0 !important; max-height: none !important; height: 100vh !important; }
+      #pdf-shell {
+        border-radius: 0 !important;
+        max-height: none !important;
+        height: 100vh !important;
+      }
+
       /* remove outer modal padding on small screens to use full viewport */
-      #pdf-modal { padding: 0 !important; align-items: stretch !important; justify-content: flex-start !important; }
+      #pdf-modal {
+        padding: 0 !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+      }
+
       /* allow canvas container to expand and consume remaining space */
-      #pdf-canvas-container { max-height: none !important; flex: 1 1 auto; }
+      #pdf-canvas-container {
+        max-height: none !important;
+        flex: 1 1 auto;
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.right-0{right:0px}.top-0{top:0px}.bottom-20{bottom:5rem}.bottom-4{bottom:1rem}.right-4{right:1rem}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mx-2{margin-left:0.5rem;margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-80{height:20rem}.h-full{height:100%}.h-screen{height:100vh}.max-h-\[90vh\]{max-height:90vh}.max-h-64{max-height:16rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-6{width:1.5rem}.w-72{width:18rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-5xl{max-width:64rem}.max-w-4xl{max-width:56rem}.flex-1{flex:1 1 0%}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-0{border-width:0px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-white\/25{border-color:rgb(255 255 255 / 0.25)}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.bg-white\/60{background-color:rgb(255 255 255 / 0.6)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-3{padding:0.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-tight{line-height:1.25}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-white\/80{color:rgb(255 255 255 / 0.8)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-black\/5{--tw-ring-color:rgb(0 0 0 / 0.05)}.ring-white\/20{--tw-ring-color:rgb(255 255 255 / 0.2)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-150{transition-duration:150ms}.duration-500{transition-duration:500ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/5:hover{background-color:rgb(255 255 255 / 0.05)}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-100:hover{opacity:1}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-sky-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(125 211 252 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:h-44{height:11rem}.sm\:h-auto{height:auto}.sm\:max-h-\[80vh\]{max-height:80vh}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-start{align-items:flex-start}.sm\:items-center{align-items:center}.sm\:gap-6{gap:1.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-48{height:12rem}.md\:h-96{height:24rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:mt-0{margin-top:0px}.lg\:flex{display:flex}.lg\:w-1\/2{width:50%}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:gap-12{gap:3rem}}</style></head>
+  <style>
+    *,
+    ::before,
+    ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style:
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      --tw-contain-size: ;
+      --tw-contain-layout: ;
+      --tw-contain-paint: ;
+      --tw-contain-style:
+    }
+
+    /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb
+    }
+
+    ::after,
+    ::before {
+      --tw-content: ''
+    }
+
+    :host,
+    html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    body {
+      margin: 0;
+      line-height: inherit
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0
+    }
+
+    button,
+    select {
+      text-transform: none
+    }
+
+    button,
+    input:where([type=button]),
+    input:where([type=reset]),
+    input:where([type=submit]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [type=search] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    summary {
+      display: list-item
+    }
+
+    blockquote,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    pre {
+      margin: 0
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0
+    }
+
+    legend {
+      padding: 0
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    dialog {
+      padding: 0
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af
+    }
+
+    [role=button],
+    button {
+      cursor: pointer
+    }
+
+    :disabled {
+      cursor: default
+    }
+
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+      display: block;
+      vertical-align: middle
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0
+    }
+
+    .pointer-events-none {
+      pointer-events: none
+    }
+
+    .fixed {
+      position: fixed
+    }
+
+    .absolute {
+      position: absolute
+    }
+
+    .relative {
+      position: relative
+    }
+
+    .sticky {
+      position: sticky
+    }
+
+    .inset-0 {
+      inset: 0px
+    }
+
+    .right-0 {
+      right: 0px
+    }
+
+    .top-0 {
+      top: 0px
+    }
+
+    .bottom-20 {
+      bottom: 5rem
+    }
+
+    .bottom-4 {
+      bottom: 1rem
+    }
+
+    .right-4 {
+      right: 1rem
+    }
+
+    .z-30 {
+      z-index: 30
+    }
+
+    .z-50 {
+      z-index: 50
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .mx-2 {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem
+    }
+
+    .mt-1 {
+      margin-top: 0.25rem
+    }
+
+    .mt-10 {
+      margin-top: 2.5rem
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem
+    }
+
+    .mt-3 {
+      margin-top: 0.75rem
+    }
+
+    .mt-4 {
+      margin-top: 1rem
+    }
+
+    .mt-6 {
+      margin-top: 1.5rem
+    }
+
+    .mt-8 {
+      margin-top: 2rem
+    }
+
+    .block {
+      display: block
+    }
+
+    .flex {
+      display: flex
+    }
+
+    .inline-flex {
+      display: inline-flex
+    }
+
+    .grid {
+      display: grid
+    }
+
+    .hidden {
+      display: none
+    }
+
+    .h-10 {
+      height: 2.5rem
+    }
+
+    .h-12 {
+      height: 3rem
+    }
+
+    .h-4 {
+      height: 1rem
+    }
+
+    .h-40 {
+      height: 10rem
+    }
+
+    .h-5 {
+      height: 1.25rem
+    }
+
+    .h-56 {
+      height: 14rem
+    }
+
+    .h-6 {
+      height: 1.5rem
+    }
+
+    .h-80 {
+      height: 20rem
+    }
+
+    .h-full {
+      height: 100%
+    }
+
+    .h-screen {
+      height: 100vh
+    }
+
+    .max-h-\[90vh\] {
+      max-height: 90vh
+    }
+
+    .max-h-64 {
+      max-height: 16rem
+    }
+
+    .min-h-screen {
+      min-height: 100vh
+    }
+
+    .w-10 {
+      width: 2.5rem
+    }
+
+    .w-12 {
+      width: 3rem
+    }
+
+    .w-4 {
+      width: 1rem
+    }
+
+    .w-5 {
+      width: 1.25rem
+    }
+
+    .w-56 {
+      width: 14rem
+    }
+
+    .w-6 {
+      width: 1.5rem
+    }
+
+    .w-72 {
+      width: 18rem
+    }
+
+    .w-full {
+      width: 100%
+    }
+
+    .max-w-2xl {
+      max-width: 42rem
+    }
+
+    .max-w-5xl {
+      max-width: 64rem
+    }
+
+    .max-w-4xl {
+      max-width: 56rem
+    }
+
+    .flex-1 {
+      flex: 1 1 0%
+    }
+
+    .scale-95 {
+      --tw-scale-x: .95;
+      --tw-scale-y: .95;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    .transform {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    .cursor-pointer {
+      cursor: pointer
+    }
+
+    .flex-col {
+      flex-direction: column
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap
+    }
+
+    .items-start {
+      align-items: flex-start
+    }
+
+    .items-center {
+      align-items: center
+    }
+
+    .items-stretch {
+      align-items: stretch
+    }
+
+    .justify-center {
+      justify-content: center
+    }
+
+    .justify-between {
+      justify-content: space-between
+    }
+
+    .gap-2 {
+      gap: 0.5rem
+    }
+
+    .gap-3 {
+      gap: 0.75rem
+    }
+
+    .gap-4 {
+      gap: 1rem
+    }
+
+    .gap-6 {
+      gap: 1.5rem
+    }
+
+    .gap-8 {
+      gap: 2rem
+    }
+
+    .space-y-3> :not([hidden])~ :not([hidden]) {
+      --tw-space-y-reverse: 0;
+      margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(0.75rem * var(--tw-space-y-reverse))
+    }
+
+    .overflow-auto {
+      overflow: auto
+    }
+
+    .overflow-hidden {
+      overflow: hidden
+    }
+
+    .overflow-y-auto {
+      overflow-y: auto
+    }
+
+    .rounded {
+      border-radius: 0.25rem
+    }
+
+    .rounded-2xl {
+      border-radius: 1rem
+    }
+
+    .rounded-full {
+      border-radius: 9999px
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem
+    }
+
+    .rounded-md {
+      border-radius: 0.375rem
+    }
+
+    .border {
+      border-width: 1px
+    }
+
+    .border-0 {
+      border-width: 0px
+    }
+
+    .border-b {
+      border-bottom-width: 1px
+    }
+
+    .border-t {
+      border-top-width: 1px
+    }
+
+    .border-slate-200 {
+      --tw-border-opacity: 1;
+      border-color: rgb(226 232 240 / var(--tw-border-opacity, 1))
+    }
+
+    .border-white\/25 {
+      border-color: rgb(255 255 255 / 0.25)
+    }
+
+    .bg-black\/30 {
+      background-color: rgb(0 0 0 / 0.3)
+    }
+
+    .bg-green-500 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-sky-600 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(2 132 199 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-slate-100 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-slate-50 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-slate-900 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-transparent {
+      background-color: transparent
+    }
+
+    .bg-white {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-white\/50 {
+      background-color: rgb(255 255 255 / 0.5)
+    }
+
+    .bg-white\/60 {
+      background-color: rgb(255 255 255 / 0.6)
+    }
+
+    .bg-black\/80 {
+      background-color: rgb(0 0 0 / 0.8)
+    }
+
+    .bg-white\/10 {
+      background-color: rgb(255 255 255 / 0.1)
+    }
+
+    .object-cover {
+      object-fit: cover
+    }
+
+    .p-2 {
+      padding: 0.5rem
+    }
+
+    .p-4 {
+      padding: 1rem
+    }
+
+    .p-6 {
+      padding: 1.5rem
+    }
+
+    .p-8 {
+      padding: 2rem
+    }
+
+    .p-3 {
+      padding: 0.75rem
+    }
+
+    .px-3 {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem
+    }
+
+    .px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem
+    }
+
+    .py-16 {
+      padding-top: 4rem;
+      padding-bottom: 4rem
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem
+    }
+
+    .py-20 {
+      padding-top: 5rem;
+      padding-bottom: 5rem
+    }
+
+    .py-4 {
+      padding-top: 1rem;
+      padding-bottom: 1rem
+    }
+
+    .py-1 {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem
+    }
+
+    .py-10 {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem
+    }
+
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem
+    }
+
+    .text-left {
+      text-align: left
+    }
+
+    .text-center {
+      text-align: center
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem
+    }
+
+    .text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem
+    }
+
+    .text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem
+    }
+
+    .font-bold {
+      font-weight: 700
+    }
+
+    .font-extrabold {
+      font-weight: 800
+    }
+
+    .font-medium {
+      font-weight: 500
+    }
+
+    .font-semibold {
+      font-weight: 600
+    }
+
+    .italic {
+      font-style: italic
+    }
+
+    .leading-tight {
+      line-height: 1.25
+    }
+
+    .text-sky-600 {
+      --tw-text-opacity: 1;
+      color: rgb(2 132 199 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-200 {
+      --tw-text-opacity: 1;
+      color: rgb(226 232 240 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-300 {
+      --tw-text-opacity: 1;
+      color: rgb(203 213 225 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-500 {
+      --tw-text-opacity: 1;
+      color: rgb(100 116 139 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-600 {
+      --tw-text-opacity: 1;
+      color: rgb(71 85 105 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-700 {
+      --tw-text-opacity: 1;
+      color: rgb(51 65 85 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-800 {
+      --tw-text-opacity: 1;
+      color: rgb(30 41 59 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-900 {
+      --tw-text-opacity: 1;
+      color: rgb(15 23 42 / var(--tw-text-opacity, 1))
+    }
+
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+    }
+
+    .text-slate-400 {
+      --tw-text-opacity: 1;
+      color: rgb(148 163 184 / var(--tw-text-opacity, 1))
+    }
+
+    .text-white\/80 {
+      color: rgb(255 255 255 / 0.8)
+    }
+
+    .antialiased {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+    }
+
+    .opacity-0 {
+      opacity: 0
+    }
+
+    .shadow {
+      --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+    }
+
+    .shadow-lg {
+      --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+    }
+
+    .shadow-sm {
+      --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+    }
+
+    .ring-1 {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+    }
+
+    .ring-black\/5 {
+      --tw-ring-color: rgb(0 0 0 / 0.05)
+    }
+
+    .ring-white\/20 {
+      --tw-ring-color: rgb(255 255 255 / 0.2)
+    }
+
+    .backdrop-blur {
+      --tw-backdrop-blur: blur(8px);
+      -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+      backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+    }
+
+    .transition {
+      transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms
+    }
+
+    .transition-all {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms
+    }
+
+    .transition-opacity {
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms
+    }
+
+    .transition-transform {
+      transition-property: transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms
+    }
+
+    .duration-150 {
+      transition-duration: 150ms
+    }
+
+    .duration-500 {
+      transition-duration: 500ms
+    }
+
+    .hover\:scale-105:hover {
+      --tw-scale-x: 1.05;
+      --tw-scale-y: 1.05;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    .hover\:bg-slate-50:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1))
+    }
+
+    .hover\:bg-slate-800:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1))
+    }
+
+    .hover\:bg-white\/5:hover {
+      background-color: rgb(255 255 255 / 0.05)
+    }
+
+    .hover\:bg-slate-100:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1))
+    }
+
+    .hover\:bg-slate-200:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1))
+    }
+
+    .hover\:text-slate-900:hover {
+      --tw-text-opacity: 1;
+      color: rgb(15 23 42 / var(--tw-text-opacity, 1))
+    }
+
+    .hover\:underline:hover {
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline
+    }
+
+    .hover\:opacity-100:hover {
+      opacity: 1
+    }
+
+    .hover\:shadow-md:hover {
+      --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+    }
+
+    .focus\:outline-none:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px
+    }
+
+    .focus\:ring-2:focus {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+    }
+
+    .focus\:ring-sky-300:focus {
+      --tw-ring-opacity: 1;
+      --tw-ring-color: rgb(125 211 252 / var(--tw-ring-opacity, 1))
+    }
+
+    @media (min-width: 640px) {
+      .sm\:h-44 {
+        height: 11rem
+      }
+
+      .sm\:h-auto {
+        height: auto
+      }
+
+      .sm\:max-h-\[80vh\] {
+        max-height: 80vh
+      }
+
+      .sm\:w-auto {
+        width: auto
+      }
+
+      .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .sm\:flex-row {
+        flex-direction: row
+      }
+
+      .sm\:items-start {
+        align-items: flex-start
+      }
+
+      .sm\:items-center {
+        align-items: center
+      }
+
+      .sm\:gap-6 {
+        gap: 1.5rem
+      }
+
+      .sm\:text-5xl {
+        font-size: 3rem;
+        line-height: 1
+      }
+    }
+
+    @media (min-width: 768px) {
+      .md\:flex {
+        display: flex
+      }
+
+      .md\:hidden {
+        display: none
+      }
+
+      .md\:h-48 {
+        height: 12rem
+      }
+
+      .md\:h-96 {
+        height: 24rem
+      }
+
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .md\:flex-row {
+        flex-direction: row
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:mt-0 {
+        margin-top: 0px
+      }
+
+      .lg\:flex {
+        display: flex
+      }
+
+      .lg\:w-1\/2 {
+        width: 50%
+      }
+
+      .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+      }
+
+      .lg\:gap-12 {
+        gap: 3rem
+      }
+    }
+  </style>
+</head>
 
 <body class="bg-slate-50 text-slate-800 antialiased" style="">
   <!-- Container -->
@@ -140,7 +1341,8 @@
     <header class="w-full bg-white/60 backdrop-blur sticky top-0 z-30 shadow-sm">
       <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" class="inline-flex items-center gap-3">
-          <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" class="w-12 h-12 rounded-full object-cover border">
+          <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo"
+            class="w-12 h-12 rounded-full object-cover border">
           <div class="leading-tight">
             <div class="font-semibold" data-i18n="brand">Dian Mukti Wibowo</div>
             <div class="text-sm text-slate-500" data-i18n="role">Web &amp; App Developer</div>
@@ -152,22 +1354,30 @@
           <a href="#contact" class="hover:text-slate-900" data-i18n="nav-contact">Contact</a>
 
           <div class="relative" id="paten-menu">
-            <button id="paten-toggle" data-i18n="patent" aria-expanded="false" aria-controls="paten-dropdown" class="inline-flex items-center gap-2 hover:text-slate-900 bg-transparent focus:outline-none focus:ring-2 focus:ring-sky-300 rounded">Patent</button>
+            <button id="paten-toggle" data-i18n="patent" aria-expanded="false" aria-controls="paten-dropdown"
+              class="inline-flex items-center gap-2 hover:text-slate-900 bg-transparent focus:outline-none focus:ring-2 focus:ring-sky-300 rounded">Patent</button>
 
-            <div id="paten-dropdown" role="menu" aria-labelledby="paten-toggle" data-open="false" class="absolute right-0 mt-2 w-72 bg-white text-left rounded shadow-lg ring-1 ring-black/5 opacity-0 scale-95 pointer-events-none transition-all duration-150">
+            <div id="paten-dropdown" role="menu" aria-labelledby="paten-toggle" data-open="false"
+              class="absolute right-0 mt-2 w-72 bg-white text-left rounded shadow-lg ring-1 ring-black/5 opacity-0 scale-95 pointer-events-none transition-all duration-150">
               <div class="p-2">
                 <div class="px-3 py-2 text-xs text-slate-500">Informasi pendaftaran dan hak cipta</div>
-                <a role="menuitem" href="https://e-hakcipta.dgip.go.id/legal/c/ZmVkNmIzN2I4MDQ2NjY0YmY4ZWJhMGI0MmZkN2I3MDkK" target="_blank" rel="noopener" class="block px-3 py-2 mt-1 rounded hover:bg-slate-50 text-slate-700">Aplikasi Mobile IOT Egrotek</a>
+                <a role="menuitem"
+                  href="https://e-hakcipta.dgip.go.id/legal/c/ZmVkNmIzN2I4MDQ2NjY0YmY4ZWJhMGI0MmZkN2I3MDkK"
+                  target="_blank" rel="noopener"
+                  class="block px-3 py-2 mt-1 rounded hover:bg-slate-50 text-slate-700">Aplikasi Mobile IOT Egrotek</a>
               </div>
             </div>
           </div>
 
-          <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" class="hover:text-slate-900" data-i18n="linkedin">LinkedIn</a>
-          <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download="" class="px-4 py-2 bg-slate-900 text-white rounded hover:bg-slate-800" data-i18n="download-cv">Download CV</a>
+          <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" class="hover:text-slate-900"
+            data-i18n="linkedin">LinkedIn</a>
+          <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download=""
+            class="px-4 py-2 bg-slate-900 text-white rounded hover:bg-slate-800" data-i18n="download-cv">Download CV</a>
         </nav>
         <div class="md:hidden">
           <button id="menu-btn" class="p-2 rounded-md bg-slate-100">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -181,24 +1391,34 @@
         <div class="max-w-5xl mx-auto px-6 lg:flex lg:gap-12 items-center">
           <div class="lg:w-1/2">
             <h1 class="text-4xl sm:text-5xl font-extrabold">Dian Mukti Wibowo</h1>
-            <p class="mt-4 text-lg text-slate-200" data-i18n="hero-desc">Full‑stack software engineer building scalable, maintainable web and mobile applications. Specialist in end-to-end solutions using Python, Go, PHP, TypeScript, and Flutter.</p>
+            <p class="mt-4 text-lg text-slate-200" data-i18n="hero-desc">Full‑stack software engineer building scalable,
+              maintainable web and mobile applications. Specialist in end-to-end solutions using Python, Go, PHP,
+              TypeScript, and Flutter.</p>
             <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
-              <button id="view-cv-btn" type="button" aria-haspopup="dialog" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded shadow hover:shadow-md focus:ring-2 focus:ring-sky-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16.051 12.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z"></path>
+              <button id="view-cv-btn" type="button" aria-haspopup="dialog"
+                class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-white text-slate-900 px-4 py-2 rounded shadow hover:shadow-md focus:ring-2 focus:ring-sky-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M16.051 12.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z">
+                  </path>
                   <path d="M8 15H7a4 4 0 0 0-4 4v2"></path>
                   <circle cx="10" cy="7" r="4"></circle>
                 </svg>
                 <span data-i18n="view-cv">View CV</span>
               </button>
-              <a href="#portfolio" data-i18n="see-projects" class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-white border border-white/25 rounded hover:bg-white/5">See projects</a>
+              <a href="#portfolio" data-i18n="see-projects"
+                class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-white border border-white/25 rounded hover:bg-white/5">See
+                projects</a>
             </div>
-            <div class="mt-6 text-sm text-slate-300"><span data-i18n="more-details">More details available in the downloadable CV. Contact information listed on this page.</span></div>
+            <div class="mt-6 text-sm text-slate-300"><span data-i18n="more-details">More details available in the
+                downloadable CV. Contact information listed on this page.</span></div>
           </div>
 
           <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
             <div class="w-56 h-56 rounded-2xl overflow-hidden shadow-lg ring-1 ring-white/20">
-              <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+              <img src="assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" loading="lazy"
+                class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
             </div>
           </div>
         </div>
@@ -209,30 +1429,37 @@
         <div class="max-w-5xl mx-auto">
           <div>
             <h2 class="text-2xl font-bold" data-i18n="about-title">About</h2>
-            <p class="mt-4 text-slate-600 max-w-2xl" data-i18n="about-desc">Full‑stack software engineer building scalable, maintainable web &amp; mobile applications. I focus on pragmatic solutions that deliver value fast.</p>
+            <p class="mt-4 text-slate-600 max-w-2xl" data-i18n="about-desc">Full‑stack software engineer building
+              scalable, maintainable web &amp; mobile applications. I focus on pragmatic solutions that deliver value
+              fast.</p>
             <p class="mt-2 text-slate-500 italic font-medium">“Make it simple. Make it powerful.”</p>
 
             <div class="mt-8 flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-4">
               <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="what-i-do">What I do</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Build end-to-end web and mobile systems - frontend, backend, APIs, and deployment pipelines.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Build end-to-end web and mobile
+                  systems - frontend, backend, APIs, and deployment pipelines.</p>
               </div>
 
               <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="core-tech">Core tech</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="core-tech-desc">Python · Go · PHP · TypeScript · Flutter · Ionic / Angular</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="core-tech-desc">Python · Go · PHP · TypeScript ·
+                  Flutter · Ionic / Angular</p>
               </div>
 
               <div class="flex-1 bg-white p-6 rounded-lg shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="focus-title">Focus</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Reliability, performance, and clean, maintainable code.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Reliability, performance, and clean,
+                  maintainable code.</p>
               </div>
             </div>
 
             <div class="mt-6 flex items-center gap-3">
-              <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm" data-i18n="see-projects">See projects</a>
-              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download="" class="px-4 py-2 border border-slate-200 rounded text-slate-700" data-i18n="download-cv">Download CV</a>
-            </div> 
+              <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm"
+                data-i18n="see-projects">See projects</a>
+              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" download=""
+                class="px-4 py-2 border border-slate-200 rounded text-slate-700" data-i18n="download-cv">Download CV</a>
+            </div>
           </div>
 
 
@@ -243,23 +1470,35 @@
       <section id="portfolio" class="bg-white/50 py-16">
         <div class="max-w-5xl mx-auto px-6">
           <h2 class="text-2xl font-bold" data-i18n="portfolio-title">Portfolio</h2>
-          <p class="mt-2 text-slate-600" data-i18n="portfolio-desc">Selected web and application projects. Edit the entries below to add your projects with descriptions, tech stack and links.</p>
+          <p class="mt-2 text-slate-600" data-i18n="portfolio-desc">Selected web and application projects. Edit the
+            entries below to add your projects with descriptions, tech stack and links.</p>
 
           <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Mefomart -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/mefomart.webp" alt="Mefomart" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Mefomart" onclick="openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/mefomart.webp" alt="Mefomart" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Mefomart"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/mefomart.webp','Mefomart','','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Mefomart</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">First ERP I built independently for Koperasi Semen Nusantara in Cilacap. Features: online store, multi-store, multi-warehouse, inventory and supplier management, consignment management, POS, and integrated reporting.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">First ERP I built independently for
+                  Koperasi Semen Nusantara in Cilacap. Features: online store, multi-store, multi-warehouse, inventory
+                  and supplier management, consignment management, POS, and integrated reporting.</p>
                 <div class="mt-4 flex items-center gap-3">
                   <!-- no external site link available -->
                 </div>
@@ -269,18 +1508,30 @@
             <!-- Digimar -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/digimar.webp" alt="Digimar" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Digimar" onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/digimar.webp" alt="Digimar" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==', '')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Digimar"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/digimar.webp','Digimar','aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Digimar</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="digimar-desc">Digital marketing automation platform - social media post management and scheduling. My role: mobile &amp; web (mobile version and web frontend; collaborated on backend APIs).</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="digimar-desc">Digital marketing automation platform -
+                  social media post management and scheduling. My role: mobile &amp; web (mobile version and web
+                  frontend; collaborated on backend APIs).</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuZGlnaW1hci5pZA==')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
               </div>
             </article>
@@ -288,18 +1539,30 @@
             <!-- Egrotek -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/egrotek.webp" alt="Egrotek" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Egrotek" onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/egrotek.webp" alt="Egrotek" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Egrotek"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/egrotek.webp','Egrotek','aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Egrotek</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="egrotek-desc">IoT LoRaWAN server and dashboard for device management, gateway integration and MQTT brokers. Role: full-stack (LoRa server, dashboard, device integrations, mobile config).</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="egrotek-desc">IoT LoRaWAN server and dashboard for
+                  device management, gateway integration and MQTT brokers. Role: full-stack (LoRa server, dashboard,
+                  device integrations, mobile config).</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9lZ3JvdGVrLmNvbQ==')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
               </div>
             </article>
@@ -307,19 +1570,33 @@
             <!-- SPHP - Bulog -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/sphp-bulog.webp" alt="Klik SPHP - Bulog" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Klik SPHP - Bulog" onclick="openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/sphp-bulog.webp" alt="Klik SPHP - Bulog" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Klik SPHP - Bulog"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/sphp-bulog.webp','Klik SPHP - Bulog','','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Klik SPHP - Bulog</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="sphp-desc">Application for nationwide rice distribution (SPHP) run by the Indonesian government. Records rice distribution from suppliers to merchants and first-level customers.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="sphp-desc">Application for nationwide rice
+                  distribution (SPHP) run by the Indonesian government. Records rice distribution from suppliers to
+                  merchants and first-level customers.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <a href="https://sphp.bulog.co.id" data-i18n="open-site" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Open site</a>
-                  <a href="https://play.google.com/store/apps/details?id=com.bulog.klik_sphp_mobile&amp;hl=id" data-i18n="play-store" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Play Store</a>
+                  <a href="https://sphp.bulog.co.id" data-i18n="open-site" target="_blank" rel="noopener"
+                    class="text-sm text-sky-600 hover:underline">Open site</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.bulog.klik_sphp_mobile&amp;hl=id"
+                    data-i18n="play-store" target="_blank" rel="noopener"
+                    class="text-sm text-sky-600 hover:underline">Play Store</a>
                 </div>
               </div>
             </article>
@@ -327,19 +1604,34 @@
             <!-- Panel Harga Pangan - BAPANAS -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/panelharga-bapanas.webp" alt="Panel Harga Pangan - BAPANAS" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Panel Harga Pangan - BAPANAS" onclick="openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/panelharga-bapanas.webp" alt="Panel Harga Pangan - BAPANAS"
+                  loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Panel Harga Pangan - BAPANAS"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/panelharga-bapanas.webp','Panel Harga Pangan - BAPANAS','','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Panel Harga Pangan - BAPANAS</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">Public dashboard publishing food commodity prices across Indonesia collected by government enumerators; includes an app for enumerators to input local market prices.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">Public dashboard publishing food
+                  commodity prices across Indonesia collected by government enumerators; includes an app for enumerators
+                  to input local market prices.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <a href="https://panelharga.badanpangan.go.id" data-i18n="open-site" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Open site</a>
-                  <a href="https://play.google.com/store/apps/details?id=com.petugaspanelhargapangan.app&amp;hl=id" data-i18n="play-store" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Play Store</a>
+                  <a href="https://panelharga.badanpangan.go.id" data-i18n="open-site" target="_blank" rel="noopener"
+                    class="text-sm text-sky-600 hover:underline">Open site</a>
+                  <a href="https://play.google.com/store/apps/details?id=com.petugaspanelhargapangan.app&amp;hl=id"
+                    data-i18n="play-store" target="_blank" rel="noopener"
+                    class="text-sm text-sky-600 hover:underline">Play Store</a>
                 </div>
               </div>
             </article>
@@ -347,18 +1639,29 @@
             <!-- Indonesiacore - Company Profile -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/indonesiacore.webp" alt="Indonesiacore" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Indonesiacore" onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/indonesiacore.webp" alt="Indonesiacore" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Indonesiacore"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/indonesiacore.webp','Indonesiacore','','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Indonesiacore</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="indonesiacore-desc">Company profile website for PT Incore Systems Solutions, built with the Astro framework and React.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="indonesiacore-desc">Company profile website for PT
+                  Incore Systems Solutions, built with the Astro framework and React.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <a href="https://www.indonesiacore.com/en" data-i18n="open-site" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Open site</a>
+                  <a href="https://www.indonesiacore.com/en" data-i18n="open-site" target="_blank" rel="noopener"
+                    class="text-sm text-sky-600 hover:underline">Open site</a>
                 </div>
               </div>
             </article>
@@ -366,19 +1669,32 @@
             <!-- Simijel -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/simijel.webp" alt="Simijel" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Simijel" onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/simijel.webp" alt="Simijel" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Simijel"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/simijel.webp','Simijel','aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Simijel</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="simijel-desc">Used for waste cooking oil export and traceability (integrated with Veriflux). Role: frontend, mobile and integrations.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="simijel-desc">Used for waste cooking oil export and
+                  traceability (integrated with Veriflux). Role: frontend, mobile and integrations.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=')" class="text-sm text-sky-600 hover:underline">Open site</button>
-                  <button data-i18n="play-store" onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9zaW1pamVsLndlYi5hcHA=')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="play-store"
+                    onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5hcnRoYW1ldHJvb2lsLmFwcHMmaGw9aWQ=')"
+                    class="text-sm text-sky-600 hover:underline">Play Store</button>
                 </div>
               </div>
             </article>
@@ -386,18 +1702,29 @@
             <!-- Online-Beacukai -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/online-beacukai.webp" alt="Online Beacukai" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Online Beacukai" onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/online-beacukai.webp" alt="Online Beacukai" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Online Beacukai"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/online-beacukai.webp','Online Beacukai','aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Online Beacukai</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">Logistics and customs reporting platform for bonded companies, exporters and importers. Role: frontend and mobile apps.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">Logistics and customs reporting
+                  platform for bonded companies, exporters and importers. Role: frontend and mobile apps.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
               </div>
             </article>
@@ -405,18 +1732,31 @@
             <!-- Instant Video App -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/instantvideoapp.webp" alt="Instant Video App" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Instant Video App" onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/instantvideoapp.webp" alt="Instant Video App"
+                  loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Instant Video App"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/instantvideoapp.webp','Instant Video App','aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Instant Video App</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="instantvideo-desc">AI-generated video platform - backend for generation, merging and rule-based processing. Role: backend engineering for AI pipeline.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="instantvideo-desc">AI-generated video platform -
+                  backend for generation, merging and rule-based processing. Role: backend engineering for AI pipeline.
+                </p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuaW5zdGFudHZpZGVvYXBwLmNvbQ==')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
               </div>
             </article>
@@ -424,18 +1764,30 @@
             <!-- Salesbot -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/salesbot.webp" alt="Salesbot" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Salesbot" onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/salesbot.webp" alt="Salesbot" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Salesbot"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/salesbot.webp','Salesbot','aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=','')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Salesbot.id</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="salesbot-desc">AI bot for WhatsApp &amp; email used to increase sales and automate marketing. Role: gateway management, frontend, mobile &amp; email server setup.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="salesbot-desc">AI bot for WhatsApp &amp; email used to
+                  increase sales and automate marketing. Role: gateway management, frontend, mobile &amp; email server
+                  setup.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=')" class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuc2FsZXNib3QuaWQ=')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
                 </div>
               </div>
             </article>
@@ -443,19 +1795,32 @@
             <!-- Evenpedia -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/evenpedia.webp" alt="Evenpedia" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Evenpedia" onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/evenpedia.webp" alt="Evenpedia" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Evenpedia"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/evenpedia.webp','Evenpedia','aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Evenpedia</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="evenpedia-desc">Online event booking &amp; marketplace connecting vendors and clients. Role: web &amp; mobile developer.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="evenpedia-desc">Online event booking &amp; marketplace
+                  connecting vendors and clients. Role: web &amp; mobile developer.</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
-                  <button data-i18n="play-store" onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuZXZlbnBlZGlhLmNvbQ==')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="play-store"
+                    onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5ldmVucGVkaWEuYXBwcyZobD1pZA==')"
+                    class="text-sm text-sky-600 hover:underline">Play Store</button>
                 </div>
               </div>
             </article>
@@ -464,19 +1829,32 @@
             <!-- Halokatering -->
             <article class="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
               <div class="relative overflow-hidden">
-                <img src="assets/portofolio-dian/projects-ss/halokatering.webp" alt="Halokatering" loading="lazy" class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105" onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" tabindex="0">
-                <div role="button" tabindex="0" aria-label="Preview Halokatering" onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
+                <img src="assets/portofolio-dian/projects-ss/halokatering.webp" alt="Halokatering" loading="lazy"
+                  class="w-full h-40 sm:h-44 md:h-48 object-cover cursor-pointer transition-transform hover:scale-105"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')"
+                  onkeydown="if(event.key==='Enter') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')"
+                  tabindex="0">
+                <div role="button" tabindex="0" aria-label="Preview Halokatering"
+                  onclick="openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')"
+                  onkeydown="if(event.key==='Enter' || event.key===' ') openPreview('assets/portofolio-dian/projects-ss/halokatering.webp','Halokatering','aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==','aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')"
+                  class="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z"></path>
                   </svg>
                 </div>
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Halokatering</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="halokatering-desc">Online catering booking platform connecting customers and caterers. Role: frontend (landing pages and app UI).</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="halokatering-desc">Online catering booking platform
+                  connecting customers and caterers. Role: frontend (landing pages and app UI).</p>
                 <div class="mt-4 flex items-center gap-3">
-                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==')" class="text-sm text-sky-600 hover:underline">Open site</button>
-                  <button data-i18n="play-store" onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')" class="text-sm text-sky-600 hover:underline">Play Store</button>
+                  <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly93d3cuaGFsb2thdGVyaW5nLmNvbQ==')"
+                    class="text-sm text-sky-600 hover:underline">Open site</button>
+                  <button data-i18n="play-store"
+                    onclick="openEncoded('aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5oYWxva2F0ZXJpbmcuYXBwcyZobD1pZA==')"
+                    class="text-sm text-sky-600 hover:underline">Play Store</button>
                 </div>
               </div>
             </article>
@@ -486,7 +1864,8 @@
           </div>
 
           <div class="mt-6 text-center">
-            <button data-i18n="more-projects" onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')" class="px-4 py-2 bg-slate-900 text-white rounded">More projects on GitHub</button>
+            <button data-i18n="more-projects" onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')"
+              class="px-4 py-2 bg-slate-900 text-white rounded">More projects on GitHub</button>
           </div>
         </div>
       </section>
@@ -498,46 +1877,111 @@
           <div class="bg-white rounded-lg shadow-sm p-8 flex flex-col justify-between h-full">
             <div>
               <h2 class="text-2xl font-bold" data-i18n="contact-title">Contact</h2>
-              <p class="mt-3 text-slate-600" data-i18n="contact-desc">Available for freelance and contract work. I usually respond within 1 business day. Prefer email or WhatsApp for quick communication.</p>
+              <p class="mt-3 text-slate-600" data-i18n="contact-desc">Available for freelance and contract work. I
+                usually respond within 1 business day. Prefer email or WhatsApp for quick communication.</p>
 
               <ul class="mt-6 space-y-3 text-sm text-slate-700">
                 <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail h-5 w-5 text-slate-500 mt-1" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-                  <div><a href="mailto:onyetcorp@gmail.com" class="text-sky-600 hover:underline" aria-label="Email">onyetcorp@gmail.com</a></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="mail" class="lucide lucide-mail h-5 w-5 text-slate-500 mt-1" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                  <div><a href="mailto:onyetcorp@gmail.com" class="text-sky-600 hover:underline"
+                      aria-label="Email">onyetcorp@gmail.com</a></div>
                 </li>
 
                 <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone h-5 w-5 text-slate-500 mt-1" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-                  <div><a href="https://wa.me/6282221874400" class="text-sky-600 hover:underline" aria-label="WhatsApp">+62 822-2187-4400 (WhatsApp)</a></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="phone" class="lucide lucide-phone h-5 w-5 text-slate-500 mt-1" aria-hidden="true">
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                    </path>
+                  </svg>
+                  <div><a href="https://wa.me/6282221874400" class="text-sky-600 hover:underline"
+                      aria-label="WhatsApp">+62 822-2187-4400 (WhatsApp)</a></div>
                 </li>
 
                 <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin h-5 w-5 text-slate-500 mt-1" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  <div><a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">linkedin.com/in/dian-mukti-wibowo-244576a6</a></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="linkedin" class="lucide lucide-linkedin h-5 w-5 text-slate-500 mt-1"
+                    aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <div><a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" rel="noopener"
+                      class="text-sky-600 hover:underline">linkedin.com/in/dian-mukti-wibowo-244576a6</a></div>
                 </li>
 
                 <li class="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin h-5 w-5 text-slate-500 mt-1" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="map-pin" class="lucide lucide-map-pin h-5 w-5 text-slate-500 mt-1" aria-hidden="true">
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                    </path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
                   <div>Purwokerto Timur, Jawa Tengah, Indonesia</div>
                 </li>
               </ul>
             </div>
 
             <div class="mt-6 flex flex-wrap gap-3">
-              <a href="mailto:onyetcorp@gmail.com?subject=Contact%20from%20website" class="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded shadow-sm" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg><span data-i18n="email-button">Email</span></a>
-              <a href="https://wa.me/6282221874400" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded shadow-sm" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span data-i18n="whatsapp-button">WhatsApp</span></a>
-              <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 border rounded text-slate-700" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg><span data-i18n="linkedin-button">LinkedIn</span></a>
-              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" class="inline-flex items-center gap-2 px-4 py-2 border rounded text-slate-700" role="button" aria-label="Download CV"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download-cloud" class="lucide lucide-download-cloud"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg><span data-i18n="download-cv">Download CV</span></a>
+              <a href="mailto:onyetcorp@gmail.com?subject=Contact%20from%20website"
+                class="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded shadow-sm"
+                role="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  data-lucide="mail" class="lucide lucide-mail">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                </svg><span data-i18n="email-button">Email</span></a>
+              <a href="https://wa.me/6282221874400"
+                class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded shadow-sm"
+                role="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  data-lucide="phone" class="lucide lucide-phone">
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                  </path>
+                </svg><span data-i18n="whatsapp-button">WhatsApp</span></a>
+              <a href="https://www.linkedin.com/in/dian-mukti-wibowo-244576a6/" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 px-4 py-2 border rounded text-slate-700" role="button"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  data-lucide="linkedin" class="lucide lucide-linkedin">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg><span data-i18n="linkedin-button">LinkedIn</span></a>
+              <a href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf"
+                class="inline-flex items-center gap-2 px-4 py-2 border rounded text-slate-700" role="button"
+                aria-label="Download CV"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" data-lucide="download-cloud" class="lucide lucide-download-cloud">
+                  <path d="M12 13v8l-4-4"></path>
+                  <path d="m12 21 4-4"></path>
+                  <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+                </svg><span data-i18n="download-cv">Download CV</span></a>
             </div>
           </div>
 
           <!-- Right: map + simple mailto form -->
           <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-            <iframe title="Purwokerto Timur map" aria-label="Map showing Purwokerto Timur" src="https://maps.google.com/maps?q=Purwokerto%20Timur&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" class="w-full h-80 md:h-96 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="Purwokerto Timur map" aria-label="Map showing Purwokerto Timur"
+              src="https://maps.google.com/maps?q=Purwokerto%20Timur&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              class="w-full h-80 md:h-96 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="p-4">
-              <p class="text-sm text-slate-600" data-i18n="map-note">Prefer email or WhatsApp — use the contact buttons on the left. For directions, open the map below.</p>
+              <p class="text-sm text-slate-600" data-i18n="map-note">Prefer email or WhatsApp — use the contact buttons
+                on the left. For directions, open the map below.</p>
               <div class="mt-3 text-sm">
-                <a data-i18n="open-google-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Purwokerto+Timur" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Open in Google Maps</a>
+                <a data-i18n="open-google-maps"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Purwokerto+Timur" target="_blank"
+                  rel="noopener" class="text-sky-600 hover:underline">Open in Google Maps</a>
               </div>
             </div>
           </div>
@@ -551,9 +1995,14 @@
     </main>
 
     <footer class="bg-white border-t">
-      <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-3">
+      <div
+        class="max-w-5xl mx-auto px-6 py-6 text-sm text-slate-600 flex flex-col md:flex-row items-center justify-between gap-3">
         <div>© <strong>Dian Mukti Wibowo</strong> - Purwokerto Timur</div>
-        <div><span data-i18n="footer-made-with">Made with ❤️ -</span> <a href="https://github.com/onyet" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Onyet</a> <span class="mx-2 text-slate-400">·</span> <a href="/privacy-police.html" class="text-slate-600 hover:underline" data-i18n="privacy-policy">Privacy policy</a> <span class="mx-2 text-slate-400">·</span> <a href="/index2.html" class="text-slate-600 hover:underline" data-i18n="onyet-apps">Onyet Apps</a></div>
+        <div><span data-i18n="footer-made-with">Made with ❤️ -</span> <a href="https://github.com/onyet" target="_blank"
+            rel="noopener" class="text-sky-600 hover:underline">Onyet</a> <span class="mx-2 text-slate-400">·</span> <a
+            href="/privacy-police.html" class="text-slate-600 hover:underline" data-i18n="privacy-policy">Privacy
+            policy</a> <span class="mx-2 text-slate-400">·</span> <a href="/index2.html"
+            class="text-slate-600 hover:underline" data-i18n="onyet-apps">Onyet Apps</a></div>
       </div>
     </footer>
   </div>
@@ -563,12 +2012,28 @@
     <div class="preview-shell">
       <header class="preview-header">
         <div class="flex items-center gap-3">
-          <button id="close-preview" class="rounded-full bg-white/10 p-2 text-white" aria-label="Close preview">✕</button>
+          <button id="close-preview" class="rounded-full bg-white/10 p-2 text-white"
+            aria-label="Close preview">✕</button>
           <div id="preview-caption" class="title">Klik SPHP - Bulog</div>
         </div>
         <div class="preview-actions">
-          <a id="preview-download" download="" class="inline-flex items-center gap-2" title="Download image" aria-label="Download image" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg><span class="sr-only">Download</span></a>
-          <a id="preview-open" target="_blank" rel="noopener" class="inline-flex items-center gap-2 secondary" title="Open in new tab" aria-label="Open in new tab" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="external-link" class="lucide lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg><span class="sr-only">Open</span></a>
+          <a id="preview-download" download="" class="inline-flex items-center gap-2" title="Download image"
+            aria-label="Download image" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" data-lucide="download" class="lucide lucide-download">
+              <path d="M12 15V3"></path>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <path d="m7 10 5 5 5-5"></path>
+            </svg><span class="sr-only">Download</span></a>
+          <a id="preview-open" target="_blank" rel="noopener" class="inline-flex items-center gap-2 secondary"
+            title="Open in new tab" aria-label="Open in new tab" style="display: inline-block;"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-lucide="external-link" class="lucide lucide-external-link">
+              <path d="M15 3h6v6"></path>
+              <path d="M10 14 21 3"></path>
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            </svg><span class="sr-only">Open</span></a>
         </div>
       </header>
 
@@ -582,24 +2047,66 @@
   </div>
 
   <!-- PDF modal (uses PDF.js) -->
-  <div id="pdf-modal" class="fixed inset-0 bg-black/80 items-start sm:items-center justify-center z-50 p-4 overflow-y-auto hidden">
-    <div id="pdf-shell" class="relative max-w-4xl w-full bg-white rounded-lg overflow-hidden shadow-lg max-h-[90vh] flex flex-col h-screen sm:h-auto">
+  <div id="pdf-modal"
+    class="fixed inset-0 bg-black/80 items-start sm:items-center justify-center z-50 p-4 overflow-y-auto hidden">
+    <div id="pdf-shell"
+      class="relative max-w-4xl w-full bg-white rounded-lg overflow-hidden shadow-lg max-h-[90vh] flex flex-col h-screen sm:h-auto">
       <div class="flex items-center justify-between p-3 border-b">
         <div class="flex items-center gap-3">
           <div class="font-semibold" data-i18n="cv-title">CV — Dian Mukti Wibowo</div>
           <div id="pdf-page-info" class="text-sm text-slate-500">—</div>
         </div>
         <div class="flex items-center gap-2">
-          <button id="pdf-prev" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Previous page" aria-label="Previous page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-left" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"></path></svg></button>
-          <button id="pdf-next" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Next page" aria-label="Next page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-right" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"></path></svg></button>
-          <button id="pdf-zoom-out" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Zoom out" aria-label="Zoom out"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zoom-out" class="lucide lucide-zoom-out"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></button>
-          <button id="pdf-zoom-in" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Zoom in" aria-label="Zoom in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zoom-in" class="lucide lucide-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line><line x1="11" x2="11" y1="8" y2="14"></line><line x1="8" x2="14" y1="11" y2="11"></line></svg></button>
-          <a id="pdf-download" href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" target="_blank" rel="noopener" class="px-3 py-1 text-sm border rounded bg-slate-50" aria-label="Download PDF"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download-cloud" class="lucide lucide-download-cloud"><path d="M12 13v8l-4-4"></path><path d="m12 21 4-4"></path><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path></svg></a>
-          <button id="close-pdf-modal" aria-label="Close PDF" class="p-2 rounded bg-white hover:bg-slate-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+          <button id="pdf-prev" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Previous page"
+            aria-label="Previous page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" data-lucide="chevron-left" class="lucide lucide-chevron-left">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg></button>
+          <button id="pdf-next" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Next page"
+            aria-label="Next page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-lucide="chevron-right" class="lucide lucide-chevron-right">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg></button>
+          <button id="pdf-zoom-out" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Zoom out"
+            aria-label="Zoom out"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-lucide="zoom-out" class="lucide lucide-zoom-out">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+              <line x1="8" x2="14" y1="11" y2="11"></line>
+            </svg></button>
+          <button id="pdf-zoom-in" class="p-2 rounded bg-slate-100 hover:bg-slate-200" title="Zoom in"
+            aria-label="Zoom in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-lucide="zoom-in" class="lucide lucide-zoom-in">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+              <line x1="11" x2="11" y1="8" y2="14"></line>
+              <line x1="8" x2="14" y1="11" y2="11"></line>
+            </svg></button>
+          <a id="pdf-download" href="assets/portofolio-dian/CV_DIAN_MUKTI_WIBOWO.pdf" target="_blank" rel="noopener"
+            class="px-3 py-1 text-sm border rounded bg-slate-50" aria-label="Download PDF"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-lucide="download-cloud" class="lucide lucide-download-cloud">
+              <path d="M12 13v8l-4-4"></path>
+              <path d="m12 21 4-4"></path>
+              <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"></path>
+            </svg></a>
+          <button id="close-pdf-modal" aria-label="Close PDF" class="p-2 rounded bg-white hover:bg-slate-100"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x"
+              class="lucide lucide-x">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg></button>
         </div>
       </div>
       <div id="pdf-canvas-container" class="p-4 w-full overflow-auto flex-1 sm:max-h-[80vh]">
-        <div id="pdf-loading" class="flex items-center justify-center text-sm text-slate-500 py-10" style="display: flex;">Failed to load PDF</div>
+        <div id="pdf-loading" class="flex items-center justify-center text-sm text-slate-500 py-10"
+          style="display: flex;">Failed to load PDF</div>
         <canvas id="pdf-canvas" class="mx-auto block"></canvas>
       </div>
     </div>
@@ -640,7 +2147,7 @@
         `;
         document.body.appendChild(nav);
         // apply translations to dynamically created mobile nav (if loaded)
-        try { if (window.translationsIndex) changeLanguage(localStorage.getItem('selectedLanguage') || 'en'); } catch (e) {}
+        try { if (window.translationsIndex) changeLanguage(localStorage.getItem('selectedLanguage') || 'en'); } catch (e) { }
 
         // wire mobile Paten toggle (created inside the nav)
         const mobilePatenToggle = document.getElementById('mobile-paten-toggle');
@@ -1026,27 +2533,87 @@
 
   <!-- Language floating button (bottom-right) -->
   <div id="lang-fab" class="fixed z-50 right-4 bottom-4">
-    <button id="lang-fab-btn" aria-expanded="false" aria-haspopup="dialog" aria-controls="lang-modal" aria-label="Change language" class="bg-slate-900 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-300">
+    <button id="lang-fab-btn" aria-expanded="false" aria-haspopup="dialog" aria-controls="lang-modal"
+      aria-label="Change language"
+      class="bg-slate-900 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-300">
       <span id="lang-fab-flag" class="text-xl">🇺🇸</span><span class="sr-only">Language</span>
     </button>
 
     <!-- modal-style panel for language choices -->
-    <div id="lang-modal" role="dialog" aria-modal="true" aria-hidden="true" class="fixed right-4 bottom-20 bg-white rounded-lg shadow-lg w-56 overflow-hidden ring-1 ring-black/5 hidden">
+    <div id="lang-modal" role="dialog" aria-modal="true" aria-hidden="true"
+      class="fixed right-4 bottom-20 bg-white rounded-lg shadow-lg w-56 overflow-hidden ring-1 ring-black/5 hidden">
       <div class="p-2 border-b text-sm font-medium" data-i18n="select-language">Select language</div>
       <div class="max-h-64 overflow-auto">
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50 bg-slate-50" data-lang="en" aria-pressed="true"><div class="flex items-center gap-3"><span class="text-lg">🇺🇸</span><span>English</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: visible;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="id" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇮🇩</span><span>Bahasa Indonesia</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="zh" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇨🇳</span><span>中文</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="jp" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇯🇵</span><span>日本語</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="ar" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇸🇦</span><span>العربية</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="de" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇩🇪</span><span>Deutsch</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
-        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50" data-lang="pt" aria-pressed="false"><div class="flex items-center gap-3"><span class="text-lg">🇵🇹</span><span>Português</span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;"><path d="M20 6 9 17l-5-5"></path></svg></button>
+        <button type="button"
+          class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50 bg-slate-50"
+          data-lang="en" aria-pressed="true">
+          <div class="flex items-center gap-3"><span class="text-lg">🇺🇸</span><span>English</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: visible;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="id" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇮🇩</span><span>Bahasa Indonesia</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="zh" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇨🇳</span><span>中文</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="jp" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇯🇵</span><span>日本語</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="ar" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇸🇦</span><span>العربية</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="de" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇩🇪</span><span>Deutsch</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
+        <button type="button" class="lang-item flex items-center justify-between w-full px-4 py-2 hover:bg-slate-50"
+          data-lang="pt" aria-pressed="false">
+          <div class="flex items-center gap-3"><span class="text-lg">🇵🇹</span><span>Português</span></div><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
+            class="lucide lucide-check h-4 w-4 text-sky-600" aria-hidden="true" style="visibility: hidden;">
+            <path d="M20 6 9 17l-5-5"></path>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 
   <script>
-    (function(){
+    (function () {
       const fabBtn = document.getElementById('lang-fab-btn');
       const fabFlag = document.getElementById('lang-fab-flag');
       const modal = document.getElementById('lang-modal');
@@ -1054,16 +2621,16 @@
 
       const FLAGS = { en: '🇺🇸', id: '🇮🇩', zh: '🇨🇳', jp: '🇯🇵', ar: '🇸🇦', de: '🇩🇪', pt: '🇵🇹' };
 
-      function openModal(){ modal.classList.remove('hidden'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow = ''; }
-      function closeModal(){ modal.classList.add('hidden'); modal.setAttribute('aria-hidden','true'); try { if (fabBtn && typeof fabBtn.focus === 'function') fabBtn.focus(); } catch (e) {} }
-      function toggleModal(){ if (modal.classList.contains('hidden')) { openModal(); const active = items.find(i => i.getAttribute('data-lang') === (localStorage.getItem('selectedLanguage') || 'en')); if (active && typeof active.focus === 'function') active.focus(); } else { closeModal(); } }
+      function openModal() { modal.classList.remove('hidden'); modal.setAttribute('aria-hidden', 'false'); document.body.style.overflow = ''; }
+      function closeModal() { modal.classList.add('hidden'); modal.setAttribute('aria-hidden', 'true'); try { if (fabBtn && typeof fabBtn.focus === 'function') fabBtn.focus(); } catch (e) { } }
+      function toggleModal() { if (modal.classList.contains('hidden')) { openModal(); const active = items.find(i => i.getAttribute('data-lang') === (localStorage.getItem('selectedLanguage') || 'en')); if (active && typeof active.focus === 'function') active.focus(); } else { closeModal(); } }
 
-      fabBtn.addEventListener('click', function(e){ e.stopPropagation(); toggleModal(); });
-      document.addEventListener('click', function(e){ if (!modal.contains(e.target) && !fabBtn.contains(e.target)) closeModal(); });
-      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+      fabBtn.addEventListener('click', function (e) { e.stopPropagation(); toggleModal(); });
+      document.addEventListener('click', function (e) { if (!modal.contains(e.target) && !fabBtn.contains(e.target)) closeModal(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
       // delegate clicks to ensure reliability even if lucide mutates icons
-      modal.addEventListener('click', function(e){
+      modal.addEventListener('click', function (e) {
         const el = e.target.closest('[data-lang]');
         if (el && el.getAttribute) {
           const lang = el.getAttribute('data-lang');
@@ -1075,15 +2642,15 @@
       });
       items.forEach(btn => {
         // keyboard activation (Enter/Space)
-        btn.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const lang = btn.getAttribute('data-lang'); if (lang) { changeLanguage(lang); closeModal(); } } });
+        btn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const lang = btn.getAttribute('data-lang'); if (lang) { changeLanguage(lang); closeModal(); } } });
       });
 
-      window.updateLangFab = function(lang){
+      window.updateLangFab = function (lang) {
         // update FAB flag
         if (FLAGS[lang]) fabFlag.textContent = FLAGS[lang];
         // mark active item
-        items.forEach(b=>{
-          const is = b.getAttribute('data-lang')===lang;
+        items.forEach(b => {
+          const is = b.getAttribute('data-lang') === lang;
           b.classList.toggle('bg-slate-50', is);
           b.setAttribute('aria-pressed', is ? 'true' : 'false');
           // try to find a check icon that might be an <i data-lucide> or the replaced <svg>
@@ -1093,7 +2660,7 @@
             if (check) check.style.visibility = is ? 'visible' : 'hidden';
           } catch (e) { /* ignore */ }
         });
-        try{ if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons(); }catch(e){}
+        try { if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons(); } catch (e) { }
       };
 
       // apply selected language and persist
@@ -1125,10 +2692,10 @@
       // initialize: load translations and apply saved language
       const saved = localStorage.getItem('selectedLanguage') || 'en';
       // ensure default is persisted so subsequent loads are consistent
-      if (!localStorage.getItem('selectedLanguage')) try { localStorage.setItem('selectedLanguage', saved); } catch (e) {}
+      if (!localStorage.getItem('selectedLanguage')) try { localStorage.setItem('selectedLanguage', saved); } catch (e) { }
       // show initial FAB state immediately
-      try { if (typeof updateLangFab === 'function') updateLangFab(saved); } catch (e) {}
-      (function(){
+      try { if (typeof updateLangFab === 'function') updateLangFab(saved); } catch (e) { }
+      (function () {
         fetch('assets/i18n/translations.json').then(function (r) { if (!r.ok) throw new Error('Network error'); return r.json(); }).then(function (json) {
           window.translationsIndex = json;
           try { /* translations loaded */ } catch (e) { /* loaded translations */ }
@@ -1143,4 +2710,6 @@
   </script>
 
 
-</body></html>
+</body>
+
+</html>
