@@ -198,4 +198,21 @@
     "evenpedia-desc": "ベンダーとクライアントをつなぐオンラインイベント予約 & マーケットプレイス。役割：Web & モバイル開発者。",
     "halokatering-desc": "顧客とケータラーをつなぐオンラインケータリング予約プラットフォーム。役割：フロントエンド（ランディングページとアプリ UI）。",
     "sphp-desc": "インドネシア政府が運営する全国規模の米配布アプリ（SPHP）。供給者から販売店および一次顧客への米の配布を記録します。",
-    "panelharga-desc": "政府の調査員が収集したインドネシア全土の食料品価格を公開するダッシュボード。調査員が現地の市場価格を入力するためのアプ`
+"panelharga-desc": "政府の調査員が収集したインドネシア全土の食料品価格を公開するダッシュボード。調査員が現地の市場価格を入力するためのアプリも含みます。",
+    "indonesiacore-desc": "PT Incore Systems Solutions の企業プロフィールサイトで、Astro フレームワークと React を使用して構築されています。",
+    "brand": "Dian Mukti Wibowo",
+    "role": "Web・アプリ開発者",
+    "linkedin": "LinkedIn",
+    "cv-title": "履歴書 — Dian Mukti Wibowo",
+    "close-menu": "閉じる",
+    "nav-about": "概要",
+    "nav-portfolio": "ポートフォリオ",
+    "nav-contact": "連絡先",
+    "patent": "特許",
+    "patent-item": "Egrotek モバイル IoT アプリ",
+    "hero-desc": "スケーラブルで保守しやすい Web とモバイル アプリケーションを構築するフルスタック ソフトウェア エンジニア。Python、Go、PHP、TypeScript、Flutter を使用したエンドツーエンドのソリューションを専門としています。",
+    "footer-made-with": "作成：❤️ -",
+    "privacy-policy": "プライバシーポリシー",
+    "onyet-apps": "Onyet Apps"
+  }
+}
