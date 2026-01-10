@@ -48,7 +48,7 @@
     "nav-contact": "Contact",
     "patent": "Patent",
     "patent-item": "Mefomart mobile IoT application (Egrotek)",
-    "hero-desc": "Full‑stack software engineer building scalable, maintainable web and mobile applications. Specialist in end-to-end solutions using Python, Go, PHP, TypeScript, and Flutter. Currently active in LLMs and AI agents (e.g., OLLAMA, QWEN 2).",
+    "hero-desc": "Full‑stack software engineer building scalable, maintainable web and mobile applications. Specialist in end-to-end solutions using Python, Go, PHP, TypeScript, Flutter, and Ionic/CapacitorJS. Currently active in LLMs and AI agents (e.g., OLLAMA, QWEN 2).",
     "footer-made-with": "Made with ❤️ -",
     "privacy-policy": "Privacy policy",
     "onyet-apps": "Onyet Apps"
@@ -102,7 +102,7 @@
     "nav-contact": "Kontak",
     "patent": "Paten",
     "patent-item": "Aplikasi Mobile IOT Egrotek",
-    "hero-desc": "Insinyur perangkat lunak full‑stack yang membangun aplikasi web dan seluler yang skalabel dan mudah dipelihara. Spesialis solusi end‑to‑end menggunakan Python, Go, PHP, TypeScript, dan Flutter. Saat ini aktif dalam LLM dan agen AI (mis. OLLAMA, QWEN 2).",
+    "hero-desc": "Insinyur perangkat lunak full‑stack yang membangun aplikasi web dan seluler yang skalabel dan mudah dipelihara. Spesialis solusi end‑to‑end menggunakan Python, Go, PHP, TypeScript, Flutter, dan Ionic/CapacitorJS. Saat ini aktif dalam LLM dan agen AI (mis. OLLAMA, QWEN 2).",
     "footer-made-with": "Dibuat dengan ❤️ -",
     "privacy-policy": "Kebijakan Privasi",
     "onyet-apps": "Onyet Apps"
@@ -156,7 +156,7 @@
     "nav-contact": "联系",
     "patent": "专利",
     "patent-item": "Egrotek 移动物联网应用",
-    "hero-desc": "全栈软件工程师，构建可扩展、可维护的 Web 与移动应用。专长于使用 Python、Go、PHP、TypeScript 和 Flutter 的端到端解决方案。当前活跃于 LLM 与 AI 代理（例如 OLLAMA、QWEN 2）。",
+    "hero-desc": "全栈软件工程师，构建可扩展、可维护的 Web 与移动应用。专长于使用 Python、Go、PHP、TypeScript、Flutter 和 Ionic/CapacitorJS 的端到端解决方案。当前活跃于 LLM 与 AI 代理（例如 OLLAMA、QWEN 2）。",
     "footer-made-with": "由 ❤️ 制作 -",
     "privacy-policy": "隐私政策",
     "onyet-apps": "Onyet 应用"
@@ -210,7 +210,7 @@
     "nav-contact": "連絡先",
     "patent": "特許",
     "patent-item": "Egrotek モバイル IoT アプリ",
-    "hero-desc": "スケーラブルで保守しやすい Web とモバイル アプリケーションを構築するフルスタック ソフトウェア エンジニア。Python、Go、PHP、TypeScript、Flutter を使用したエンドツーエンドのソリューションを専門としています。",
+    "hero-desc": "スケーラブルで保守しやすい Web とモバイル アプリケーションを構築するフルスタック ソフトウェア エンジニア。Python、Go、PHP、TypeScript、Flutter、Ionic/CapacitorJS を使用したエンドツーエンドのソリューションを専門としています。",
     "footer-made-with": "作成：❤️ -",
     "privacy-policy": "プライバシーポリシー",
     "onyet-apps": "Onyet Apps"
@@ -264,7 +264,7 @@
     "nav-contact": "اتصل",
     "patent": "براءة اختراع",
     "patent-item": "تطبيق Mefomart المحمول لإنترنت الأشياء (Egrotek)",
-    "hero-desc": "مهندس برمجيات Full‑stack يبني تطبيقات ويب وموبايل قابلة للتوسع وسهلة الصيانة. متخصص في حلول شاملة باستخدام Python وGo وPHP وTypeScript وFlutter. أنا حاليًا أعمل على نماذج اللغة الكبيرة ووكلاء الذكاء الاصطناعي (مثل OLLAMA، QWEN 2).",
+    "hero-desc": "مهندس برمجيات Full‑stack يبني تطبيقات ويب وموبايل قابلة للتوسع وسهلة الصيانة. متخصص في حلول شاملة باستخدام Python وGo وPHP وTypeScript وFlutter وIonic/CapacitorJS. أنا حاليًا أعمل على نماذج اللغة الكبيرة ووكلاء الذكاء الاصطناعي (مثل OLLAMA، QWEN 2).",
     "footer-made-with": "مصنوع بحب ❤️",
     "privacy-policy": "سياسة الخصوصية",
     "onyet-apps": "Onyet Apps"
@@ -318,7 +318,7 @@
     "nav-contact": "Kontakt",
     "patent": "Patent",
     "patent-item": "Mefomart Mobile-IoT-Anwendung (Egrotek)",
-    "hero-desc": "Full‑Stack-Softwareingenieur, der skalierbare und wartbare Web- und Mobile-Anwendungen entwickelt. Spezialisiert auf End-to-End-Lösungen mit Python, Go, PHP, TypeScript und Flutter. Derzeit aktiv in LLMs und KI-Agenten (z. B. OLLAMA, QWEN 2).",
+    "hero-desc": "Full‑Stack-Softwareingenieur, der skalierbare und wartbare Web- und Mobile-Anwendungen entwickelt. Spezialisiert auf End-to-End-Lösungen mit Python, Go, PHP, TypeScript, Flutter und Ionic/CapacitorJS. Derzeit aktiv in LLMs und KI-Agenten (z. B. OLLAMA, QWEN 2).",
     "footer-made-with": "Mit ❤️ erstellt",
     "privacy-policy": "Datenschutz",
     "onyet-apps": "Onyet Apps"
@@ -372,7 +372,7 @@
     "nav-contact": "Contacto",
     "patent": "Patente",
     "patent-item": "Aplicação móvel IoT Mefomart (Egrotek)",
-    "hero-desc": "Engenheiro de software Full‑stack que constrói aplicações web e móveis escaláveis e fáceis de manter. Especialista em soluções end-to-end usando Python, Go, PHP, TypeScript e Flutter. Atualmente ativo em LLMs e agentes de IA (ex.: OLLAMA, QWEN 2).",
+    "hero-desc": "Engenheiro de software Full‑stack que constrói aplicações web e móveis escaláveis e fáceis de manter. Especialista em soluções end-to-end usando Python, Go, PHP, TypeScript, Flutter e Ionic/CapacitorJS. Atualmente ativo em LLMs e agentes de IA (ex.: OLLAMA, QWEN 2).",
     "footer-made-with": "Feito com ❤️ -",
     "privacy-policy": "Política de privacidade",
     "onyet-apps": "Onyet Apps"
