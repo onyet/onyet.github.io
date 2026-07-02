@@ -107,6 +107,48 @@
       backdrop-filter: blur(12px);
     }
 
+    .section-eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgb(71 85 105);
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(148, 163, 184, 0.32), rgba(148, 163, 184, 0.08));
+    }
+
+    .hero-summary-grid {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .hero-summary-item {
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 1.15rem;
+      padding: 1rem 1.05rem;
+    }
+
+    .hero-summary-item strong {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: rgb(15 23 42);
+      font-weight: 600;
+    }
+
+    .subsection-surface {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 28%),
+        rgba(255, 255, 255, 0.88);
+      border-radius: 1.75rem;
+    }
+
     .soft-grid {
       --grid-shift-x: 0px;
       --grid-shift-y: 0px;
@@ -1478,6 +1520,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr))
       }
 
+      .md\:hero-summary-grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
       .md\:flex-row {
         flex-direction: row
       }
@@ -1517,7 +1563,7 @@
           <img src="/assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" class="w-12 h-12 rounded-full object-cover border">
           <div class="leading-tight">
             <div class="font-semibold" data-i18n="brand">Dian Mukti Wibowo</div>
-            <div class="text-sm text-slate-500" data-i18n="role">Software Engineer · Sistem Web, Mobile &amp; AI</div>
+            <div class="text-sm text-slate-500" data-i18n="role">Senior Software Engineer</div>
           </div>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
@@ -1557,9 +1603,9 @@
         <div class="grid-spotlight" aria-hidden="true"></div>
         <div class="max-w-5xl mx-auto px-6 lg:grid lg:grid-cols-[minmax(0,1.08fr)_minmax(300px,0.92fr)] lg:gap-10 items-start">
           <div>
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-sky-700 shadow-sm" data-i18n="hero-kicker">Portofolio Software Engineer</div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-sky-700 shadow-sm" data-i18n="hero-kicker">Software Kawasan Berikat &amp; Kepabeanan</div>
             <h1 class="mt-5 text-4xl sm:text-[4.2rem] font-extrabold leading-[0.98] tracking-[-0.03em] text-slate-950">Dian Mukti Wibowo</h1>
-            <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700" data-i18n="hero-desc">Saya merancang dan membangun software yang andal untuk operasional, layanan publik, dan produk digital di ranah web, mobile, serta alur kerja berbantuan AI.</p>
+            <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700" data-i18n="hero-desc">Saya merancang dan membangun software yang andal untuk IT Inventory, operasional kawasan berikat, integrasi kepabeanan Host-to-Host, dan sistem bisnis internal di ranah web, mobile, serta backend.</p>
             <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
               <button id="view-cv-btn" type="button" aria-haspopup="dialog" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-slate-950 text-white px-4 py-2 rounded-xl shadow hover:shadow-md focus:ring-2 focus:ring-sky-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1572,15 +1618,15 @@
               </button>
               <a href="#portfolio" data-i18n="see-projects" class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-slate-800 border border-slate-300 bg-white/80 rounded-xl hover:bg-white">Lihat proyek</a>
             </div>
-            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">Halaman ini menampilkan pilihan karya utama. CV terbaru memuat riwayat pengalaman, detail pendukung, dan referensi tambahan.</span></div>
+            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">Halaman ini menampilkan karya terpilih di area sistem kawasan berikat, software operasional, dan delivery produk. CV terbaru memuat konteks proyek serta detail implementasi tambahan.</span></div>
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">Fokus kerja</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">Platform web, aplikasi mobile, dan sistem internal</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">Domain utama</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">IT Inventory, sistem kawasan berikat, dan platform operasional internal</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">Pendekatan</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">Arsitektur praktis, delivery terawat, handover yang jelas</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">Cakupan integrasi</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">Host-to-Host Bea Cukai, INSW, API, traceability, dan alur pelaporan</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
                 <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-3-label">Berlokasi di</div>
@@ -1590,27 +1636,27 @@
           </div>
 
           <div class="mt-10 lg:mt-0">
-            <div class="section-panel rounded-[1.75rem] p-5 shadow-md">
-              <div class="text-xs uppercase tracking-[0.2em] text-slate-500" data-i18n="hero-summary-kicker">Ringkasan profesional</div>
-              <h2 class="mt-2 text-[1.65rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">Berfokus pada software yang berguna dan mudah dirawat</h2>
-              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">Pekerjaan saya biasanya memadukan implementasi produk, integrasi backend, dan pemahaman operasional sehingga software bukan hanya selesai dibuat, tetapi juga praktis dipakai dan dipelihara.</p>
+            <div class="section-panel rounded-[1.75rem] p-6 shadow-md">
+              <div class="section-eyebrow" data-i18n="hero-summary-kicker">Ringkasan profesional</div>
+              <h2 class="mt-2 text-[1.5rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">Spesialis di sistem operasional, tetap fleksibel untuk domain lain</h2>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">Pengalaman terkuat saya memang di IT Inventory, alur kawasan berikat, dan sistem yang terhubung ke kepabeanan, tetapi saya juga tetap mengerjakan software operasional yang lebih luas, produk sektor publik, dan platform bisnis internal.</p>
 
-              <div class="mt-5 space-y-3">
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-side-label-1">Stack utama</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-side-value-1">Python, Go, PHP, TypeScript, Flutter</div>
+              <div class="section-divider mt-5"></div>
+
+              <div class="mt-5 hero-summary-grid md:hero-summary-grid-2">
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">Spesialisasi utama</div>
+                  <strong data-i18n="hero-summary-row-1-value">IT Inventory untuk kawasan berikat dan fasilitas yang diatur, dengan pelacakan barang, dashboard operasional, serta integrasi Host-to-Host ke Bea Cukai dan INSW.</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div>
-                    <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">Karya yang sudah terbit</div>
-                    <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-1-value">Beberapa aplikasi Android sudah dipublikasikan melalui profil developer Google Play.</div>
-                    <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="hero-secondary-cta">Lihat aplikasi yang sudah terbit</a>
-                  </div>
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">Cakupan yang lebih luas</div>
+                  <strong data-i18n="hero-summary-row-2-value">Saya juga mengerjakan platform web, aplikasi mobile, dashboard pelaporan, workflow tools, dan sistem internal di luar domain kepabeanan.</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">Gaya bekerja</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-2-value">Ruang lingkup yang jelas, keputusan yang praktis, dan delivery yang tetap mudah dipahami oleh tim berikutnya yang akan merawatnya.</div>
-                </div>
+              </div>
+
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a href="#about" class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="hero-secondary-cta">Lihat area spesialisasi</a>
+                <a href="#contact" class="inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-white" data-i18n="hero-contact-cta">Diskusikan proyek</a>
               </div>
             </div>
           </div>
@@ -1622,13 +1668,13 @@
         <div class="max-w-5xl mx-auto">
           <div>
             <h2 class="text-2xl font-bold" data-i18n="about-title">Tentang</h2>
-            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">Saya mengerjakan perangkat lunak untuk kebutuhan produk maupun operasional, membantu tim mengubah alur kerja yang kompleks menjadi sistem digital yang lebih andal, mudah dijalankan, dan siap dikembangkan.</p>
-            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">Saya menghargai proses delivery yang matang: ruang lingkup yang jelas, implementasi yang stabil, dan software yang tetap praktis setelah rilis.</p>
+            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">Saya membangun software operasional untuk organisasi yang membutuhkan kontrol inventori yang andal, alur kerja yang terhubung ke kepabeanan, dan sistem internal yang tetap praktis setelah go-live, sambil tetap terbuka pada pekerjaan produk dan platform di domain lain.</p>
+            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">Kekuatan utama saya ada di persimpangan antara software, kepatuhan, dan tekanan operasional nyata: inventori kawasan berikat, integrasi kepabeanan, dan sistem yang membutuhkan audit trail yang dapat diandalkan.</p>
 
             <div class="mt-8 grid gap-4 sm:grid-cols-3">
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="what-i-do">Apa yang saya lakukan</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Merancang dan mengirimkan sistem end-to-end mulai dari antarmuka produk, layanan backend, API, hingga alur deployment.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Merancang dan mengirimkan platform IT Inventory, sistem web operasional, aplikasi mobile, API, dan integrasi Host-to-Host untuk proses bisnis yang diatur secara ketat.</p>
               </div>
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
@@ -1638,14 +1684,14 @@
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="focus-title">Fokus</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Rilis yang andal, arsitektur yang terawat, dan software yang benar-benar mendukung kebutuhan operasional.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Alur kerja kawasan berikat, traceability, pertukaran data kepabeanan, arsitektur yang terawat, dan delivery yang mendukung operasi sensitif kepatuhan tanpa menutup fleksibilitas untuk domain software lain.</p>
               </div>
             </div>
 
             <div class="mt-6 section-panel rounded-2xl p-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">Butuh developer yang bisa menjembatani produk, engineering, dan delivery?</div>
-                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">Saya terbuka untuk proyek freelance terpilih, kontrak, dan kolaborasi pengembangan produk.</p>
+                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">Butuh developer untuk IT Inventory, integrasi kepabeanan, atau sistem operasional?</div>
+                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">Saya terbuka untuk proyek freelance terpilih, kontrak, dan kolaborasi yang melibatkan software kawasan berikat, integrasi Host-to-Host, dan platform internal.</p>
               </div>
               <div class="flex items-center gap-3">
               <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm" data-i18n="see-projects">Lihat proyek</a>
@@ -1661,29 +1707,9 @@
       <!-- Portfolio -->
       <section id="portfolio" class="bg-slate-50 py-16">
         <div class="max-w-5xl mx-auto px-6">
-          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <h2 class="text-2xl font-bold" data-i18n="portfolio-title">Portofolio</h2>
-              <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">Pilihan karya pada platform web, sistem operasional, dan produk mobile untuk kebutuhan komersial, sektor publik, dan proses bisnis internal.</p>
-            </div>
-            <div class="grid gap-4 lg:max-w-2xl lg:grid-cols-2">
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="playstore-dev-label">Portofolio tambahan</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="playstore-dev-title">Portofolio developer Google Play</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="playstore-dev-desc">Gambaran yang lebih luas tentang karya Android yang telah dipublikasikan, termasuk aplikasi untuk kebutuhan komersial dan operasional lapangan.</p>
-                <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="playstore-dev-link">Buka portofolio Google Play</a>
-              </div>
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="patent-portfolio-label">Portofolio paten</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="patent-portfolio-title">Kekayaan intelektual terdaftar</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="patent-portfolio-desc">Halaman registrasi publik untuk paten dan kekayaan intelektual terpilih yang berkaitan dengan embedded system, IoT, dan antarmuka kontrol berbasis web.</p>
-                <div class="mt-3 space-y-2 text-sm">
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-1">Aplikasi Mobile Egrotek</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-2">Web GUI Setting Konfigurasi Monitoring Trafo 3 Phase berbasis ESP32</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-3">Web GUI Setting Konfigurasi Sensor Waterflow berbasis ESP32</a>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h2 class="text-2xl font-bold" data-i18n="portfolio-title">Portofolio</h2>
+            <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">Pilihan karya pada IT Inventory, operasional kawasan berikat, platform yang terhubung ke kepabeanan, sistem sektor publik, dan produk mobile yang dipakai dalam proses bisnis nyata.</p>
           </div>
 
           <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1700,7 +1726,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Mefomart</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">Platform ERP yang saya bangun secara mandiri untuk Koperasi Semen Nusantara di Cilacap, mencakup alur perdagangan, inventaris, pergudangan, pemasok, konsinyasi, POS, dan pelaporan terintegrasi.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">Platform ERP yang saya bangun secara mandiri untuk Koperasi Semen Nusantara di Cilacap, mencakup alur perdagangan, inventaris, pergudangan, pemasok, konsinyasi, POS, dan pelaporan terintegrasi untuk operasional harian.</p>
                 <div class="mt-4 flex items-center gap-3">
                   <!-- no external site link available -->
                 </div>
@@ -1777,7 +1803,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Panel Harga Pangan - BAPANAS</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">Dashboard publik harga pangan yang didukung input enumerator lapangan di seluruh Indonesia, termasuk aplikasi operasional untuk pencatatan harga pasar lokal.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">Dashboard publik harga pangan yang didukung input enumerator lapangan di seluruh Indonesia, termasuk aplikasi operasional untuk pencatatan harga pasar lokal dan menjaga konsistensi alur pelaporan lapangan.</p>
                 <div class="mt-4 flex items-center gap-3">
                   <a href="https://panelharga.badanpangan.go.id" data-i18n="open-site" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Buka situs</a>
                   <a href="https://play.google.com/store/apps/details?id=com.petugaspanelhargapangan.app&amp;hl=id" data-i18n="play-store" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Play Store</a>
@@ -1836,7 +1862,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Online Beacukai</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">Platform pelaporan logistik dan kepabeanan untuk perusahaan kawasan berikat, eksportir, dan importir. Kontribusi saya berfokus pada implementasi frontend dan delivery aplikasi mobile.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">Platform pelaporan logistik dan kepabeanan untuk perusahaan kawasan berikat, eksportir, dan importir. Pekerjaan ini sangat dekat dengan spesialisasi saya pada software kepabeanan operasional, alur inventori, dan antarmuka pelaporan yang diatur.</p>
                 <div class="mt-4 flex items-center gap-3">
                   <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t')" class="text-sm text-sky-600 hover:underline">Buka situs</button>
                 </div>
@@ -1928,6 +1954,40 @@
 
           <div class="mt-6 text-center">
             <button data-i18n="more-projects" onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl">Proyek lainnya di GitHub</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="published-work" class="py-10">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="playstore-dev-label">Portofolio tambahan</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="playstore-dev-title">Portofolio developer Google Play</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="playstore-dev-desc">Gambaran yang lebih luas tentang karya Android yang telah dipublikasikan, termasuk aplikasi yang mendukung operasional lapangan, alur bisnis, dan proses layanan publik.</p>
+          </div>
+          <div class="subsection-surface p-6 shadow-sm md:grid md:grid-cols-2 md:items-center md:gap-6">
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Google Play</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="playstore-dev-note">Aplikasi dan game yang sudah dipublikasikan di profil developer publik, terpisah dari studi kasus pilihan di atas.</p>
+            </div>
+            <div class="mt-4 md:mt-0 md:flex md:justify-end">
+              <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="playstore-dev-link">Buka portofolio Google Play</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="patents" class="pb-16">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="patent-portfolio-label">Portofolio paten</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="patent-portfolio-title">Kekayaan intelektual terdaftar</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="patent-portfolio-desc">Halaman registrasi publik untuk paten dan kekayaan intelektual terpilih yang berkaitan dengan embedded system, IoT, dan antarmuka kontrol berbasis web.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-1">Aplikasi Mobile Egrotek</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-2">Web GUI Setting Konfigurasi Monitoring Trafo 3 Phase berbasis ESP32</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-3">Web GUI Setting Konfigurasi Sensor Waterflow berbasis ESP32</a>
           </div>
         </div>
       </section>

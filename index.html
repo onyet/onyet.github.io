@@ -110,6 +110,48 @@
       backdrop-filter: blur(12px);
     }
 
+    .section-eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgb(71 85 105);
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(148, 163, 184, 0.32), rgba(148, 163, 184, 0.08));
+    }
+
+    .hero-summary-grid {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .hero-summary-item {
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 1.15rem;
+      padding: 1rem 1.05rem;
+    }
+
+    .hero-summary-item strong {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: rgb(15 23 42);
+      font-weight: 600;
+    }
+
+    .subsection-surface {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 28%),
+        rgba(255, 255, 255, 0.88);
+      border-radius: 1.75rem;
+    }
+
     .soft-grid {
       --grid-shift-x: 0px;
       --grid-shift-y: 0px;
@@ -1481,6 +1523,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr))
       }
 
+      .md\:hero-summary-grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
       .md\:flex-row {
         flex-direction: row
       }
@@ -1521,7 +1567,7 @@
             class="w-12 h-12 rounded-full object-cover border">
           <div class="leading-tight">
             <div class="font-semibold" data-i18n="brand">Dian Mukti Wibowo</div>
-            <div class="text-sm text-slate-500" data-i18n="role">Software Engineer · Web, Mobile &amp; AI Systems</div>
+            <div class="text-sm text-slate-500" data-i18n="role">Senior Software Engineer</div>
           </div>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
@@ -1579,10 +1625,10 @@
         <div class="max-w-5xl mx-auto px-6 lg:grid lg:grid-cols-[minmax(0,1.08fr)_minmax(300px,0.92fr)] lg:gap-10 items-start">
           <div>
             <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-sky-700 shadow-sm"
-              data-i18n="hero-kicker">Software Engineer Portfolio</div>
+              data-i18n="hero-kicker">Bonded Zone &amp; Customs Software</div>
             <h1 class="mt-5 text-4xl sm:text-[4.2rem] font-extrabold leading-[0.98] tracking-[-0.03em] text-slate-950">Dian Mukti Wibowo</h1>
             <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700" data-i18n="hero-desc">I design and build dependable software for
-              operations, public services, and digital products across web, mobile, and AI-assisted workflows.</p>
+              IT Inventory, bonded-zone operations, Host-to-Host customs integration, and other internal business systems across web, mobile, and backend workflows.</p>
             <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
               <button id="view-cv-btn" type="button" aria-haspopup="dialog"
                 class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-slate-950 text-white px-4 py-2 rounded-xl shadow hover:shadow-md focus:ring-2 focus:ring-sky-300">
@@ -1600,16 +1646,16 @@
                 class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-slate-800 border border-slate-300 bg-white/80 rounded-xl hover:bg-white">See
                 projects</a>
             </div>
-            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">This page highlights selected work.
-                The latest CV includes experience history, supporting details, and additional references.</span></div>
+            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">This page highlights selected work in bonded-zone systems,
+                operational software, and product delivery. The latest CV includes additional project context and implementation details.</span></div>
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">Primary work</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">Web platforms, mobile apps, and internal systems</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">Primary domain</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">IT Inventory, bonded-zone systems, and internal operational platforms</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">Approach</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">Practical architecture, maintainable delivery, clear handover</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">Integration scope</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">Host-to-Host Bea Cukai, INSW, APIs, traceability, and reporting workflows</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
                 <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-3-label">Based in</div>
@@ -1619,28 +1665,27 @@
           </div>
 
           <div class="mt-10 lg:mt-0">
-            <div class="section-panel rounded-[1.75rem] p-5 shadow-md">
-              <div class="text-xs uppercase tracking-[0.2em] text-slate-500" data-i18n="hero-summary-kicker">Professional summary</div>
-              <h2 class="mt-2 text-[1.65rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">Focused on useful, maintainable software</h2>
-              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">My work typically combines product implementation, backend integration, and operational understanding so software is not only delivered, but also practical to use and maintain.</p>
+            <div class="section-panel rounded-[1.75rem] p-6 shadow-md">
+              <div class="section-eyebrow" data-i18n="hero-summary-kicker">Professional summary</div>
+              <h2 class="mt-2 text-[1.5rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">Specialized in operational systems, flexible across other domains</h2>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">My strongest experience is in IT Inventory, bonded-zone workflows, and customs-connected systems, but I also work across broader operational software, public-sector products, and internal business platforms.</p>
 
-              <div class="mt-5 space-y-3">
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-side-label-1">Core stack</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-side-value-1">Python, Go, PHP, TypeScript, Flutter</div>
+              <div class="section-divider mt-5"></div>
+
+              <div class="mt-5 hero-summary-grid md:hero-summary-grid-2">
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">Main specialization</div>
+                  <strong data-i18n="hero-summary-row-1-value">IT Inventory for bonded zones and regulated facilities, including goods movement tracking, operational dashboards, and Host-to-Host integration with Bea Cukai and INSW.</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div>
-                    <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">Published work</div>
-                    <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-1-value">Several Android applications are already published through the Google Play developer profile.</div>
-                    <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener"
-                      class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="hero-secondary-cta">View published apps</a>
-                  </div>
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">Broader delivery</div>
+                  <strong data-i18n="hero-summary-row-2-value">I also build web platforms, mobile apps, reporting dashboards, workflow tools, and internal systems outside the customs domain when the problem space fits.</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">Working style</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-2-value">Clear scope, practical decisions, and delivery that stays understandable for the next team maintaining it.</div>
-                </div>
+              </div>
+
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a href="#about" class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="hero-secondary-cta">See specialization areas</a>
+                <a href="#contact" class="inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-white" data-i18n="hero-contact-cta">Discuss a project</a>
               </div>
             </div>
           </div>
@@ -1652,17 +1697,16 @@
         <div class="max-w-5xl mx-auto">
           <div>
             <h2 class="text-2xl font-bold" data-i18n="about-title">About</h2>
-            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">I work across product-facing and
-              operational software, helping teams turn complex workflows into reliable digital tools that are easier to
-              run, scale, and maintain.</p>
-            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">I value thoughtful delivery: clear scope,
-              stable implementation, and software that remains practical after launch.</p>
+            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">I build operational software for
+              organizations that need reliable inventory control, customs-connected workflows, and internal systems that stay practical after go-live.</p>
+            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">My strongest work sits where software,
+              compliance, and real operational pressure meet: bonded-zone inventory, customs integration, and systems that need dependable audit trails.</p>
 
             <div class="mt-8 grid gap-4 sm:grid-cols-3">
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="what-i-do">What I do</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Build end-to-end web and mobile
-                  systems - frontend, backend, APIs, and deployment pipelines.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">Design and deliver IT Inventory
+                  platforms, operational web systems, mobile apps, APIs, and Host-to-Host integrations for regulated business processes.</p>
               </div>
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
@@ -1673,15 +1717,15 @@
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="focus-title">Focus</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Reliability, performance, and clean,
-                  maintainable code.</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">Bonded-zone workflows, traceability,
+                  customs data exchange, maintainable architecture, and delivery that supports compliance-heavy operations.</p>
               </div>
             </div>
 
             <div class="mt-6 section-panel rounded-2xl p-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">Need a developer who can bridge product, engineering, and delivery?</div>
-                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">I am available for selected freelance, contract, and collaborative product work.</p>
+                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">Need a developer for IT Inventory, customs integration, or operational systems?</div>
+                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">I am available for selected freelance, contract, and collaborative work involving bonded-zone software, Host-to-Host integration, and internal platforms.</p>
               </div>
               <div class="flex items-center gap-3">
               <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm"
@@ -1699,35 +1743,10 @@
       <!-- Portfolio -->
       <section id="portfolio" class="bg-slate-50 py-16">
         <div class="max-w-5xl mx-auto px-6">
-          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <h2 class="text-2xl font-bold" data-i18n="portfolio-title">Portfolio</h2>
-              <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">Selected work across web
-                platforms, operational systems, and mobile products for commerce, public sector, and internal business
-                processes.</p>
-            </div>
-            <div class="grid gap-4 lg:max-w-2xl lg:grid-cols-2">
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="playstore-dev-label">Additional portfolio</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="playstore-dev-title">Google Play developer portfolio</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="playstore-dev-desc">A broader view of published Android work, including apps used in commerce and field operations.</p>
-                <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener"
-                  class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="playstore-dev-link">Open Google Play portfolio</a>
-              </div>
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="patent-portfolio-label">Patent portfolio</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="patent-portfolio-title">Registered intellectual property</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="patent-portfolio-desc">Public registration pages for selected patents and intellectual property related to embedded systems, IoT, and web-based control interfaces.</p>
-                <div class="mt-3 space-y-2 text-sm">
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener"
-                    class="block text-sky-700 hover:underline" data-i18n="patent-item-1">Aplikasi Mobile Egrotek</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener"
-                    class="block text-sky-700 hover:underline" data-i18n="patent-item-2">Web GUI Setting Konfigurasi Monitoring Trafo 3 Phase berbasis ESP32</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener"
-                    class="block text-sky-700 hover:underline" data-i18n="patent-item-3">Web GUI Setting Konfigurasi Sensor Waterflow berbasis ESP32</a>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h2 class="text-2xl font-bold" data-i18n="portfolio-title">Portfolio</h2>
+            <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">Selected work across IT
+              Inventory, bonded-zone operations, customs-connected platforms, public-sector systems, and mobile products used in real business processes.</p>
           </div>
 
           <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1753,9 +1772,8 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Mefomart</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">First ERP I built independently for
-                  Koperasi Semen Nusantara in Cilacap. Features: online store, multi-store, multi-warehouse, inventory
-                  and supplier management, consignment management, POS, and integrated reporting.</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">An ERP platform built independently for
+                  Koperasi Semen Nusantara in Cilacap, covering commerce, inventory, warehousing, suppliers, consignment flows, POS, and integrated reporting for daily operations.</p>
                 <div class="mt-4 flex items-center gap-3">
                   <!-- no external site link available -->
                 </div>
@@ -2123,6 +2141,44 @@
           <div class="mt-6 text-center">
             <button data-i18n="more-projects" onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')"
               class="px-5 py-2.5 bg-slate-900 text-white rounded-xl">More projects on GitHub</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="published-work" class="py-10">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="playstore-dev-label">Additional portfolio</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="playstore-dev-title">Google Play developer portfolio</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="playstore-dev-desc">A broader view of published Android work, including applications that support field operations, business workflows, and public-service processes.</p>
+          </div>
+          <div class="subsection-surface p-6 shadow-sm md:grid md:grid-cols-2 md:items-center md:gap-6">
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Google Play</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="playstore-dev-note">Published apps and games under the public developer profile, separate from the selected case studies above.</p>
+            </div>
+            <div class="mt-4 md:mt-0 md:flex md:justify-end">
+              <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener"
+                class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="playstore-dev-link">Open Google Play portfolio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="patents" class="pb-16">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="patent-portfolio-label">Patent portfolio</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="patent-portfolio-title">Registered intellectual property</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="patent-portfolio-desc">Public registration pages for selected patents and intellectual property related to embedded systems, IoT, and web-based control interfaces.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener"
+              class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-1">Aplikasi Mobile Egrotek</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener"
+              class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-2">Web GUI Setting Konfigurasi Monitoring Trafo 3 Phase berbasis ESP32</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener"
+              class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-3">Web GUI Setting Konfigurasi Sensor Waterflow berbasis ESP32</a>
           </div>
         </div>
       </section>

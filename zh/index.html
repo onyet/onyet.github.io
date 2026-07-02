@@ -107,6 +107,48 @@
       backdrop-filter: blur(12px);
     }
 
+    .section-eyebrow {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgb(71 85 105);
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(148, 163, 184, 0.32), rgba(148, 163, 184, 0.08));
+    }
+
+    .hero-summary-grid {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .hero-summary-item {
+      border: 1px solid rgba(226, 232, 240, 0.95);
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 1.15rem;
+      padding: 1rem 1.05rem;
+    }
+
+    .hero-summary-item strong {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.97rem;
+      line-height: 1.7;
+      color: rgb(15 23 42);
+      font-weight: 600;
+    }
+
+    .subsection-surface {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 28%),
+        rgba(255, 255, 255, 0.88);
+      border-radius: 1.75rem;
+    }
+
     .soft-grid {
       --grid-shift-x: 0px;
       --grid-shift-y: 0px;
@@ -1478,6 +1520,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr))
       }
 
+      .md\:hero-summary-grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
       .md\:flex-row {
         flex-direction: row
       }
@@ -1517,7 +1563,7 @@
           <img src="/assets/portofolio-dian/image206.png" alt="Dian Mukti Wibowo" class="w-12 h-12 rounded-full object-cover border">
           <div class="leading-tight">
             <div class="font-semibold" data-i18n="brand">Dian Mukti Wibowo</div>
-            <div class="text-sm text-slate-500" data-i18n="role">网页与应用开发者 · LLM 与 AI 代理研究者</div>
+            <div class="text-sm text-slate-500" data-i18n="role">Senior Software Engineer</div>
           </div>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
@@ -1557,9 +1603,9 @@
         <div class="grid-spotlight" aria-hidden="true"></div>
         <div class="max-w-5xl mx-auto px-6 lg:grid lg:grid-cols-[minmax(0,1.08fr)_minmax(300px,0.92fr)] lg:gap-10 items-start">
           <div>
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-sky-700 shadow-sm" data-i18n="hero-kicker">软件工程师作品集</div>
+            <div class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-sky-700 shadow-sm" data-i18n="hero-kicker">保税区与海关软件</div>
             <h1 class="mt-5 text-4xl sm:text-[4.2rem] font-extrabold leading-[0.98] tracking-[-0.03em] text-slate-950">Dian Mukti Wibowo</h1>
-            <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700" data-i18n="hero-desc">全栈软件工程师，构建可扩展、可维护的 Web 与移动应用。专长于使用 Python、Go、PHP、TypeScript、Flutter 和 Ionic/CapacitorJS 的端到端解决方案。当前活跃于 LLM 与 AI 代理（例如 OLLAMA、QWEN 2）。</p>
+            <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-700" data-i18n="hero-desc">我设计并构建可靠的软件，用于 IT Inventory、保税区运营、Host-to-Host 海关集成，以及覆盖 Web、移动端与后端的内部业务系统。</p>
             <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
               <button id="view-cv-btn" type="button" aria-haspopup="dialog" class="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-slate-950 text-white px-4 py-2 rounded-xl shadow hover:shadow-md focus:ring-2 focus:ring-sky-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1572,15 +1618,15 @@
               </button>
               <a href="#portfolio" data-i18n="see-projects" class="inline-flex w-full sm:w-auto justify-center px-4 py-2 text-slate-800 border border-slate-300 bg-white/80 rounded-xl hover:bg-white">查看项目</a>
             </div>
-            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">更多详情请参阅可下载的简历。联系信息列在此页面。</span></div>
+            <div class="mt-6 text-sm text-slate-600"><span data-i18n="more-details">本页展示我在保税区系统、运营软件和产品交付方面的代表性工作。完整简历包含更多项目背景与实现细节。</span></div>
             <div class="mt-8 grid gap-3 sm:grid-cols-3">
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">主要工作</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">Web 平台、移动应用与内部系统</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-1-label">核心领域</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-1-value">IT Inventory、保税区系统与内部运营平台</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">方法</div>
-                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">务实架构、可维护交付、清晰交接</div>
+                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-2-label">集成范围</div>
+                <div class="mt-2 text-sm font-medium text-slate-900" data-i18n="hero-chip-2-value">Bea Cukai Host-to-Host、INSW、API、可追溯性与报表流程</div>
               </div>
               <div class="section-panel rounded-2xl px-4 py-3.5">
                 <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-chip-3-label">所在地</div>
@@ -1590,27 +1636,27 @@
           </div>
 
           <div class="mt-10 lg:mt-0">
-            <div class="section-panel rounded-[1.75rem] p-5 shadow-md">
-              <div class="text-xs uppercase tracking-[0.2em] text-slate-500" data-i18n="hero-summary-kicker">职业概览</div>
-              <h2 class="mt-2 text-[1.65rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">专注于有用且易维护的软件</h2>
-              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">我的工作通常结合产品实现、后端集成与运营理解，使软件不仅能交付，还真正易于使用和维护。</p>
+            <div class="section-panel rounded-[1.75rem] p-6 shadow-md">
+              <div class="section-eyebrow" data-i18n="hero-summary-kicker">职业概览</div>
+              <h2 class="mt-2 text-[1.5rem] leading-tight font-semibold text-slate-950" data-i18n="hero-summary-title">专长于运营系统，也能覆盖其他领域</h2>
+              <p class="mt-3 text-sm leading-7 text-slate-600" data-i18n="hero-summary-desc">我最强的经验在 IT Inventory、保税区流程和海关相关系统，但我也同样承接更广泛的运营软件、公共部门产品和内部业务平台工作。</p>
 
-              <div class="mt-5 space-y-3">
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-side-label-1">核心技术栈</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-side-value-1">Python、Go、PHP、TypeScript、Flutter</div>
+              <div class="section-divider mt-5"></div>
+
+              <div class="mt-5 hero-summary-grid md:hero-summary-grid-2">
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">主要专长</div>
+                  <strong data-i18n="hero-summary-row-1-value">面向保税区和受监管设施的 IT Inventory，涵盖货物流转追踪、运营仪表盘，以及与 Bea Cukai 和 INSW 的 Host-to-Host 集成。</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div>
-                    <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-1-label">已发布作品</div>
-                    <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-1-value">多个 Android 应用已通过 Google Play 开发者主页公开发布。</div>
-                    <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="hero-secondary-cta">查看已发布应用</a>
-                  </div>
+                <div class="hero-summary-item">
+                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">更广交付范围</div>
+                  <strong data-i18n="hero-summary-row-2-value">我也会构建 Web 平台、移动应用、报表仪表盘、工作流工具，以及海关领域之外的内部系统。</strong>
                 </div>
-                <div class="rounded-2xl border border-slate-200 bg-white px-5 py-3.5">
-                  <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="hero-summary-row-2-label">工作风格</div>
-                  <div class="mt-2 text-sm font-medium leading-7 text-slate-900" data-i18n="hero-summary-row-2-value">清晰的范围、务实的决策，以及让后续维护团队也容易理解的交付成果。</div>
-                </div>
+              </div>
+
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a href="#about" class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="hero-secondary-cta">查看专长方向</a>
+                <a href="#contact" class="inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-white" data-i18n="hero-contact-cta">讨论项目</a>
               </div>
             </div>
           </div>
@@ -1622,13 +1668,13 @@
         <div class="max-w-5xl mx-auto">
           <div>
             <h2 class="text-2xl font-bold" data-i18n="about-title">关于</h2>
-            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">全栈软件工程师，构建可扩展、可维护的 Web 与移动应用。我专注于能快速交付价值的务实解决方案。</p>
-            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">我重视周到的交付方式：清晰的范围、稳定的实现，以及上线后依然实用的软件。</p>
+            <p class="mt-4 text-slate-600 max-w-3xl leading-7" data-i18n="about-desc">我为需要可靠库存控制、海关相关流程以及长期可用内部系统的组织构建运营软件，同时也愿意在其他领域承担合适的产品与平台开发工作。</p>
+            <p class="mt-3 text-slate-500 font-medium" data-i18n="about-quote">我最强的能力位于软件、合规要求与真实运营压力的交叉点：保税区库存、海关集成，以及需要稳定审计追踪的系统。</p>
 
             <div class="mt-8 grid gap-4 sm:grid-cols-3">
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="what-i-do">我的工作</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">构建端到端的 Web 与移动系统——前端、后端、API 和部署流水线。</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="what-i-do-desc">设计并交付 IT Inventory 平台、运营 Web 系统、移动应用、API，以及面向受监管业务流程的 Host-to-Host 集成。</p>
               </div>
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
@@ -1638,14 +1684,14 @@
 
               <div class="section-panel p-6 rounded-2xl shadow-sm">
                 <div class="text-slate-800 font-semibold" data-i18n="focus-title">关注点</div>
-                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">可靠性、性能以及干净、可维护的代码。</p>
+                <p class="mt-2 text-slate-600 text-sm" data-i18n="focus-desc">保税区流程、库存可追溯性、海关数据交换、可维护架构，以及支持高合规运营的交付，同时保留对其他软件领域的灵活性。</p>
               </div>
             </div>
 
             <div class="mt-6 section-panel rounded-2xl p-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">需要一位能够连接产品、工程与交付的开发者吗？</div>
-                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">我愿意参与精选的自由职业、合同制以及协作型产品开发工作。</p>
+                <div class="text-sm font-semibold text-slate-900" data-i18n="about-cta-title">需要开发 IT Inventory、海关集成或运营系统吗？</div>
+                <p class="mt-1 text-sm text-slate-600" data-i18n="about-cta-desc">我愿意参与与保税区软件、Host-to-Host 集成及内部平台相关的精选自由职业、合同与协作项目。</p>
               </div>
               <div class="flex items-center gap-3">
               <a href="#portfolio" class="px-4 py-2 bg-slate-900 text-white rounded shadow-sm" data-i18n="see-projects">查看项目</a>
@@ -1661,29 +1707,9 @@
       <!-- Portfolio -->
       <section id="portfolio" class="bg-slate-50 py-16">
         <div class="max-w-5xl mx-auto px-6">
-          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <h2 class="text-2xl font-bold" data-i18n="portfolio-title">作品集</h2>
-              <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">精选的 Web 与应用项目。编辑下方条目以添加您的项目、描述、技术栈和链接。</p>
-            </div>
-            <div class="grid gap-4 lg:max-w-2xl lg:grid-cols-2">
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="playstore-dev-label">附加作品集</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="playstore-dev-title">Google Play 开发者作品集</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="playstore-dev-desc">更广泛地展示已发布的 Android 作品，包括用于商业和现场运营的应用。</p>
-                <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-medium text-sky-700 hover:underline" data-i18n="playstore-dev-link">打开 Google Play 作品集</a>
-              </div>
-              <div class="section-panel rounded-2xl px-5 py-4">
-                <div class="text-xs uppercase tracking-[0.18em] text-slate-500" data-i18n="patent-portfolio-label">专利作品集</div>
-                <div class="mt-2 text-sm font-semibold text-slate-900" data-i18n="patent-portfolio-title">已登记的知识产权</div>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="patent-portfolio-desc">与嵌入式系统、物联网和基于 Web 的控制界面相关的精选专利与知识产权公开登记页面。</p>
-                <div class="mt-3 space-y-2 text-sm">
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-1">Egrotek 移动应用</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-2">基于 ESP32 的三相变压器监测 Web GUI 配置</a>
-                  <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener" class="block text-sky-700 hover:underline" data-i18n="patent-item-3">基于 ESP32 的水流传感器 Web GUI 配置</a>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h2 class="text-2xl font-bold" data-i18n="portfolio-title">作品集</h2>
+            <p class="mt-2 max-w-3xl text-slate-600 leading-7" data-i18n="portfolio-desc">精选项目涵盖 IT Inventory、保税区运营、海关相关平台、公共部门系统，以及用于真实业务流程的移动产品。</p>
           </div>
 
           <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1700,7 +1726,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Mefomart</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">我独立为 Koperasi Semen Nusantara 在 Cilacap 构建的第一个 ERP。功能：在线商店、多店铺、多仓库、库存与供应商管理、寄售管理、POS 和集成报告。</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="mefomart-desc">我为 Koperasi Semen Nusantara 在 Cilacap 独立构建的 ERP，覆盖电商、库存、多仓库、供应商、寄售、POS 与支撑日常运营的集成报表。</p>
                 <div class="mt-4 flex items-center gap-3">
                   <!-- no external site link available -->
                 </div>
@@ -1777,7 +1803,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Panel Harga Pangan - BAPANAS</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">公共仪表盘，发布覆盖印度尼西亚的食品商品价格，由政府普查员收集；包含用于普查员输入本地市场价格的应用。</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="panelharga-desc">覆盖印度尼西亚的公共食品价格仪表盘，依赖现场普查员输入；同时包含用于记录本地市场价格并保持现场报表流程一致性的运营应用。</p>
                 <div class="mt-4 flex items-center gap-3">
                   <a href="https://panelharga.badanpangan.go.id" data-i18n="open-site" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">打开站点</a>
                   <a href="https://play.google.com/store/apps/details?id=com.petugaspanelhargapangan.app&amp;hl=id" data-i18n="play-store" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">Play 商店</a>
@@ -1836,7 +1862,7 @@
               </div>
               <div class="p-4">
                 <h3 class="font-semibold">Online Beacukai</h3>
-                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">为保税公司、出口商和进口商提供的物流与海关报告平台。角色：前端与移动应用。</p>
+                <p class="mt-2 text-sm text-slate-600" data-i18n="online-beacukai-desc">面向保税企业、出口商和进口商的物流与海关报表平台。这类工作与我在运营型海关软件、库存流程及受监管报表界面的专长高度一致。</p>
                 <div class="mt-4 flex items-center gap-3">
                   <button data-i18n="open-site" onclick="openEncoded('aHR0cHM6Ly9vbmxpbmUtYmVhY3VrYWkuY29t')" class="text-sm text-sky-600 hover:underline">打开站点</button>
                 </div>
@@ -1928,6 +1954,40 @@
 
           <div class="mt-6 text-center">
             <button data-i18n="more-projects" onclick="openEncoded('aHR0cHM6Ly9naXRodWIuY29tL29ueWV0')" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl">更多项目在 GitHub</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="published-work" class="py-10">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="playstore-dev-label">附加作品集</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="playstore-dev-title">Google Play 开发者作品集</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="playstore-dev-desc">更广泛地展示已发布的 Android 作品，包括支持现场运营、业务流程与公共服务流程的应用。</p>
+          </div>
+          <div class="subsection-surface p-6 shadow-sm md:grid md:grid-cols-2 md:items-center md:gap-6">
+            <div>
+              <div class="text-sm font-semibold text-slate-900">Google Play</div>
+              <p class="mt-2 text-sm leading-7 text-slate-600" data-i18n="playstore-dev-note">公开开发者主页下已发布的应用和游戏，和上面的精选案例分开呈现。</p>
+            </div>
+            <div class="mt-4 md:mt-0 md:flex md:justify-end">
+              <a href="https://play.google.com/store/apps/dev?id=4679714779847784928" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800" data-i18n="playstore-dev-link">打开 Google Play 作品集</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="patents" class="pb-16">
+        <div class="max-w-5xl mx-auto px-6">
+          <div class="mb-5">
+            <div class="section-eyebrow" data-i18n="patent-portfolio-label">专利作品集</div>
+            <h2 class="mt-2 text-2xl font-bold text-slate-950" data-i18n="patent-portfolio-title">已登记的知识产权</h2>
+            <p class="mt-3 max-w-3xl text-slate-600 leading-7" data-i18n="patent-portfolio-desc">与嵌入式系统、物联网和基于 Web 的控制界面相关的精选专利与知识产权公开登记页面。</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511032219" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-1">Egrotek 移动应用</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA2511071390" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-2">基于 ESP32 的三相变压器监测 Web GUI 配置</a>
+            <a href="https://btp.telkomuniversity.ac.id/landing/ip/HCNA25110708421" target="_blank" rel="noopener" class="subsection-surface px-5 py-5 text-sky-700 hover:border-sky-200 hover:shadow-sm" data-i18n="patent-item-3">基于 ESP32 的水流传感器 Web GUI 配置</a>
           </div>
         </div>
       </section>
