@@ -40,9 +40,7 @@
       violation of applicable laws in your jurisdiction.</p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="permissions-title">1.1 Device Permissions</h2>
-    <p class="mb-4" data-i18n="permissions-desc">This application requires access to your device's camera for barcode
-      scanning features and access to geographic location (geolocation) for location-related features. By using this
-      application, you grant permission for such access in accordance with our privacy policy.</p>
+    <p class="mb-4" data-i18n="permissions-desc">Depending on the application, access to device permissions such as camera (for barcode scanning), geographic location (for location features), contacts, call logs, audio recording (microphone), or system alert overlays may be required. By using this application and granting these permissions, you agree to their processing in accordance with our privacy policy.</p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="game-services-title">1.2 Game Services, Local Data, and Advertising</h2>
     <p class="mb-4" data-i18n="game-services-desc">Some applications and/or games may use third-party services such as
@@ -96,6 +94,10 @@
         advertising providers such as AdMob or AppLovin may process advertising identifiers, device information,
         approximate location, ad interactions, and diagnostic data to serve, measure, and improve ads, subject to the
         app's configuration, permissions, and applicable law. Some of our apps may not use ads at all.</li>
+      <li data-i18n="info-8">Call logs and dialer role (if applicable): For applications functioning as dialers or CRM tools, we access call log history to sync logs, display calls, and generate productivity statistics.</li>
+      <li data-i18n="info-9">Microphone/Audio recording (if applicable): Used strictly for manual or automated voice/call recording features, with audio files archived to local storage.</li>
+      <li data-i18n="info-10">Contacts database access (if applicable): Used to match numbers to names, populate CRM lists, and provide suggestions during dialing.</li>
+      <li data-i18n="info-11">System alert window/overlay permission (if applicable): Used to show CRM summaries or pop-ups on the screen after events (e.g. phone calls).</li>
     </ul>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="usage-data-title">2. Data Usage</h2>
@@ -114,12 +116,14 @@
         can remember your preferences and continue your activity</li>
       <li data-i18n="usage-8">Display and measure advertising, including fraud prevention and performance reporting,
         when ad-supported features are used</li>
+      <li data-i18n="usage-9">Synchronize system calls with a local CRM, show call notifications, and compile call productivity statistics</li>
+      <li data-i18n="usage-10">Provide call recording functionality to archive conversation history on the device</li>
+      <li data-i18n="usage-11">Auto-suggest contacts and display caller identification names on logs and CRM leads</li>
+      <li data-i18n="usage-12">Display interactive pop-up overlays immediately post-call to let users enter notes or set reminders</li>
     </ul>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="storage-title">3. Storage and Security</h2>
-    <p class="mb-4" data-i18n="storage-desc">Your data may be stored locally on your device/browser and, where
-      applicable, on secure servers or trusted third-party platforms used to operate the service. We take reasonable
-      steps to protect data from unauthorized access, alteration, disclosure, or destruction.</p>
+    <p class="mb-4" data-i18n="storage-desc">Your data may be stored locally on your device/browser or on secure servers/trusted third-party platforms. For our offline-first applications, all call logs, contacts, CRM databases, and audio recordings are stored strictly on your device's internal storage and secured using SQLCipher encryption with a unique, device-specific key. No personal data from offline-first applications is ever transmitted or uploaded to cloud servers or any third parties. We take reasonable steps to protect all data from unauthorized access, alteration, disclosure, or destruction.</p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="third-party-title">4. Third-Party Services and Advertising</h2>
     <p class="mb-4" data-i18n="third-party-desc">Some features may rely on third-party providers such as Google Play
@@ -135,11 +139,7 @@
       functionality, deliver ads, perform analytics, prevent fraud, or comply with legal obligations.</p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="retention-title">6. Data Retention and Deletion</h2>
-    <p class="mb-4" data-i18n="retention-desc">We keep data only for as long as reasonably necessary for the purposes
-      described in this policy. Data stored locally on your device generally remains there until you clear the app data,
-      remove saved content, or uninstall the app. Most of our apps do not require an account. Where Google Play Games
-      Services or another third-party service is used, related account or cloud data may also be retained according to
-      that provider's policies.</p>
+    <p class="mb-4" data-i18n="retention-desc">We keep data only for as long as reasonably necessary. For offline-first applications, since all databases and audio recordings are stored strictly locally, you retain absolute control over retention. Uninstalling the application or clearing the application data (Clear Data) through your system settings will permanently, immediately, and irretrievably delete all local encrypted databases and recording files from your device. Most of our apps do not require an account, but cloud data related to third-party services (like Google Play Games) is retained under their policies.</p>
 
     <h2 class="text-2xl font-semibold text-blue-600 mt-8 mb-4" data-i18n="rights-title">7. User Rights</h2>
     <p class="mb-4" data-i18n="rights-desc">You can request access, correction, or deletion of your personal data by
@@ -178,7 +178,7 @@
         "usage-title": "1. Application Usage",
         "usage-desc": "You agree to use this application only for lawful purposes and not in violation of applicable laws in your jurisdiction.",
         "permissions-title": "1.1 Device Permissions",
-        "permissions-desc": "This application requires access to your device's camera for barcode scanning features and access to geographic location (geolocation) for location-related features. By using this application, you grant permission for such access in accordance with our privacy policy.",
+        "permissions-desc": "Depending on the application, access to device permissions such as camera (for barcode scanning), geographic location (for location features), contacts, call logs, audio recording (microphone), or system alert overlays may be required. By using this application and granting these permissions, you agree to their processing in accordance with our privacy policy.",
         "game-services-title": "1.2 Game Services, Local Data, and Advertising",
         "game-services-desc": "Some applications and/or games may use third-party services such as Google Play Games Services for sign-in, achievements, leaderboards, and cloud save features. They may also store game progress, preferences, session information, and cached data on your device through local storage mechanisms, including localStorage where applicable. If advertising is enabled, the application may display ads from partners such as AdMob or AppLovin. By using these features, you acknowledge that the relevant third-party terms and privacy policies may also apply.",
         "ip-title": "2. Intellectual Property Rights",
@@ -198,6 +198,10 @@
         "info-5": "Game service data, if applicable: This may include your Google Play Games profile information, player ID, achievements, leaderboard activity, and cloud save data when you choose to sign in or use those features.",
         "info-6": "Local device data and localStorage, if applicable: The application or game may store settings, preferences, login/session information, game progress, save data, and cache locally on your device/browser to keep the service functioning properly.",
         "info-7": "Advertising-related data, if applicable: When an app or game includes ads, third-party advertising providers such as AdMob or AppLovin may process advertising identifiers, device information, approximate location, ad interactions, and diagnostic data to serve, measure, and improve ads, subject to the app's configuration, permissions, and applicable law. Some of our apps may not use ads at all.",
+        "info-8": "Call logs and dialer role (if applicable): For applications functioning as dialers or CRM tools, we access call log history to sync logs, display calls, and generate productivity statistics.",
+        "info-9": "Microphone and audio recording (if applicable): Used strictly for manual or automated voice/call recording features, with audio files archived to local storage.",
+        "info-10": "Contacts database access (if applicable): Used to match numbers to names, populate CRM lists, and provide suggestions during dialing.",
+        "info-11": "System alert window/overlay permission (if applicable): Used to show CRM summaries or pop-ups on the screen after events (e.g., phone calls).",
         "usage-data-title": "2. Data Usage",
         "usage-data-desc": "We use your data to:",
         "usage-1": "Provide and improve application services",
@@ -208,14 +212,18 @@
         "usage-6": "Enable game features such as sign-in, achievements, leaderboards, and cloud save through services like Google Play Games Services",
         "usage-7": "Store your settings, saved progress, and local session data so the application or game can remember your preferences and continue your activity",
         "usage-8": "Display and measure advertising, including fraud prevention and performance reporting, when ad-supported features are used",
+        "usage-9": "Synchronize system calls with a local CRM, show call notifications, and compile call productivity statistics",
+        "usage-10": "Provide call recording functionality to archive conversation history on the device",
+        "usage-11": "Auto-suggest contacts and display caller identification names on logs and CRM leads",
+        "usage-12": "Display interactive pop-up overlays immediately post-call to let users enter notes or set reminders",
         "storage-title": "3. Storage and Security",
-        "storage-desc": "Your data may be stored locally on your device/browser and, where applicable, on secure servers or trusted third-party platforms used to operate the service. We take reasonable steps to protect data from unauthorized access, alteration, disclosure, or destruction.",
+        "storage-desc": "Your data may be stored locally on your device/browser or on secure servers/trusted third-party platforms. For our offline-first applications, all call logs, contacts, CRM databases, and audio recordings are stored strictly on your device's internal storage and secured using SQLCipher encryption with a unique, device-specific key. No personal data from offline-first applications is ever transmitted or uploaded to cloud servers or any third parties. We take reasonable steps to protect all data from unauthorized access, alteration, disclosure, or destruction.",
         "third-party-title": "4. Third-Party Services and Advertising",
         "third-party-desc": "Some features may rely on third-party providers such as Google Play Games Services, Google Play services, analytics tools, crash reporting tools, payment providers, and advertising networks including AdMob and AppLovin. These providers may process certain data under their own terms and privacy policies. Where required by platform policy or applicable law, we may limit, disable, or avoid initializing certain SDKs for child-directed or child users, and we encourage you to review the privacy policies of any third-party services used by the application or game.",
         "sharing-title": "5. Information Sharing",
         "sharing-desc": "We will not sell your personal data. We may share limited data with trusted service providers or business partners only as needed to operate core features, provide sign-in or game service functionality, deliver ads, perform analytics, prevent fraud, or comply with legal obligations.",
         "retention-title": "6. Data Retention and Deletion",
-        "retention-desc": "We keep data only for as long as reasonably necessary for the purposes described in this policy. Data stored locally on your device generally remains there until you clear the app data, remove saved content, or uninstall the app. Most of our apps do not require an account. Where Google Play Games Services or another third-party service is used, related account or cloud data may also be retained according to that provider's policies.",
+        "retention-desc": "We keep data only for as long as reasonably necessary. For offline-first applications, since all databases and audio recordings are stored strictly locally, you retain absolute control over retention. Uninstalling the application or clearing the application data (Clear Data) through your system settings will permanently, immediately, and irretrievably delete all local encrypted databases and recording files from your device. Most of our apps do not require an account, but cloud data related to third-party services (like Google Play Games) is retained under their policies.",
         "rights-title": "7. User Rights",
         "rights-desc": "You can request access, correction, or deletion of your personal data by contacting us at: onyetcorp@gmail.com. You can also manage camera and location access permissions through your device settings at any time, and you may clear locally stored data through your device or browser settings where supported.",
         "coppa-title": "8. Children's Privacy, COPPA, and Child-Safe Advertising",
@@ -233,7 +241,7 @@
         "usage-title": "1. Penggunaan Aplikasi",
         "usage-desc": "Anda setuju untuk menggunakan aplikasi ini hanya untuk tujuan yang sah dan tidak melanggar hukum yang berlaku di wilayah Anda.",
         "permissions-title": "1.1 Izin Perangkat",
-        "permissions-desc": "Aplikasi ini memerlukan akses ke kamera perangkat Anda untuk fitur scan barcode dan akses ke lokasi geografis (geolocation) untuk fitur terkait lokasi. Dengan menggunakan aplikasi ini, Anda memberikan izin untuk akses tersebut sesuai dengan kebijakan privasi kami.",
+        "permissions-desc": "Tergantung pada aplikasinya, akses ke izin perangkat seperti kamera (untuk pemindaian barcode), lokasi geografis (untuk fitur lokasi), kontak, log panggilan, perekaman audio (mikrofon), atau overlay sistem mungkin diperlukan. Dengan menggunakan aplikasi ini dan memberikan izin tersebut, Anda menyetujui pemrosesan data sesuai dengan kebijakan privasi kami.",
         "game-services-title": "1.2 Layanan Game, Data Lokal, dan Iklan",
         "game-services-desc": "Beberapa aplikasi dan/atau game dapat menggunakan layanan pihak ketiga seperti Google Play Games Services untuk fitur login, achievement, leaderboard, dan cloud save. Aplikasi atau game juga dapat menyimpan progres permainan, preferensi, informasi sesi, dan data cache pada perangkat Anda melalui mekanisme penyimpanan lokal, termasuk localStorage jika berlaku. Jika iklan diaktifkan, aplikasi dapat menampilkan iklan dari mitra seperti AdMob atau AppLovin. Dengan menggunakan fitur-fitur tersebut, Anda memahami bahwa syarat dan kebijakan privasi pihak ketiga yang relevan juga dapat berlaku.",
         "ip-title": "2. Hak Kekayaan Intelektual",
@@ -253,6 +261,10 @@
         "info-5": "Data layanan game, jika berlaku: Ini dapat mencakup informasi profil Google Play Games Anda, player ID, achievement, aktivitas leaderboard, dan data cloud save saat Anda memilih login atau menggunakan fitur tersebut.",
         "info-6": "Data perangkat lokal dan localStorage, jika berlaku: Aplikasi atau game dapat menyimpan pengaturan, preferensi, informasi login/sesi, progres permainan, data simpanan, dan cache secara lokal pada perangkat/browser Anda agar layanan berfungsi dengan baik.",
         "info-7": "Data terkait iklan, jika berlaku: Jika suatu aplikasi atau game menampilkan iklan, penyedia iklan pihak ketiga seperti AdMob atau AppLovin dapat memproses advertising ID, informasi perangkat, perkiraan lokasi, interaksi iklan, dan data diagnostik untuk menayangkan, mengukur, dan meningkatkan iklan, sesuai konfigurasi aplikasi, izin, dan hukum yang berlaku. Sebagian aplikasi kami mungkin tidak menggunakan iklan sama sekali.",
+        "info-8": "Log panggilan dan peran dialer (jika berlaku): Untuk aplikasi yang berfungsi sebagai dialer atau CRM, kami mengakses riwayat log panggilan untuk sinkronisasi log, menampilkan panggilan, dan menganalisis statistik produktivitas.",
+        "info-9": "Perekaman audio/mikrofon (jika berlaku): Digunakan khusus untuk perekaman suara/telepon baik manual maupun otomatis, dengan berkas audio disimpan di memori internal perangkat.",
+        "info-10": "Akses kontak (jika berlaku): Digunakan untuk mencocokkan nomor dengan nama kontak, mengisi daftar prospek CRM, dan memberikan saran saat mengetik nomor.",
+        "info-11": "Izin overlay sistem/SYSTEM_ALERT_WINDOW (jika berlaku): Digunakan untuk menampilkan ringkasan CRM atau pop-up otomatis di layar setelah peristiwa tertentu (seperti setelah telepon).",
         "usage-data-title": "2. Penggunaan Data",
         "usage-data-desc": "Kami menggunakan data Anda untuk:",
         "usage-1": "Menyediakan dan meningkatkan layanan aplikasi",
@@ -263,14 +275,18 @@
         "usage-6": "Mengaktifkan fitur game seperti login, achievement, leaderboard, dan cloud save melalui layanan seperti Google Play Games Services",
         "usage-7": "Menyimpan pengaturan, progres tersimpan, dan data sesi lokal agar aplikasi atau game dapat mengingat preferensi Anda dan melanjutkan aktivitas Anda",
         "usage-8": "Menampilkan dan mengukur iklan, termasuk pencegahan fraud dan pelaporan performa, saat fitur berbasis iklan digunakan",
+        "usage-9": "Menyinkronkan panggilan sistem dengan CRM lokal, menampilkan notifikasi telepon, dan menganalisis produktivitas panggilan",
+        "usage-10": "Menyediakan fitur perekaman panggilan untuk mengarsipkan riwayat percakapan di perangkat",
+        "usage-11": "Membaca data kontak untuk menampilkan nama pemilik nomor di log dan memberikan saran saat mengetik",
+        "usage-12": "Menampilkan pop-up overlay otomatis pasca-telepon agar pengguna dapat langsung menulis catatan atau pengingat balik",
         "storage-title": "3. Penyimpanan dan Keamanan",
-        "storage-desc": "Data Anda dapat disimpan secara lokal pada perangkat/browser Anda dan, jika berlaku, pada server aman atau platform pihak ketiga tepercaya yang digunakan untuk mengoperasikan layanan. Kami mengambil langkah yang wajar untuk melindungi data dari akses, perubahan, pengungkapan, atau penghancuran tanpa izin.",
+        "storage-desc": "Data Anda dapat disimpan secara lokal pada perangkat/browser Anda atau pada server aman/platform pihak ketiga tepercaya. Untuk aplikasi offline-first kami, semua log panggilan, kontak, database CRM, dan rekaman suara disimpan secara eksklusif di memori internal perangkat Anda dan diamankan menggunakan enkripsi SQLCipher dengan kunci unik untuk masing-masing perangkat. Tidak ada data pribadi dari aplikasi offline-first yang dikirimkan atau diunggah ke server cloud kami maupun pihak ketiga. Kami mengambil langkah yang wajar untuk melindungi seluruh data dari akses, perubahan, pengungkapan, atau penghancuran tanpa izin.",
         "third-party-title": "4. Layanan Pihak Ketiga dan Iklan",
         "third-party-desc": "Beberapa fitur dapat bergantung pada penyedia pihak ketiga seperti Google Play Games Services, Google Play services, alat analitik, alat pelaporan crash, penyedia pembayaran, dan jaringan iklan termasuk AdMob dan AppLovin. Penyedia ini dapat memproses data tertentu berdasarkan syarat dan kebijakan privasi mereka sendiri. Jika diwajibkan oleh kebijakan platform atau hukum yang berlaku, kami dapat membatasi, menonaktifkan, atau tidak menginisialisasi SDK tertentu untuk aplikasi yang ditujukan kepada anak atau untuk pengguna yang diperlakukan sebagai anak, dan kami menyarankan Anda untuk meninjau kebijakan privasi dari layanan pihak ketiga yang digunakan oleh aplikasi atau game.",
         "sharing-title": "5. Berbagi Informasi",
         "sharing-desc": "Kami tidak menjual data pribadi Anda. Kami dapat membagikan data terbatas kepada penyedia layanan tepercaya atau mitra bisnis hanya sejauh diperlukan untuk menjalankan fitur inti, menyediakan fungsi login atau layanan game, menayangkan iklan, melakukan analitik, mencegah fraud, atau memenuhi kewajiban hukum.",
         "retention-title": "6. Retensi dan Penghapusan Data",
-        "retention-desc": "Kami menyimpan data hanya selama diperlukan secara wajar untuk tujuan yang dijelaskan dalam kebijakan ini. Data yang disimpan secara lokal pada perangkat Anda umumnya tetap berada di sana sampai Anda menghapus data aplikasi, menghapus konten tersimpan, atau menghapus instalasi aplikasi. Sebagian besar aplikasi kami tidak memerlukan akun. Jika Google Play Games Services atau layanan pihak ketiga lain digunakan, data akun atau cloud terkait juga dapat disimpan sesuai kebijakan penyedia tersebut.",
+        "retention-desc": "Kami menyimpan data hanya selama diperlukan secara wajar. Untuk aplikasi offline-first, karena semua database dan rekaman audio disimpan sepenuhnya secara lokal, Anda memiliki kontrol penuh atas retensi data. Menghapus aplikasi atau membersihkan data aplikasi (Clear Data) melalui pengaturan Android akan menghapus seluruh database terenkripsi lokal dan berkas rekaman secara permanen, seketika, dan tidak dapat dikembalikan dari perangkat Anda. Sebagian besar aplikasi kami tidak memerlukan akun, dan data cloud dari layanan pihak ketiga (seperti Google Play Games) disimpan sesuai kebijakan penyedia tersebut.",
         "rights-title": "7. Hak Pengguna",
         "rights-desc": "Anda dapat meminta akses, perbaikan, atau penghapusan data pribadi Anda dengan menghubungi kami di: onyetcorp@gmail.com. Anda juga dapat mengelola izin akses kamera dan lokasi melalui pengaturan perangkat Anda kapan saja, serta menghapus data yang tersimpan secara lokal melalui pengaturan perangkat atau browser Anda jika didukung.",
         "coppa-title": "8. Privasi Anak, COPPA, dan Iklan Aman untuk Anak",
@@ -288,9 +304,9 @@
         "usage-title": "1. 应用程序使用",
         "usage-desc": "您同意仅将此应用程序用于合法目的，且不违反您所在司法管辖区的适用法律。",
         "permissions-title": "1.1 设备权限",
-        "permissions-desc": "此应用程序需要访问您的设备摄像头以进行条形码扫描功能，并访问地理位置（地理定位）以进行位置相关功能。通过使用此应用程序，您根据我们的隐私政策授予此类访问权限。",
+        "permissions-desc": "根据具体的应用程序，可能需要访问设备权限，例如摄像头（用于条形码扫描）、地理位置（用于定位功能）、联系人、通话记录、录音（麦克风）或系统悬浮窗。通过使用此应用程序并授予这些权限，即表示您同意按照我们的隐私政策处理这些数据。",
         "game-services-title": "1.2 游戏服务、本地数据与广告",
-        "game-services-desc": "某些应用和/或游戏可能会使用 Google Play Games Services 等第三方服务来提供登录、成就、排行榜和云存档功能。它们也可能通过本地存储机制在您的设备上保存游戏进度、偏好设置、会话信息和缓存数据，在适用情况下包括 localStorage。如果启用了广告，应用可能会显示来自 AdMob 或 AppLovin 等合作伙伴的广告。使用这些功能即表示您理解相关第三方条款和隐私政策也可能适用。",
+        "game-services-desc": "某些应用和/或游戏可能会使用 Google Play 游戏服务来提供登录、成就、排行榜和云存档功能。它们也可能通过本地存储机制在您的设备上保存游戏进度、偏好设置、会话信息和缓存数据，在适用情况下包括 localStorage。如果启用了广告，应用可能会显示来自 AdMob 或 AppLovin 等合作伙伴的广告。使用这些功能即表示您理解相关第三方条款和隐私政策也可能适用。",
         "ip-title": "2. 知识产权",
         "ip-desc": "此应用程序中的所有内容、徽标和其他材料均由 OnyetCorp 拥有，并受版权法保护。",
         "liability-title": "3. 责任限制",
@@ -299,15 +315,19 @@
         "changes-desc": "我们保留随时更改这些条款和条件的权利。变更将通过应用程序或电子邮件通知。",
         "privacy-title": "隐私政策",
         "scope-title": "0. 适用范围",
-        "scope-desc": "本政策适用于我们在 Google Play 发布的公开应用和游戏。数据处理方式可能因具体应用、游戏、启用功能、年龄分级以及所使用的第三方 SDK 而有所不同。我们的大多数工具类应用不需要注册账号或直接登录。某些游戏可选择使用 Google Play Games Services 来实现登录、成就、排行榜及类似游戏功能。",
+        "scope-desc": "本政策适用于我们在 Google Play 发布的公开应用和游戏。数据处理方式可能因具体应用、游戏、启用功能、年龄分级以及所使用的第三方 SDK 而有所不同。我们的大多数工具类应用不需要注册账号或直接登录。某些游戏可选择使用 Google Play 游戏服务来实现登录、成就、排行榜及类似游戏功能。",
         "info-collected-title": "1. 我们收集的信息",
         "info-1": "您直接提供的信息，例如您通过电子邮件联系我们寻求支持时提供的信息。",
         "info-2": "应用使用数据、设备信息、诊断数据以及崩溃或错误日志（如适用）。",
         "info-3": "摄像头访问用于条形码扫描：扫描的条形码数据可能被收集用于应用程序功能目的，例如验证或记录。",
         "info-4": "地理位置数据（地理定位）：当启用地理定位功能时，会收集您的设备位置信息，以提供基于位置的服务。",
-        "info-5": "游戏服务数据（如适用）：这可能包括您选择登录或使用相关功能时的 Google Play Games 个人资料信息、玩家 ID、成就、排行榜活动以及云存档数据。",
+        "info-5": "游戏服务数据（如适用）：这可能包括您选择登录或使用相关功能时的 Google Play 游戏服务个人资料信息、玩家 ID、成就、排行榜活动以及云存档数据。",
         "info-6": "本地设备数据和 localStorage（如适用）：应用或游戏可能会在您的设备/浏览器本地存储设置、偏好、登录/会话信息、游戏进度、存档数据和缓存，以确保服务正常运行。",
         "info-7": "广告相关数据（如适用）：当某个应用或游戏包含广告时，AdMob 或 AppLovin 等第三方广告提供商可能会根据应用配置、权限和适用法律处理广告标识符、设备信息、大致位置、广告互动和诊断数据，以展示、衡量和改进广告。我们的部分应用可能完全不使用广告。",
+        "info-8": "通话记录与默认拨号盘角色（如适用）：对于用作拨号盘或 CRM 工具的应用，我们访问通话记录历史以同步记录、显示通话并生成生产力分析统计。",
+        "info-9": "麦克风与音频录制（如适用）：严格用于手动或自动语音/通话录音功能，音频文件将归档到本地存储中。",
+        "info-10": "联系人数据库访问（如适用）：用于将电话号码与联系人姓名进行匹配、填充 CRM 列表并在拨号时提供建议。",
+        "info-11": "系统悬浮窗权限（如适用）：用于在特定事件（如通话）结束后在屏幕上显示 CRM 摘要或自动弹出窗口。",
         "usage-data-title": "2. 数据使用",
         "usage-data-desc": "我们使用您的数据来：",
         "usage-1": "提供和改进应用程序服务",
@@ -315,11 +335,15 @@
         "usage-3": "分析使用情况以进行功能开发",
         "usage-4": "处理扫描的条形码数据以进行应用程序功能，例如产品验证或库存",
         "usage-5": "使用位置数据提供基于位置的功能，例如附近搜索或跟踪",
-        "usage-6": "通过 Google Play Games Services 等服务启用登录、成就、排行榜和云存档等游戏功能",
-        "usage-7": "保存您的设置、存档进度和本地会话数据，以便应用或游戏记住您的偏好并继续您的活动",
+        "usage-6": "通过 Google Play 游戏服务等服务启用登录、成就、排行榜和云存档等游戏功能",
+        "usage-7": "保存您的设置、存档进度 and 本地会话数据，以便应用或游戏记住您的偏好并继续您的活动",
         "usage-8": "在使用广告支持功能时展示和衡量广告，包括欺诈防范和效果报告",
+        "usage-9": "同步系统通话至本地 CRM，显示通话通知并生成通话生产力统计数据",
+        "usage-10": "提供通话录音功能以将通话记录归档于设备本地",
+        "usage-11": "自动建议联系人并在通话记录和 CRM 线索中显示联系人姓名",
+        "usage-12": "在通话结束后立即显示悬浮窗，以便用户快速输入笔记或设置回电提醒",
         "storage-title": "3. 存储和安全",
-        "storage-desc": "您的数据可能存储在您的设备/浏览器本地，并在适用情况下存储于用于运营服务的安全服务器或可信第三方平台。我们采取合理措施保护数据免遭未经授权的访问、更改、披露或销毁。",
+        "storage-desc": "您的数据可能会存储在您的设备/浏览器本地，或存储在安全服务器/可信第三方平台上。对于我们的离线优先应用，所有通话记录、联系人、CRM 数据库和录音均严格存储在您的设备内部存储中，并使用 SQLCipher 加密技术（带有设备特定的唯一密钥）进行保护。离线优先应用中的任何个人数据绝不会传输或上传到云端服务器或任何第三方。我们采取合理措施保护所有数据免遭未经授权的访问、更改、披露或销毁。",
         "third-party-title": "4. 第三方服务与广告",
         "third-party-desc": "某些功能可能依赖 Google Play Games Services、Google Play services、分析工具、崩溃报告工具、支付提供商以及包括 AdMob 和 AppLovin 在内的广告网络等第三方提供商。这些提供商可能根据其各自的条款和隐私政策处理某些数据。若平台政策或适用法律要求，我们可能会对面向儿童的应用或被视为儿童的用户限制、禁用或不初始化某些 SDK，并建议您查阅应用或游戏所使用第三方服务的隐私政策。",
         "sharing-title": "5. 信息共享",
